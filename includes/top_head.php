@@ -1,11 +1,11 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="For faster mobile-friendly and responsive development, Bootstrap includes dozens of utility classes for showing, hiding, aligning, and spacing content.">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="description" content="Math and Physik">
+    <meta name="author" content="Rabus Dominik">
     <meta name="generator" content="Jekyll v3.8.3">
 
-    <title>Marcs Wiki</title>
+    <title>Rabus Unistuff</title>
 
     <!-- Bootstrap core CSS -->
 

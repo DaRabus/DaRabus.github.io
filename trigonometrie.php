@@ -24,22 +24,14 @@
           <?php include ('includes/nav_mathe.php'); ?>
         </div>
 
-          <div class="d-none d-xl-block col-xl-2 bd-toc">
-            <ul class="section-nav">
-            <li class="toc-entry toc-h2"><a href="#rechenoperationen">Trigonometrie</a></li>
-              <ul><li class="toc-entry toc-h3"><a href="#definition_der_winkelfunktion">Definition der Winkelfunktionen</a></li></ul>
-              <ul><li class="toc-entry toc-h3"><a href="#berechnung_allgemeines_dreieck">Berechnung allgemeines Dreieck</a></li></ul>
-              <ul><li class="toc-entry toc-h3"><a href="#beziehungen_zwischen_den_winkelfunktionen">Beziehungen zwischen den Winkelfunktionen</a></li></ul>
-            </ul>
-          </div>
-        
+                 
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">Trigonometrie</h1>
 
           <p class="bd-lead">Die Grundaufgabe der Trigonometrie besteht darin, aus drei Grössen eines gegebenen Dreiecks andere Grössen dieses Dreiecks zu berechnen.</p>
 
-<br><h5 id="definition_der_winkelfunktion">Definition der Winkelfunktionen</h5>
+<br><h2>Definition der Winkelfunktionen</h2>
 <div class="pre-spoiler">
 <input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 <div class="spoiler" style="display: none;">
@@ -55,7 +47,7 @@
                   <tr id="mult_mit_skalar">
                     <td >Sinus von α</td>
                     <td>$$ \sin(\alpha) = \frac{\text{Gegenkathete}}{\text{Hypotenuse}} = \frac{{\color{#0C9D51} g}}{{\color{#DD262C} h}} $$</td>
-                    <td rowspan="3"><img src="bilder/trigonometrie/winkelfunktionen/rechtwinklige_dreiecke.png"style="max-height:30%; max-width:100%"></td>
+                    <td rowspan="3"><img src="bilder/trigonometrie/winkelfunktionen/rechtwinklige_dreiecke.png"style="max-height:30%; max-width:50%"></td>
                   </tr>
                   <tr id="laenge_eines_vektors" >
                     <td>Kosinus von α</td>
@@ -127,7 +119,7 @@
                           </tbody>
                           </table>
                         </td>
-                    <td><img src="bilder/trigonometrie/winkelfunktionen/spezielle_dreiecke.png"style="max-height:38%; max-width:100%"></td>
+                    <td><img src="bilder/trigonometrie/winkelfunktionen/spezielle_dreiecke.png"style="max-height:38%; max-width:50%"></td>
                   </tr>
             </tbody>
           </table>
@@ -142,12 +134,12 @@
                   <tr id="mult_mit_skalar">
                     <td width=20% >Sinussatz</td>
                     <td  width=42%>$$ \frac{{\color{#0C9D51} a}}{\sin({\color{#0C9D51} \alpha})} = \frac{{\color{#0FA9E3} b}}{\sin({\color{#0FA9E3} \beta})} = \frac{{\color{#DD262C} c}}{\sin({\color{#DD262C} \gamma })} = 2r $$</td>
-                    <td><img src="bilder/trigonometrie/berechnung/sinussatz.png"style="max-height:30%; max-width:100%"></td>
+                    <td><img src="bilder/trigonometrie/berechnung/sinussatz.png"style="max-height:30%; max-width:40%"></td>
                   </tr>
                   <tr id="laenge_eines_vektors" >
                     <td>Kosinussatz</td>
                     <td>$$ {\color{#0C9D51} a^{2}} = {\color{#0FA9E3} b^{2}} +  {\color{#0FA9E3} c^{2}} - 2bc\cos({\color{#0C9D51} \alpha}) $$</td>
-                    <td><img src="bilder/trigonometrie/berechnung/cosinussatz.png"style="max-height:30%; max-width:100%"></td>
+                    <td><img src="bilder/trigonometrie/berechnung/cosinussatz.png"style="max-height:30%; max-width:40%"></td>
                   </tr>
                 </tbody>
             </table>
@@ -157,16 +149,22 @@
 <div class="pre-spoiler">
 <input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 <div class="spoiler" style="display: none;">
-          <table class="table">
-                <tbody>
-                  <tr id="mult_mit_skalar">
-                    <td width=20% >Trigonometrischer Pythagoras</td>
-                    <td  width=42%>$$ \sin^{2}(\alpha)+\cos^{2}(\alpha) = 1 $$</td>
-                    <td></td>
-                  </tr>
-                  
-                </tbody>
-            </table>
+
+	<ol style="list-style-type:none">
+   <li><b>Trigonometrische Funktionen</b>
+         <li>$$\sin (-x) = -\sin (x)  \quad \quad \cos (-x) = \cos (x)$$</li>
+         <li>$$\sin^2 x + \cos^2 x = 1  \quad  \quad \tan x = \frac{\sin x}{\cos x}$$</li>
+		  <li>$$e^{ix}=\cos(x)+i\sin(x) \quad  \quad e^{-ix}=\cos(x)-i\sin(x)$$</li>
+		  <li>$$\sin(x)=\frac{1}{2i}(e^{ix}-e^{-ix}) \quad  \quad \cos(x)=\frac{1}{2}(e^{ix}+e^{-ix})$$</li>
+		<li>$$\sinh(x)=\frac{1}{2}(-e^{-x}+e^x) \quad \quad \cosh(x)=\frac{1}{2}(e^{-x}+e^x)$$</li>
+   </li>
+	<li><b>Additionstheoreme</b>
+		<li>$$\cos (x + y) = \cos x \cdot \cos y - \sin x \cdot \sin y$$</li>
+	<li>$$\cos (x - \frac{\pi}{2}) = \sin x \quad \quad \sin (x + \frac{\pi}{2}) = \cos x$$</li>
+	<li>$$\sin (x + y) = \sin x \cdot \cos y + \cos x \cdot \sin y $$</li>
+	<li>$$\sin 2x = 2 \sin x \cdot \cos x  $$</li>
+	<li>$$ \cos 2x = \cos^2 x - \sin^2 x = 2\cos^2 (x - 1)$$</li>
+	</li>
 				</div>
 			</div>
         </main>
