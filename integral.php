@@ -4,6 +4,7 @@
     <?php include ('includes/top_head.php'); 
     $loc = "mathe";
     ?>
+	  <link href="spoiler.css" rel="stylesheet" type="text/css">
 </head>
   <body>
     <a id="skippy" class="sr-only sr-only-focusable" href="#content">
@@ -44,7 +45,10 @@
 
           
 
-          <br><br><h5 id="begriffe">Definition & Eigenschaften</h5>
+<br><h2 id="begriffe">Definition & Eigenschaften</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
               <table class="table">
                 <thead>
                   <tr>
@@ -57,7 +61,7 @@
                   <tr>
                     <td >Definition</td>
                     <td>Die Fläche A heisst Integral der Funktion f(x) in den Grenzen x<sub>0</sub>  bis x<sub>E</sub>  über x.</td>
-                    <td ><img src="bilder/integral/definition.png"style="max-height:15%; max-width:100%"></td>
+                    <td ><img src="bilder/integral/definition.png"style="max-height:15%; max-width:50%"></td>
                   </tr>
                   <tr>
                     <td >Schreibweise</td>
@@ -79,9 +83,24 @@
                     <td>$$ \int_{x_{E}}^{x_{0}}f(x) \:dx = -\int_{x_{0}}^{x_{E}}f(x) \:dx$$</td>
                     <td></td>
                   </tr>
+					<tr>
+                <td width=20%>Bestimmtes Integral</td>
+                <td width=42%>$$  $$</td>
+                <td>Beim bestimmten Integral sind die Integrationsgrenzen angegeben</td>
+              </tr>
+              <tr>
+                <td width=20%>Unbestimmtes Integral</td>
+                <td width=42%>$$ \int \! f(x) \, \mathrm{d}x = F(x) + c $$</td>
+                <td>Hingegen beim unbestimmten Integral sind keine Grenzen angegeben.<br> <b>c</b> = Integrationskonstante</td>
+              </tr>
                 </tbody>
               </table>
-
+				</div>
+			</div>
+<br><h2 id="NLF">Newton-Leibniz-Formel</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
               <table class="table">
               <tr>
                 <td width=20%>Newton-Leibniz-Formel</td>
@@ -98,18 +117,13 @@
                 <td width=42%>$$ \int_{0}^{\pi}\sin(x)\:dx = -\cos(x)\mid _{0}^{\pi} \;= -\cos(\pi)+\cos(0) \\= -(-1)+1 = 1+1 = 2 $$</td>
                 <td><img src="bilder/integral/beispiel_2.png"style="max-height:35%; max-width:100%"></td>
               </tr>
-              <tr>
-                <td width=20%>Bestimmtes Integral</td>
-                <td width=42%>$$  $$</td>
-                <td>Beim bestimmten Integral sind die Integrationsgrenzen angegeben</td>
-              </tr>
-              <tr>
-                <td width=20%>Unbestimmtes Integral</td>
-                <td width=42%>$$ \int \! f(x) \, \mathrm{d}x = F(x) + c $$</td>
-                <td>Hingegen beim unbestimmten Integral sind keine Grenzen angegeben.<br> <b>c</b> = Integrationskonstante</td>
-              </tr>
             </table>
-
+	</div>
+			</div>
+<br><h2 id="UF">Umformungen</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
             <table class="table">
               <tr>
                 <td width=20%>Summen-Regel</td>
@@ -127,9 +141,12 @@
                 <td></td>
               </tr>
             </table>
-
-            <br><br><h5 id="formeln">Formeln zur Integration</h5>
-
+				</div>
+			</div>	
+<br><h2 id="formeln">Formeln zur Integration</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
             <table class="table">
               <thead>
                   <tr>
@@ -179,8 +196,12 @@
                 <td>$$ x · \ln x - x \color{#AAA}{+ c}\color{#000} \\= x · (\ln x - 1) \color{#AAA}{+ c} $$</td>
               </tr>
             </table>
-
-            <br><br><h5 id="modifikation">Lineare Modifikation</h5>
+	</div>
+			</div>	
+<br><h2 id="modifikation">Lineare Modifikation</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
             <table class="table">
               <thead>
                   <tr>
@@ -212,8 +233,12 @@
                 <td>$$ G \cdot \frac{1}{\ln(a)}\cdot \varepsilon \cdot a^{\frac{x-x_0}{\varepsilon}} $$</td>
               </tr>
             </table>
-
-            <br><br><h5 id="acr">ACR-Prozess</h5>
+				</div>
+			</div>
+<br><h2 id="acr">ACR-Prozess</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
               <table>
                 <tr>
                 <td width=20%>Konzept</td>
@@ -229,14 +254,12 @@
                 <td><b>Global:</b><br> $$ A = \int_{x_0}^{x_E}f(x)\; dx = F(x_E)-F(x_0) $$</td>
               </tr>
               </table>
-
-
-
-
-
-
-
-             <br><br><h5 id="tools">Tools</h5>
+				</div>
+			</div>
+<br><h2 id="tools">Tools</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
               <table class="table">
                 <tr>
                     <td>Wolframalpha & Mathematica</td>
@@ -287,6 +310,8 @@ axis(<font color="#8A0A8A">'image'</font>);</code>
                   <td>Ergebnis:<br><img src="bilder/integral/matlab/plot_1.png"style="max-height:35%; max-width:100%"></td>
                 </tr>
               </table>
+				</div>
+			</div>
 
         </main>
       </div>

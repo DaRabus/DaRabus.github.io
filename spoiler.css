@@ -1,0 +1,24 @@
+@charset "utf-8";
+h1 {}	
+h2 {
+font-family: Rockwell, Georgia, "Times New Roman", Times, serif;
+  font-size: 2em; line-height: 0.5em;
+  margin: 0.3em 0.3em 1em 0.3em;
+  color: black;
+}
+h3 {
+  color: black;
+  padding-left: 2em;
+}
+h4 {
+  color: salmon;
+  padding-left: 3em;  
+}
+.pre-spoiler {
+object-position: center;
+	font-size: 13pt;
+}
+.spoiler {
+object-position: center;
+	font-size: 13pt;
+}

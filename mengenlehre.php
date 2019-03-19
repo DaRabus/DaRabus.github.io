@@ -43,7 +43,11 @@
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title">Mengenlehre</h1>
 
-          <p class="bd-lead">Die Mengenlehre ist ein grundlegendes Teilgebiet der Mathematik, das sich mit der Untersuchung von Mengen, also von Zusammenfassungen von Objekten, beschäftigt. </p>
+
+          <p class="bd-lead">Eine Zusammenfassung von Elementen zu einer Menge die explizite Angabe sieht wie folgt aus:
+			 $$A=\{1,2,3\}$$ </p>
+			  <p class="bd-lead">
+		Angabe durch Eigenschaft: $$A = \{n \in \mathbb{N} \mid 0 < n < 4 \}$$	</p>
 
           
 

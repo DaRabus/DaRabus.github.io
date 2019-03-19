@@ -4,6 +4,7 @@
     <?php include ('includes/top_head.php'); 
     $loc = "mathe";
     ?>
+	   <link href="spoiler.css" rel="stylesheet" type="text/css">
 </head>
   <body>
     <a id="skippy" class="sr-only sr-only-focusable" href="#content">
@@ -38,8 +39,10 @@
 
           <p class="bd-lead">Die Grundaufgabe der Trigonometrie besteht darin, aus drei Grössen eines gegebenen Dreiecks andere Grössen dieses Dreiecks zu berechnen.</p>
 
-          <br><br><h5 id="definition_der_winkelfunktion">Definition der Winkelfunktionen</h5>
-
+<br><h5 id="definition_der_winkelfunktion">Definition der Winkelfunktionen</h5>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
               <table class="table">
                 <thead>
                   <tr id="add_und_sub">
@@ -74,7 +77,12 @@
                   </tr>
                     </tbody>
                 </table>
-
+	</div>
+			</div>
+<br><h2>Oft gebrauchte Winkel</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
                 <table class="table">
                 <tbody>
                   <tr id="mult_mit_skalar">
@@ -123,7 +131,12 @@
                   </tr>
             </tbody>
           </table>
-
+				</div>
+			</div>
+<br><h2>Allgemeiner Sinus/Kosinussatz</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
           <table class="table">
                 <tbody>
                   <tr id="mult_mit_skalar">
@@ -138,7 +151,12 @@
                   </tr>
                 </tbody>
             </table>
-
+	</div>
+			</div>
+<br><h2>Additionstherme</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
           <table class="table">
                 <tbody>
                   <tr id="mult_mit_skalar">
@@ -149,7 +167,8 @@
                   
                 </tbody>
             </table>
-
+				</div>
+			</div>
         </main>
       </div>
     </div>

@@ -4,6 +4,7 @@
     <?php include ('includes/top_head.php'); 
     $loc = "mathe";
     ?>
+  <link href="spoiler.css" rel="stylesheet" type="text/css">
 </head>
   <body>
     <a id="skippy" class="sr-only sr-only-focusable" href="#content">
@@ -11,6 +12,7 @@
     <span class="skiplink-text">Skip to main content</span>
   </div>
 </a>
+	  
 
   <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
     <?php include ('includes/head.php'); ?>
@@ -27,7 +29,8 @@
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
             <li class="toc-entry toc-h2"><a href="#sur">Surjektive, injektive und bijektive</a></li>
-            <li class="toc-entry toc-h3"><a href="#begriffe">Begriffe</a></li>
+            <li class="toc-entry toc-h3"><a href="#begriffe">Bild / Urbild</a></li>
+			<li class="toc-entry toc-h3"><a href="#begriffe">Vorzeichen Spezialfälle</a></li>
             <li class="toc-entry toc-h3"><a href="#exp_func">Verallgemeinerte Exponentialfunktionen</a></li>
             <li class="toc-entry toc-h3"><a href="#paritaet">Parität</a></li>
             <li class="toc-entry toc-h3"><a href="#lokale_extrema">Lokale Extrema</a></li>
@@ -39,84 +42,54 @@
           </div>
         
 
-        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+<main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title">Funktionen</h1>
 
-          <p class="bd-lead">In der Mathematik ist eine Funktion oder Abbildung eine Beziehung zwischen zwei Mengen, die jedem Element der einen Menge, unabhängige Variable, genau ein Element der anderen Menge zugeordnet.</p>
+          <p class="bd-lead">Eine Funktion f ist eine Abbildung, die jedem Element x einer Definitionsmenge D genau ein Element y einer Zielmenge Z zuordnet.</p>
 
           
 
-          <br><br><h5 id="sur">Surjektive, injektive und bijektive</h5>
+<br><h2 id="sur">Surjektive, injektive und bijektive</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
 
               <table class="table">
                 <thead>
                   <tr>
                     <th scope="col" width=20%>Bezeichnung</th>
                     <th scope="col" width=42%>Formel</th>
-                    <th scope="col">Grafik</th>
+                    <th scope="col">Defintion</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td >Funktion</td>
-                    <td>$$ f: A \longrightarrow B, \; x \mapsto f(x) := x^{2}$$</td>
+                    <td>$$ f: D \longrightarrow Z, \; x \mapsto f(x) := x^{2}$$</td>
                     <td><b>A</b> = Definitionsmenge<br><b>B</b> = Zielmenge</td>
                   </tr>
-                  <tr>
-                    <td>Abzählbar</td>
-                    <td><p>
-                      Eine Menge ist <b>abzählbar</b>, wenn sie die gleiche Mächtigkeit wie die natürlichen Zahlen hat.  Dies bedeutet, dass es eine Bijektion zwischen A und der Menge der natürlichen Zahlen gibt.<br>
-                      Die Menge der Primzahlen ist abzählbar unendlich, da sie eine Teilmenge der natürlichen Zahlen und nach dem Satz von Euklid auch unendlich ist.
-                    </p></td>
-                    <td><img src="bilder/funktionen/abzaehlbar/abzaehlbar.png" style="max-height:60%; max-width:100%"></td>
+					                    <td >Surjektivität</td>
+                    <td>Jedes Element der Zielmenge wird mind. 1x erreicht werden</td>
+                    <td></td>
                   </tr>
-                  <tr>
-                    <td >Argument</td>
-                    <td>$$ f(\textbf{x} )$$</td>
-                    <td>Das Argument einer Funktion ist die unabhängige Variable, also z. B.  das „x“ im Funktionsterm f(x) = 3x + 2.</td>
+					<tr>
+                    <td >Injektivität</td>
+                    <td>Jedes Element der Zielmenge wird maximal 1x erreicht</td>
+                    <td></td>
                   </tr>
-                </tbody>
-              </table>
-
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col" width=20%></th>
-                    <th scope="col" width=42%>injektiv</th>
-                    <th scope="col">nicht injektiv</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td rowspan="3"><b>Surjektiv</b></td>
-                    <td><img src="bilder/funktionen/surjektiv/11.png" style="max-height:50%; max-width:100%"></td>
-                    <td><img src="bilder/funktionen/surjektiv/12.png" style="max-height:50%; max-width:100%"></td>
-                  </tr>
-                  <tr>
-                    <td>$$ A \coloneqq \mathbb{R}_{0}^{+};\: B \coloneqq \mathbb{R}_{0}^{+}  $$</td>
-                    <td>$$ A \coloneqq \mathbb{R};\: B \coloneqq \mathbb{R}_{0}^{+}  $$</td>
-                  </tr>
-                  <tr>
-                    <td>Diese Form nennt man <b>Bijektiv</b>.</td>
-                    <td>Jedes Element von B <b>muss</b> erreicht werden.</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="3"><b>nicht Surjektiv</b></td>
-                    <td><img src="bilder/funktionen/surjektiv/21.png" style="max-height:50%; max-width:100%"></td>
-                    <td><img src="bilder/funktionen/surjektiv/22.png" style="max-height:50%; max-width:100%"></td>
-                  </tr>
-                  <tr>
-                    <td>$$ A \coloneqq \mathbb{R}_{0}^{+};\: B \coloneqq \mathbb{R}  $$</td>
-                    <td>$$ A \coloneqq \mathbb{R};\: B \coloneqq \mathbb{R}  $$</td>
-                  </tr>
-                  <tr>
-                    <td>Jedes Element von B wird <b>höchsten</b> einmal erreicht</td>
+			<tr>
+                    <td >Bijektiv (Eineindeutig)</td>
+                    <td>f ist injektiv und surjektiv --> f umkehrbar</td>
                     <td></td>
                   </tr>
                     </tbody>
                 </table>
-            <br><br><h5 id="begriffe">Begriffe</h5>
-
+			</div>
+		</div>
+<br><h2 id="bild">Bild/Urbild</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
               <table class="table">
                 <tr>
                   <td width=20%>Bild</td>
@@ -128,8 +101,16 @@
                   <td>$$ f^{-1}(N)= \left \{ x \in A \: | \: f(x) \in  N \right \} $$</td>
                   <td><img src="bilder/funktionen/surjektiv/urbild.png" style="max-height:50%; max-width:100%"></td>
                 </tr>
+				  </table>
+				  
+				  </div> </div>	
+<br><h2 id="begriffe">Vorzeichen Spezialfälle</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
+		<table class="table">
                 <tr>
-                  <td >Signum</td>
+                  <td >Signum(Vorzeichen</td>
                   <td>$$ \operatorname{sgn}(x)\left\{\begin{matrix}
                         -1 &  \text{falls}& x<0\\ 
                          0&  \text{falls}& x=0\\ 
@@ -139,8 +120,11 @@
                   <td><img src="bilder/funktionen/sgn/sgn.png" style="max-height:100%; max-width:100%"></td>
                 </tr>
               </table>
-
-            <br><br><h5 id="exp_func">Verallgemeinerte Exponentialfunktionen</h5>
+	</div> </div>
+<br><h2 id="exp_func">Verallgemeinerte Exponentialfunktionen</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
 
               <table class="table">
                   <tr>
@@ -165,8 +149,12 @@
                     </td>
                   </tr>
               </table>
-
-              <br><br><h5 id="paritaet">Parität</h5>
+			</div>
+		</div>
+<br><h2 id="paritaet">Parität</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
 
               <table class="table">
                   <tr>
@@ -179,9 +167,12 @@
                     <td>$$ f(-x) = -f(x) $$</td>
                   </tr>
               </table>
-
-            <br><br><h5 id="lokale_extrema">Lokale Extrema</h5>
-
+			</div>
+		</div>
+<br><h2 id="lokale_extrema">Lokale Extrema</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
             <table class="table">
               <thead>
                   <tr id="add_und_sub">
@@ -193,7 +184,7 @@
               <tr>
                 <td>Kritische Stellen</td>
                 <td>$$ f'(x)=0 $$</td>
-                <td>heissen <b>kritische Stellen</b> von f</td>
+                <td>heissen <b>kritische Stellen</b> von f und die erste Ableitung ist die Steigung der Funktion</td>
               </tr>
               <tr>
                 <td rowspan="3" width=20%>Einfache kriterien<br>Falls:</td>
@@ -218,38 +209,76 @@
               <tr><td>$$ \text{m gerade und }f^{(m)}(x_{k})> 0 \Rightarrow f \text{ hat Tiefpunkt bei }x_{k} $$</td><td></td></tr>
               <tr><td>$$ \text{m ungerade} \Rightarrow f \text{ hat Sattelpunkt bei }x_{k} $$</td><td></td></tr>
             </table>
+	</div>
+		</div>
+<br><h2 id="kurven">Beispiel einer Bestimmung der Extremalstellen</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Aufklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Zuklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
 
-            <br><h5 id="kurven">Tabelle</h5>
-            <table class="table">
+	
+		Ausgangslage ist folgende Funktion: $$f(x) = 2x^3 + 3x^2 - 12x + 1$$
+<ol style="list-style-type:none">
+   <li><b>1. Ableitung formen:</b>
+         <li>$$f(x) = 2x^3 + 3x^2 - 12x + 1$$</li>
+         <li>$$f'(x) = 6x^2 + 6x -12$$</li>
+		  <li>$$f''(x) = 12x + 6$$</li>
+		  <li>$$f'''(x) = 12$$</li>
+   </li>
+   <li><b>Erste Ableitung = 0 setzen</b>
+         <li>$$6x^2 + 6x -12 = 0$$</li>
+         <li>$$ x_1 = -2$$ </li>
+			 <li>$$x_2 = 1$$</li>
+   </li>
+	 <li><b>Werte einsetzen und berechnen</b>
+		  <br>
+         <li><b>In die Funktion f(x) einsetzten:</b></li>
+
+			  <li>$$f(x_1) = 2(-2)^3 + 3(-2)^2 - 12(-2) + 1$$</li>
+			  <li>$$f(x_1) = 21$$</li>
+			  <li>$$f(x_2) = 2(1)^3 + 3(1)^2 - 12(1) + 1$$</li>
+			  <li>$$f(x_2) = -6$$</li>
+         <li><b>In die Zweite Ableitung einsetzten:</b></li>
+			  <li>$$f''(x_1) = 12(-2) + 6$$</li>
+			  <li>$$f''(x_1) = -18$$</li>
+			  <li>$$f''(x_2) = 12(1) + 6$$</li>
+			  <li>$$f''(x_1) = 18$$</li>
+   </li>
+</ol>
+		<b>Anschliessend das ganze als Tabelle aufführen:</b>
+		<table class="table">
               <tr>
-                <td width="10%"><b>k</b></td>
-                <td width="10%"><b>x<sub>k</sub></b></td>
-                <td width="21%"><b>f(x<sub>k</sub>)</b></td>
-                <td width="21%"><b>f'(x<sub>k</sub>)</b></td>
-                <td width="15%"><b>f''(x<sub>k</sub>)</b></td>
+                <td><b>k</b></td>
+                <td><b>x<sub>k</sub></b></td>
+                <td><b>f(x<sub>k</sub>)</b></td>
+				<td><b>f'(x<sub>k</sub>)</b></td>
+				<td><b>f''(x<sub>k</sub>)</b></td>
                 <td><b>Typ</b></td>
-              </tr>
               <tr>
                 <td>1</td>
                 <td>-2</td>
                 <td>21</td>
                 <td>0</td>
-                <td>-18 < 0</td>
-                <td>lokales Maximum</td>
+				<td>-18</td>
+				<td>lokales Maximum</td>
               </tr>
-              <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
+			              <tr>
+                <td>2</td>
+                <td>1</td>
+                <td>-6</td>
+                <td>0</td>
+				<td>18</td>
+				<td>lokales Minimum</td>
               </tr>
             </table>
-
-            <br><br><h5 id="globale_extrema">Globale Extrema</h5>
-
-            <table class="table">
+</div> 
+	</div> 
+<br><h2 id="globale_extrema">Globale Extrema</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Aufklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Zuklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
+	
+	<table class="table">
               <tr>
                 <td rowspan="2" width=20%>Geschlossene Intervalle</td>
                 <td width=42%>$$ 0 = f'(x)  \Rightarrow x_{1},...,x_{2} \Rightarrow f(x_{1}), ..., f(x_{n})$$</td>
@@ -265,64 +294,76 @@
                 <td>Bei den Geschlossenen Intervallen muss es ein globales Minimum und ein globales Maximum haben.</td>
               </tr>
             </table>
-
-            <br><h5 id="kurven">Kandidatenvergleich</h5>
+			</div>
+		</div>         
+<br><h2 id="wendepunkte">Wendepunkte</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
+	<h3>Wendepunkte sind die Punkte mit der höchsten Steigung in einer Funktion. <br>
+Um die Punkte zu finden muss man die <b>f''(x) = 0</b> setzten </h3>
             <table class="table">
               <tr>
-                <td width="20%"><b>k</b></td>
-                <td width="20%"><b>x<sub>k</sub></b></td>
-                <td width="22%"><b>f(x<sub>k</sub>)</b></td>
-                <td><b>Typ</b></td>
-              <tr>
-                <td>0</td>
-                <td>x<sub>0</sub></td>
-                <td>y<sub>0</sub></s></td>
-                <td>globales Minimum</td>
+                <td>Wendepunkt nach rechts</td>
+                <td>Hochpunkt von f'</td>
               </tr>
               <tr>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
-                <td>...</td>
+				<td>Wendepunkt nach links</td>
+                <td>Tiefpunkt von f'</td>
               </tr>
-              <tr>
-                <td>E</td>
-                <td>x<sub>E</sub></td>
-                <td>y<sub>E</sub></td>
-                <td>...</td>
-              </tr>
+				<td>Die Wendepunkte von f liegen somit an:</td>
+				<td>Kritischen Stellen von f' <br> Flachstellen von f</td>
             </table>
-
-          
-
-            <br><h5 id="wendepunkte">Wendepunkte</h5>
-            <table class="table">
-              <tr>
-                <td width=20%>Wendepunkte</td>
-                <td rowspan="2" width=42%>$$ f''(x) = 0 \text{ und } f'''(x) \not = 0 $$</td>
-                <td>Die Wendepunkte von f Liegen an kritischen Stellen von f'.</td>
-              </tr>
-              <tr>
-                <td width=20%>Sattelpunkte</td>
-                <td>Sattelpunkte sind Spezialfälle von Wendepunkten. Ein Terassenpunkt ist ein Wendepunkt, an dessen Stelle die Funktion die Steigung Null hat.</td>
-              </tr>
-            </table>
-
-            <br><h5 id="kruemmung">Krümmung</h5>
+			</div>
+		</div>
+<br><h2 id="kruemmung">Krümmung</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
             <table class="table">
               <tr>
                 <td width=20%>Analytische Krümmung</td>
                 <td width=42%>$$ K_{A}(x):=f''(x) $$</td>
-                <td>Eine Parabel (Funktion zweiter Ordnung) hat konstante analytische Krümmung!</td>
+                <td>Eine Parabel (Funktion zweiter Ordnung) hat konstante analytische Krümmung!(ist jedoch Geometrischer Bullshit)</td>
               </tr>
               <tr>
                 <td width=20%>Geometrische Krümmung</td>
-                <td width=42%>$$ K_{G}(x):=\frac{1}{\sqrt{(1+(f'(x)^2)^3)}} \cdot K_{A}(x) $$</td>
+                <td width=42%>$$ K_{G}(x):=\frac{1}{\sqrt{(1+(f'(x)^2)^3)}} \cdot K_{A}(x) = \frac{1}{r} \quad \text{eines Kreises} $$ </td>
                 <td>Gerade ist unabhängig von der Wahl des Krümmungsbegriffs.</td>
               </tr>
+				<tr>
+                <td width=20%>Spezialfall</td>
+                <td width=42%> $$\text{Falls} \quad 0 = f''(x) = K_A(x)$$</td>
+                <td>Das sind Flachstellen von f, gleichzeitig sind das kritische Stellen.</td>
+              </tr>
+            </table>
+	<h3>Vorzeichenkonvention für Kurven anhand der Krümmung</h3>
+	            <table class="table">
+              <tr>
+                <td>$$\text{Falls} \quad sgn(K_A(x)) = sgn(K_g(x)) \quad = \quad  \text{negativ}$$</td>
+				  <td>Parabel nach unten zeigend</td>
+				  <td>$$\text{Grundsätzlich, wenn} \quad y = -x^2$$</td>
+              </tr>
+			<tr>
+                <td>$$\text{Falls} \quad sgn(K_A(x)) = sgn(K_g(x)) \quad = \quad  \text{positiv}$$</td>
+				  <td>Parabel nach oben zeigend</td>
+				  <td>$$\text{Grundsätzlich, wenn} \quad y = +x^2$$</td>
+              </tr>
+					<tr>
+                <td>$$\text{Falls} \quad sgn(K_A(x)) = sgn(K_g(x)) \quad = \quad 0$$</td>
+				  <td>Lineare Funktion</td>
+			
+              </tr>
+              
             </table>
 
-            <br><br><h5 id="tools">Tools</h5>
+	
+			</div>
+		</div>
+<br><h2 id="tools">Tools</h2>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
 
               <table class="table">
                   <tr>
@@ -341,7 +382,8 @@
                     <td></td>
                   </tr>
               </table>
-
+			</div>
+		</div>
           
 
         </main>
