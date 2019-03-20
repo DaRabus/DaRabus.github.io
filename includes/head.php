@@ -3,6 +3,14 @@
   <div class="navbar-nav-scroll">
     <ul class="navbar-nav bd-navbar-nav flex-row">
       <li class="nav-item">
+        <a class="nav-link <?php if ($loc == "Analysis") echo "active" ?>" href="Analysis.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Analysis</a>
+      </li>
+		<ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link <?php if ($loc == "linalg") echo "active" ?>" href="linalg.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Lineare Algebra</a>
+      </li>
+		<ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
         <a class="nav-link <?php if ($loc == "mathe") echo "active" ?>" href="mathe.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Mathe</a>
       </li>
     <ul class="navbar-nav bd-navbar-nav flex-row">

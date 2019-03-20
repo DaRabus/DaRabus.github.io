@@ -1,4 +1,14 @@
 <nav class="collapse bd-links" id="bd-docs-nav">
+	 <div class="bd-toc-item <?php if($_SERVER['PHP_SELF'] == "/Analysis.php")echo " active";?>">
+      <a class="bd-toc-link" href="Analysis.php">
+        Analysis Allgemein
+      </a>
+    </div>
+	<div class="bd-toc-item <?php if($_SERVER['PHP_SELF'] == "/linalg.php")echo " active";?>">
+      <a class="bd-toc-link" href="linalg.php">
+        Lineare Algebra Allgemein
+      </a>
+    </div>
     <div class="bd-toc-item <?php if($_SERVER['PHP_SELF'] == "/differentialrechnung.php")echo " active";?>">
       <a class="bd-toc-link" href="differentialrechnung.php">
         Differentialrechnung

@@ -27,9 +27,9 @@
                  
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-          <h1 class="bd-title" id="content">Analysis 1</h1>
+          <h1 class="bd-title" id="content">Analysis</h1>
 
-          <p class="bd-lead">Grundlagen der Analysis 1</p>
+          <p class="bd-lead">Grundlagen der Analysis</p>
 
 <br><h2>Wichtige Kennzahlen und Formeln</h2>
 <div class="pre-spoiler">
@@ -137,152 +137,107 @@
 <input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 <div class="spoiler" style="display: none;">
 	<p class="bd-lead">Eine Funktion f ist eine Abbildung, die jedem Element x einer Definitionsmenge D genau ein Element y einer Zielmenge Z zuordnet.</p>
-
-          
-
-<li><b>Funktionsmodifikationen und Verschiebungen</b></li>
+	
+<li><b>Tabelle für wichtige Ableitungen/Aufleitungen</b></li>
 <div class="pre-spoiler">
 <input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 <div class="spoiler" style="display: none;">
-	<ol style="list-style-type:none">
-		<li><b>Modifikationen</b></li>
-		<li>$$\text{Sei} \quad g:A\rightarrow \mathbb{R}$ mit $A \subseteq \mathbb{R}$$ </li><br>
-		
-	<li>$$\text{nach rechts um} \delta x : f(X) = g(x -\delta x)$$</li>
-		<li>$$\text{nach links um} \delta x : f(X) = g(x +\delta x)$$</li>
-		<li>$$\text{nach oben um} \delta x : f(X) = g(x) + \delta y$$</li>
-		<li>$$\text{nach unten um} \delta x : f(X) = g(x) - \delta y$$</li>
-		
-		<li><b>Skalierungen</b></li>
-<li>$$\text{Sei} \quad g:A\rightarrow \mathbb{R}$ mit $A \subseteq \mathbb{R}$$ </li><br>
-		<li>$$\text{entlang der X - Achse um} \quad \delta : f(X) = g(\frac{x}{\delta} )$$</li>
-		<li>$$\text{entlang der Y - Achse um} \quad \delta : f(X) = g(x) \cdot \delta$$</li>
-		
-		<li><b>Spiegelungen</b></li>
-<li>$$\text{Sei} \quad g:A\rightarrow \mathbb{R}$ mit $A \subseteq \mathbb{R}$$ </li><br>
-		<li>$$\text{an der Y - Achse: } \quad f(X) = g(-x) \Leftrightarrow$$</li>
-		<li>$$\text{an der X - Achse: } \quad f(X) = - g(x)$$</li>
-	</ol>
-	</div>
-	</div>
-	<li><b>Surjektive, injektive und bijektive</b></li>
-<div class="pre-spoiler">
-<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
-<div class="spoiler" style="display: none;">
-
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col" width=20%>Bezeichnung</th>
-                    <th scope="col" width=42%>Formel</th>
-                    <th scope="col">Defintion</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td >Funktion</td>
-                    <td>$$ f: D \longrightarrow Z, \; x \mapsto f(x) := x^{2}$$</td>
-                    <td><b>A</b> = Definitionsmenge<br><b>B</b> = Zielmenge</td>
-                  </tr>
-					                    <td >Surjektivität</td>
-                    <td>Jedes Element der Zielmenge wird mind. 1x erreicht werden</td>
-                    <td></td>
-                  </tr>
-					<tr>
-                    <td >Injektivität</td>
-                    <td>Jedes Element der Zielmenge wird maximal 1x erreicht</td>
-                    <td></td>
-                  </tr>
-			<tr>
-                    <td >Bijektiv (Eineindeutig)</td>
-                    <td>f ist injektiv und surjektiv --> f umkehrbar</td>
-                    <td></td>
-                  </tr>
-                    </tbody>
-                </table>
-			</div>
+	<table>
+  <tr>
+    <th>Stammfunktion</th>
+    <th>Funktion</th>
+    <th>Ableitung</th>
+  </tr>
+  <tr>
+    <td>$$\frac{a^x}{ln a}$$</td>
+    <td>$$a^x$$</td>
+    <td>$$ln(a) \cdot a^x$$</td>
+  </tr>
+  <tr>
+    <td>$$e^x$$</td>
+    <td>$$e^x$$</td>
+    <td>$$e^x$$</td>
+  </tr>
+  <tr>
+    <td>$$\frac{e^{nx}}{n}$$</td>
+    <td>$$e^{nx}$$</td>
+    <td>$$n \cdot e^{nx}$$</td>
+  </tr>
+  <tr>
+    <td>$$ln \mid x \mid $$</td>
+    <td>$$\frac{1}{x}$$</td>
+    <td>$$-\frac{1}{x^2}$$</td>
+  </tr>
+  <tr>
+    <td>$$\frac{1}{q+1} x^{q+1}$$</td>
+    <td>$$ x^q$$</td>
+    <td>$$qx^{q-1}$$</td>
+  </tr>
+  <tr>
+    <td>$$\frac{2x^{\frac{3}{2}}}{3}$$</td>
+    <td>$$ \sqrt{x}$$</td>
+    <td>$$\frac{1}{2 \cdot \sqrt{x}}$$</td>
+  </tr>
+  <tr>
+    <td>$$x ln(ax) - x $$</td>
+    <td>$$ln(ax)$$</td>
+    <td>$$ \frac{1}{x} $$</td>
+  </tr>
+  <tr>
+    <td>$$-cos(x)$$</td>
+    <td>$$ sin(x)$$</td>
+    <td>$$ cos(x) $$</td>
+  </tr>
+  <tr>
+    <td>$$sin(x) $$</td>
+    <td>$$ cos(x) $$</td>
+    <td>$$ -sin(x) $$</td>
+  </tr>
+  <tr>
+    <td>$$-ln \mid cos(x) \mid $$</td>
+    <td>$$ tan(x) $$</td>
+    <td>$$ \frac{1}{cos^2(x)}$$</td>
+  </tr>
+  <tr>
+    <td>$$ln\mid sin(x) \mid $$</td>
+    <td>$$ cot(x) $$</td>
+    <td>$$\frac{-1}{sin^2(x)}$$</td>
+  </tr>
+  <tr>
+    <td>$$x arcsin(x) + \sqrt{1-x^2}  $$</td>
+    <td>$$ arcsin(x) $$</td>
+    <td>$$\frac{1}{\sqrt{1-x^2}} $$</td>
+  </tr>
+  <tr>
+    <td>$$x arccos(x) - \sqrt{1-x^2} $$</td>
+    <td>$$ arccos(x)$$</td>
+    <td>$$ -\frac{1}{\sqrt{1+x^2}} $$</td>
+  </tr>
+  <tr>
+    <td>$$x arctan(x) - \frac{1}{2} ln \mid 1+x^2 \mid $$</td>
+    <td>$$arctan(x) $$</td>
+    <td>$$ \frac{1}{1+x^2} $$</td>
+  </tr>
+  <tr>
+    <td>$$x arccot(x) + \frac{1}{2} ln \mid 1+x^2 \mid $$</td>
+    <td>$$arccot(x)$$</td>
+    <td>$$- \frac{1}{1+x^2}$$</td>
+  </tr>
+  <tr>
+    <td>$$sinh(x)$$</td>
+    <td>$$ cosh(x) $$</td>
+    <td>$$ sinh(x)$$</td>
+  </tr>
+  <tr>
+    <td>$$cosh(x)$$</td>
+    <td>$$ sinh(x)$$</td>
+    <td>$$ cosh(x) $$</td>
+  </tr>
+</table>
+	
 		</div>
-	<li><b>Betrag und Vorzeichen</b></li>
-<div class="pre-spoiler">
-<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
-<div class="spoiler" style="display: none;">
-	<ol style="list-style-type:none">
-	<li>$$\mid-2\mid = 2 \qquad ; sgn(-2) = - 1 $$</li>
-	 <li>$$	\mid 2 \mid = 2 ;\qquad sgn(2) = 1 $$</li>
-	 <li>$$	\mid 0 \mid  =  0 ;\qquad sgn(0) = 0	$$</li>
-	<li><b>Für alle x von R gilt:</b></li>
-	<li>$$x = sgn(x) \cdot \mid x \mid $$</li>
-	<li>	$$ \mid x \mid = sgn(x) \cdot x $$  </li>
-	 <li>	$$ x \neq 0 \rightarrow sgn(x) = \frac{1}{sgn(x)}$$</li>
-		
-		<table class="table">
-                <tr>
-                  <td >Signum(Vorzeichen</td>
-                  <td>$$ \operatorname{sgn}(x)\left\{\begin{matrix}
-                        -1 &  \text{falls}& x<0\\ 
-                         0&  \text{falls}& x=0\\ 
-                         +1&  \text{falls}& x>0
-                        \end{matrix}\right. $$
-                  </td>
-                  <td><img src="bilder/funktionen/sgn/sgn.png" style="max-height:100%; max-width:100%"></td>
-                </tr>
-              </table>
-	</div>
-	</div>
-	<li><b>Bild/Urbild</b></li>
-<div class="pre-spoiler">
-<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
-<div class="spoiler" style="display: none;">
-              <table class="table">
-                <tr>
-                  <td width=20%>Bild</td>
-                  <td width=42%>$$ f(A)= \left \{ f(x) \:| \: x\in A \right \} $$</td>
-                  <td><img src="bilder/funktionen/surjektiv/bild.png" style="max-height:50%; max-width:100%"></td>
-                </tr>
-                <tr>
-                  <td >Urbild</td>
-                  <td>$$ f^{-1}(N)= \left \{ x \in A \: | \: f(x) \in  N \right \} $$</td>
-                  <td><img src="bilder/funktionen/surjektiv/urbild.png" style="max-height:50%; max-width:100%"></td>
-                </tr>
-				  </table>
-				  
-				  </div> </div>	
-	<li><b>Verallgemeinerte Exponentialfunktionen</b></li>
-<div class="pre-spoiler">
-<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
-<div class="spoiler" style="display: none;">
-
-              <table class="table">
-                  <tr>
-                    <td width=20%>Schritt 1</td>
-                    <td width=42%>
-                      <img src="bilder/funktionen/exp_func/exp_1.png" style="max-height:50%; max-width:100%">
-                    </td>
-                    <td>Informationen aus Text in Tabelle übertragen.</td>
-                  </tr>
-                  <tr>
-                    <td>Schritt 2</td>
-                    <td>$$ N(13h)=500 \cdot 2^{\large\frac{13h-7h}{3h}} = 500 \cdot 2^{2} = 2000$$</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td >Schritt 3</td>
-                    <td>$$ N(t)=500 \cdot 2^{\large\frac{t-7h}{3h}} = N_{0} \cdot a^{\large\frac{t-t_{0}}{\Sigma}} $$</td>
-                    <td><b>t<sub>0</sub></b> = Referenz-Stelle<br>
-                      <b>N<sub>0</sub></b> = Referenz-Wert<br>
-                      <b>a</b> = Basis(Faktor)<br>
-                      <b>Σ</b> = Schritt-Weite<br>
-                    </td>
-                  </tr>
-				  <tr>
-                    <td>Umkehrfunktion der Exponentialfunktion</td>
-                    <td>$$f^{-1}(y) = t_0 + \Sigma + \log_a\frac{y}{y_0}$$</td>
-                    <td></td>
-                  </tr>
-              </table>
-			</div>
-		</div>
-	<li><b>Ableitungen + Regeln</b></li>
+	</div>          
+<li><b>Ableitungen + Regeln</b></li>
 <div class="pre-spoiler">
 <input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 <div class="spoiler" style="display: none;">
@@ -303,7 +258,7 @@
 		<tr id="mult_mit_skalar">
                     <td rowspan="2" >Differenzenquotient / mittlere Änderungsrate</td>
                     <td>$${\color{#0BACE8}\frac{\Delta y}{\Delta x} } = \frac{\Delta f}{\Delta x} \coloneqq \frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}$$</td>
-                    <td rowspan="2"><img src="bilder/differentialrechnung/ableitung/differenzenquotient.png"style="max-height:50%; max-width:50%"></td>
+                    <td rowspan="2"><img src="bilder/differentialrechnung/ableitung/differenzenquotient.png"style="max-height:50%; max-width:80%"></td>
                   </tr>
                   <tr>
                     <td><p>Der Differenzenquotient gibt die Steigung der <t style="color:#18A45A";>Sekante</t> PQ an.</p></td>
@@ -315,17 +270,17 @@
                   </tr>
                   <tr>
                     <td width=20%>Summenregel</td>
-                    <td width=42%>$$ (f(x)+g(x))' = f'(x)+g'(x) $$</td>
+                    <td width=42%>$$ (f(x)+g(x))' \\ =   f'(x)+g'(x) $$</td>
                     <td>Die Ableitung einer konstanten Funktion ist null. </td>
                   </tr>
                   <tr>
                     <td width=20%>Faktorregel</td>
-                    <td width=42%>$$ (c\cdot f(x))' = c\cdot f'(x) $$</td>
+                    <td width=42%>$$ (c\cdot f(x))' \\ = c\cdot f'(x) $$</td>
                     <td>Ein konstanter Faktor bleibt beim Differenzieren erhalten.</td>
                   </tr>
                   <tr>
                     <td width=20%>Produktregel</td>
-                    <td width=42%>$$ (f(x)\cdot g(x))' = f'(x)\cdot g(x)+f(x)\cdot g'(x) $$</td>
+                    <td width=42%>$$ (f(x)\cdot g(x))' \\ = f'(x)\cdot g(x)+f(x)\cdot g'(x) $$</td>
                     <td></td>
                   </tr>
 		 <tr>
@@ -381,82 +336,156 @@ f'(x) = sgn(g(x)) \cdot g'(x) $$</td>
                   </tr>
 	</table>
 	
-	
-<ol style="list-style-type:none">
-	<li><b>negative Parität</b></li>
-	<li>$$f(-x) = - f(x) \Leftrightarrow$$</li>
-	<li><b>positive Parität</b></li>
-	<li>$$f(-x) = f(x) $$</li>
-	
-	<li><b>Wichtige Paritäten:</b></li>
-	<li>cos(x), cosh(x) --> positive Parität</li>
-	<li>sin(x), sinh(x) --> negative Parität</li>
-	<li>tan(x), tanh(x) --> negative Parität</li>
-	<li>a^x hat keine Parität</li>
-	</ol>
+
 			</div>
 		</div>
-	<li><b>Parität</b></li>
+<li><b>Integral + Regeln</b></li>
 <div class="pre-spoiler">
 <input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 <div class="spoiler" style="display: none;">
-<ol style="list-style-type:none">
-	<li><b>negative Parität</b></li>
-	<li>$$f(-x) = - f(x) \Leftrightarrow$$</li>
-	<li><b>positive Parität</b></li>
-	<li>$$f(-x) = f(x) $$</li>
+	<h3>Integral ist die Fläche unter einer Kurve zwischen einem Intervall oder unbestimmt.</h3>
+	<ol style="list-style-type:none">
+	<li><b>Grundform eines Integrals</b></li>
+	 <li>$$\int_{x_0}^{x_e}f(x) dx$$</li>
+	<li><b>Summenregel</b></li>
+	<li>$$\int(g(x) + h(x)) dx = \int g(x) dx + \int h(x) dx$$</li>
+		<li><b>Faktorregel</b></li>
+	<li>	$$\int a \cdot g(x) dx = a \cdot \int g(x) dx$$  </li>
+		<li><b>Zerlegungsregel</b></li>
+	 <li>	$$\int_{x_0}^{x_e} g(x) dx = \int_{x_0}^{x_1} g(x) dx + \int_{x_1}^{x_e} g(x) dx$$</li>
+		<li><b>Grenzen vertauschen dreht das Vorzeichen um</b></li>
+		<li>$$ \int_{x_{E}}^{x_{0}}f(x) \:dx = -\int_{x_{0}}^{x_{E}}f(x) \:dx$$</li>
+		
+		<li><b>Newton-Leibniz Formel</b></li>
+		<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
+	<table class="table">
+              <tr>
+                <td width=20%>Newton-Leibniz-Formel</td>
+                <td width=42%>$$ \int_{x_{E}}^{x_{0}}f(x) \:dx = F(x_{E})-F{(x_{0})} $$</td>
+                <td>Falls die Funktion keine Sprünge hat, gilt die Formel mit:<br> <b>f(x) = F'(x)</b>.</td>
+              </tr>
+              <tr>
+                <td width=20%>Beispiel 1</td>
+                <td width=42%>$$ \int_{-1}^{1}x^{3} \:dx = \frac{1}{4}x^{4} \mid _{-1}^{1} = \frac{1}{4}1^{4} -\frac{1}{4}(-1)^{4} = \frac{1}{4}-\frac{1}{4}= 0 $$</td>
+                <td><img src="bilder/integral/beispiel_1.png"style="max-height:35%; max-width:50%"></td>
+              </tr>
+              <tr>
+                <td width=20%>Beispiel 2</td>
+                <td width=42%>$$ \int_{0}^{\pi}\sin(x)\:dx = -\cos(x)\mid _{0}^{\pi} \;= -\cos(\pi)+\cos(0) \\= -(-1)+1 = 1+1 = 2 $$</td>
+                <td><img src="bilder/integral/beispiel_2.png"style="max-height:35%; max-width:50%"></td>
+              </tr>
+            </table>
 	
-	<li><b>Wichtige Paritäten:</b></li>
-	<li>cos(x), cosh(x) --> positive Parität</li>
-	<li>sin(x), sinh(x) --> negative Parität</li>
-	<li>tan(x), tanh(x) --> negative Parität</li>
-	<li>a^x hat keine Parität</li>
-	</ol>
 			</div>
 		</div>
-	<li><b>Lokale Extrema</b></li>
-<div class="pre-spoiler">
+		<li><b>Lineare Modifikation</b></li>
+		<div class="pre-spoiler">
 <input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 <div class="spoiler" style="display: none;">
             <table class="table">
               <thead>
-                  <tr id="add_und_sub">
-                    <th scope="col" width=20%>Bezeichnung</th>
-                    <th scope="col" width=42%>Formel</th>
-                    <th scope="col">Grafik / Text</th>
+                  <tr>
+                    <th scope="col" width=20%></th>
+                    <th scope="col" width=42%>unmodifiziert</th>
+                    <th scope="col">modifiziert</th>
                   </tr>
                 </thead>
               <tr>
-                <td>Kritische Stellen</td>
-                <td>$$ f'(x)=0 $$</td>
-                <td>heissen <b>kritische Stellen</b> von f und die erste Ableitung ist die Steigung der Funktion</td>
+                <td width=20%>Lineare Modifikation</td>
+                <td width=42%>$$ \int f(m\cdot x+q) \; dx  $$</td>
+                <td>$$ \frac{1}{m}\cdot F(m\cdot x+q)+c$$</td>
               </tr>
               <tr>
-                <td rowspan="3" width=20%>Einfache kriterien<br>Falls:</td>
-                <td width=42%>$$ f''(x_{k})< 0 \Rightarrow f \text{ hat Hochpunkt bei }x_{k} $$</td>
-                <td rowspan="3"><img src="bilder/kurvendiskussion/lokale_extrema_2.png"style="max-height:50%; max-width:85%"></td>
+                <td rowspan="4" width=20%>Beispiele</td>
+                <td width=42%>$$ \int \cos(8x-3) \; dx $$</td>
+                <td>$$ \frac{1}{8}\cdot \sin(8x-3) + c $$</td>
               </tr>
-              <tr><td>$$ f''(x_{k})> 0 f\Rightarrow f \text{ hat Tiefpunkt bei }x_{k} $$</td></tr>
-              <tr><td>$$ f''(x_{k})= 0 \text{ und } f'''(x_{k})\not = 0\Rightarrow f \text{ hat Sattelpunkt bei }x_{k} $$</td></tr>
+              <tr>
+                <td>$$ \int 3^{2x+9} \; dx $$</td>
+                <td>$$ \frac{1}{2}\cdot \frac{1}{\ln(3)} \cdot 3^{2x+9} + c $$</td>
+              </tr>
+              <tr>
+                <td>$$ \int x^{13} \; dx  $$</td>
+                <td>$$ \frac{1}{14}\cdot x^{14} + c $$</td>
+              </tr>
+              <tr>
+                <td>$$ \int f(G \cdot a^{\frac{x-x_0}{\varepsilon}}) \; dx  $$</td>
+                <td>$$ G \cdot \frac{1}{\ln(a)}\cdot \varepsilon \cdot a^{\frac{x-x_0}{\varepsilon}} $$</td>
+              </tr>
+            </table>
+				</div>
+			</div>
+		<li><b>ACR-Prozess Grundsatz</b></li>
+		<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
+              <table>
+                <tr>
+                <td width=20%>Konzept</td>
+                <td width=42%>Archimedes-Cauchy-Riemann Approximationsprozess</td>
+                <td><img src="bilder/integral/acr/acr.png"style="max-height:35%; max-width:50%"></td>
+              </tr>
+              <tr>
+                <td rowspan="2" width=20%>Vorgehen</td>
+                <td width=42%><b>Lokal:</b><br>$$ \delta A \approx f(x) \cdot \delta x$$</td>
+                <td rowspan="2"><img src="bilder/integral/acr/lokal.png"style="max-height:35%; max-width:50%"></td>
+              </tr>
+              <tr>
+                <td><b>Global:</b><br> $$ A = \int_{x_0}^{x_E}f(x)\; dx = F(x_E)-F(x_0) $$</td>
+              </tr>
               </table>
+				</div>
+			</div>
+		<li><b>Vektoranalysis</b></li>
+		<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
+	<li><b>Funktionen mit mehren Variablen</b></li>
+	<li></li>
+			</div>
+		</div>
+			
+		
+	</div>
+	</div>
+<li><b>Verallgemeinerte Exponentialfunktionen</b></li>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
 
               <table class="table">
-              <tr>
-                <td>Erweiterte kriterien</td>
-                <td>$$ f'(x_{k})= f''(x_{k}) = ... = f^{(m-1)}(x_{k}) = 0 \\ f^{(m)} \not = 0 $$</td>
-                <td><b>m</b> ist die Anzahl, die man Ableitet, bis der Wert ≠ 0 ist.</td>
-              </tr>
-              <tr>
-                <td rowspan="3" width=20%>Falls:</td>
-                <td width=42%>$$ \text{m gerade und }f^{(m)}(x_{k})< 0 \Rightarrow f \text{ hat Hochpunkt bei }x_{k} $$</td>
-                <td>Anhand dieser Zahl kann man sagen, was für ein Punkt das ist.</td>
-              </tr>
-              <tr><td>$$ \text{m gerade und }f^{(m)}(x_{k})> 0 \Rightarrow f \text{ hat Tiefpunkt bei }x_{k} $$</td><td></td></tr>
-              <tr><td>$$ \text{m ungerade} \Rightarrow f \text{ hat Sattelpunkt bei }x_{k} $$</td><td></td></tr>
-            </table>
-	</div>
+                  <tr>
+                    <td width=20%>Schritt 1</td>
+                    <td width=42%>
+                      <img src="bilder/funktionen/exp_func/exp_1.png" style="max-height:50%; max-width:100%">
+                    </td>
+                    <td>Informationen aus Text in Tabelle übertragen.</td>
+                  </tr>
+                  <tr>
+                    <td>Schritt 2</td>
+                    <td>$$ N(13h)=500 \cdot 2^{\large\frac{13h-7h}{3h}} = 500 \cdot 2^{2} = 2000$$</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td >Schritt 3</td>
+                    <td>$$ N(t)=500 \cdot 2^{\large\frac{t-7h}{3h}} = N_{0} \cdot a^{\large\frac{t-t_{0}}{\Sigma}} $$</td>
+                    <td><b>t<sub>0</sub></b> = Referenz-Stelle<br>
+                      <b>N<sub>0</sub></b> = Referenz-Wert<br>
+                      <b>a</b> = Basis(Faktor)<br>
+                      <b>Σ</b> = Schritt-Weite<br>
+                    </td>
+                  </tr>
+				  <tr>
+                    <td>Umkehrfunktion der Exponentialfunktion</td>
+                    <td>$$f^{-1}(y) = t_0 + \Sigma + \log_a\frac{y}{y_0}$$</td>
+                    <td></td>
+                  </tr>
+              </table>
+			</div>
 		</div>
-	<li><b>Beispiel einer Bestimmung der Extremalstellen</b></li>
+<li><b>Beispiel einer Bestimmung der Extremalstellen</b></li>
 <div class="pre-spoiler">
 <input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Aufklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Zuklappen';}" value="Aufklappen">
 <div class="spoiler" style="display: none;">
@@ -518,7 +547,174 @@ f'(x) = sgn(g(x)) \cdot g'(x) $$</td>
             </table>
 </div> 
 	</div> 
-	<li><b>Globale Extrema</b></li>
+<li><b>Funktionsmodifikationen und Verschiebungen</b></li>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
+	<ol style="list-style-type:none">
+		<li><b>Modifikationen</b></li>
+		<li>$$\text{Sei} \quad g:A\rightarrow \mathbb{R}$ mit $A \subseteq \mathbb{R}$$ </li><br>
+		
+	<li>$$\text{nach rechts um} \delta x : f(X) = g(x -\delta x)$$</li>
+		<li>$$\text{nach links um} \delta x : f(X) = g(x +\delta x)$$</li>
+		<li>$$\text{nach oben um} \delta x : f(X) = g(x) + \delta y$$</li>
+		<li>$$\text{nach unten um} \delta x : f(X) = g(x) - \delta y$$</li>
+		
+		<li><b>Skalierungen</b></li>
+<li>$$\text{Sei} \quad g:A\rightarrow \mathbb{R}$ mit $A \subseteq \mathbb{R}$$ </li><br>
+		<li>$$\text{entlang der X - Achse um} \quad \delta : f(X) = g(\frac{x}{\delta} )$$</li>
+		<li>$$\text{entlang der Y - Achse um} \quad \delta : f(X) = g(x) \cdot \delta$$</li>
+		
+		<li><b>Spiegelungen</b></li>
+<li>$$\text{Sei} \quad g:A\rightarrow \mathbb{R}$ mit $A \subseteq \mathbb{R}$$ </li><br>
+		<li>$$\text{an der Y - Achse: } \quad f(X) = g(-x) \Leftrightarrow$$</li>
+		<li>$$\text{an der X - Achse: } \quad f(X) = - g(x)$$</li>
+	</ol>
+	</div>
+	</div>
+<li><b>Surjektive, injektive und bijektive</b></li>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
+
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" width=20%>Bezeichnung</th>
+                    <th scope="col" width=42%>Formel</th>
+                    <th scope="col">Defintion</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td >Funktion</td>
+                    <td>$$ f: D \longrightarrow Z, \; x \mapsto f(x) := x^{2}$$</td>
+                    <td><b>A</b> = Definitionsmenge<br><b>B</b> = Zielmenge</td>
+                  </tr>
+					                    <td >Surjektivität</td>
+                    <td>Jedes Element der Zielmenge wird mind. 1x erreicht werden</td>
+                    <td></td>
+                  </tr>
+					<tr>
+                    <td >Injektivität</td>
+                    <td>Jedes Element der Zielmenge wird maximal 1x erreicht</td>
+                    <td></td>
+                  </tr>
+			<tr>
+                    <td >Bijektiv (Eineindeutig)</td>
+                    <td>f ist injektiv und surjektiv --> f umkehrbar</td>
+                    <td></td>
+                  </tr>
+                    </tbody>
+                </table>
+			</div>
+		</div>
+<li><b>Betrag und Vorzeichen</b></li>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
+	<ol style="list-style-type:none">
+	<li>$$\mid-2\mid = 2 \qquad ; sgn(-2) = - 1 $$</li>
+	 <li>$$	\mid 2 \mid = 2 ;\qquad sgn(2) = 1 $$</li>
+	 <li>$$	\mid 0 \mid  =  0 ;\qquad sgn(0) = 0	$$</li>
+	<li><b>Für alle x von R gilt:</b></li>
+	<li>$$x = sgn(x) \cdot \mid x \mid $$</li>
+	<li>	$$ \mid x \mid = sgn(x) \cdot x $$  </li>
+	 <li>	$$ x \neq 0 \rightarrow sgn(x) = \frac{1}{sgn(x)}$$</li>
+		
+		<table class="table">
+                <tr>
+                  <td >Signum(Vorzeichen</td>
+                  <td>$$ \operatorname{sgn}(x)\left\{\begin{matrix}
+                        -1 &  \text{falls}& x<0\\ 
+                         0&  \text{falls}& x=0\\ 
+                         +1&  \text{falls}& x>0
+                        \end{matrix}\right. $$
+                  </td>
+                  <td><img src="bilder/funktionen/sgn/sgn.png" style="max-height:100%; max-width:100%"></td>
+                </tr>
+              </table>
+	</div>
+	</div>
+<li><b>Bild/Urbild</b></li>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
+              <table class="table">
+                <tr>
+                  <td width=20%>Bild</td>
+                  <td width=42%>$$ f(A)= \left \{ f(x) \:| \: x\in A \right \} $$</td>
+                  <td><img src="bilder/funktionen/surjektiv/bild.png" style="max-height:50%; max-width:100%"></td>
+                </tr>
+                <tr>
+                  <td >Urbild</td>
+                  <td>$$ f^{-1}(N)= \left \{ x \in A \: | \: f(x) \in  N \right \} $$</td>
+                  <td><img src="bilder/funktionen/surjektiv/urbild.png" style="max-height:50%; max-width:100%"></td>
+                </tr>
+				  </table>
+				  
+				  </div> </div>	
+<li><b>Parität</b></li>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
+<ol style="list-style-type:none">
+	<li><b>negative Parität</b></li>
+	<li>$$f(-x) = - f(x) \Leftrightarrow$$</li>
+	<li><b>positive Parität</b></li>
+	<li>$$f(-x) = f(x) $$</li>
+	
+	<li><b>Wichtige Paritäten:</b></li>
+	<li>cos(x), cosh(x) --> positive Parität</li>
+	<li>sin(x), sinh(x) --> negative Parität</li>
+	<li>tan(x), tanh(x) --> negative Parität</li>
+	<li>a^x hat keine Parität</li>
+	</ol>
+			</div>
+		</div>
+<li><b>Lokale Extrema</b></li>
+<div class="pre-spoiler">
+<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+<div class="spoiler" style="display: none;">
+            <table class="table">
+              <thead>
+                  <tr id="add_und_sub">
+                    <th scope="col" width=20%>Bezeichnung</th>
+                    <th scope="col" width=42%>Formel</th>
+                    <th scope="col">Grafik / Text</th>
+                  </tr>
+                </thead>
+              <tr>
+                <td>Kritische Stellen</td>
+                <td>$$ f'(x)=0 $$</td>
+                <td>heissen <b>kritische Stellen</b> von f und die erste Ableitung ist die Steigung der Funktion</td>
+              </tr>
+              <tr>
+                <td rowspan="3" width=20%>Einfache kriterien<br>Falls:</td>
+                <td width=42%>$$ f''(x_{k})< 0 \Rightarrow f \text{ hat Hochpunkt bei }x_{k} $$</td>
+                <td rowspan="3"><img src="bilder/kurvendiskussion/lokale_extrema_2.png"style="max-height:50%; max-width:85%"></td>
+              </tr>
+              <tr><td>$$ f''(x_{k})> 0 f\Rightarrow f \text{ hat Tiefpunkt bei }x_{k} $$</td></tr>
+              <tr><td>$$ f''(x_{k})= 0 \text{ und } f'''(x_{k})\not = 0\Rightarrow f \text{ hat Sattelpunkt bei }x_{k} $$</td></tr>
+              </table>
+
+              <table class="table">
+              <tr>
+                <td>Erweiterte kriterien</td>
+                <td>$$ f'(x_{k})= f''(x_{k}) = ... = f^{(m-1)}(x_{k}) = 0 \\ f^{(m)} \not = 0 $$</td>
+                <td><b>m</b> ist die Anzahl, die man Ableitet, bis der Wert ≠ 0 ist.</td>
+              </tr>
+              <tr>
+                <td rowspan="3" width=20%>Falls:</td>
+                <td width=42%>$$ \text{m gerade und }f^{(m)}(x_{k})< 0 \Rightarrow f \text{ hat Hochpunkt bei }x_{k} $$</td>
+                <td>Anhand dieser Zahl kann man sagen, was für ein Punkt das ist.</td>
+              </tr>
+              <tr><td>$$ \text{m gerade und }f^{(m)}(x_{k})> 0 \Rightarrow f \text{ hat Tiefpunkt bei }x_{k} $$</td><td></td></tr>
+              <tr><td>$$ \text{m ungerade} \Rightarrow f \text{ hat Sattelpunkt bei }x_{k} $$</td><td></td></tr>
+            </table>
+	</div>
+		</div>	
+<li><b>Globale Extrema</b></li>
 <div class="pre-spoiler">
 <input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Aufklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Zuklappen';}" value="Aufklappen">
 <div class="spoiler" style="display: none;">
@@ -541,7 +737,7 @@ f'(x) = sgn(g(x)) \cdot g'(x) $$</td>
             </table>
 			</div>
 		</div>         
-	<li><b>Wendepunkte</b></li>
+<li><b>Wendepunkte</b></li>
 <div class="pre-spoiler">
 <input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 <div class="spoiler" style="display: none;">
@@ -561,7 +757,7 @@ Um die Punkte zu finden muss man die <b>f''(x) = 0</b> setzten </h3>
             </table>
 			</div>
 		</div>
-	<li><b>Krümmung</b></li>
+<li><b>Krümmung</b></li>
 <div class="pre-spoiler">
 <input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 <div class="spoiler" style="display: none;">
@@ -605,7 +801,7 @@ Um die Punkte zu finden muss man die <b>f''(x) = 0</b> setzten </h3>
 	
 			</div>
 		</div>
-	<li><b>Tools</b></li>
+<li><b>Tools</b></li>
 <div class="pre-spoiler">
 <input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 <div class="spoiler" style="display: none;">
