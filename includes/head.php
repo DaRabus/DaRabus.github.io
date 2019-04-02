@@ -9,6 +9,10 @@
       <li class="nav-item">
         <a class="nav-link <?php if ($loc == "linalg") echo "active" ?>" href="linalg.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Lineare Algebra</a>
       </li>
+			<ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link <?php if ($loc == "elektrotechnik") echo "active" ?>" href="elektrotechnik.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Elektrotechnik</a>
+      </li>
 		<ul class="navbar-nav bd-navbar-nav flex-row">
       <li class="nav-item">
         <a class="nav-link <?php if ($loc == "mathe") echo "active" ?>" href="mathe.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Mathe</a>

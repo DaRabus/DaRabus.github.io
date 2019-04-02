@@ -33,11 +33,12 @@
 				<p class="bd-lead">Grundlagen der Linearen Algebra</p>
 				<br>
 				<h2>Lineare Abbildungen + Matrizen</h2>
-				<br>
+				
 				<div class="pre-spoiler">
 					<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 					<div class="spoiler" style="display: none;">
 						<ol style="list-style-type:none">
+							<br><br>
 							<li><b>Von einer Linearen Abbildung zur Matrize</b>
 							</li>
 						</ol>
@@ -105,6 +106,171 @@
 
 
 						</table>
+						
+						<ol style="list-style-type:none">
+							<li><b>Charakteristische Polynome</b>
+							</li>
+						</ol>
+
+						<div class="pre-spoiler">
+							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Aufklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Zuklappen';}" value="Aufklappen">
+							<div class="spoiler" style="display: none;">
+								  <ol style="list-style-type:none">
+									  <li><b>Wir Subtrahieren eine Einheitsmatrix welche wir mit X Multiplizieren von einer Matrix unserer Wahl um die Eigenwerte/vektoren zu erhalten.</b></li>
+									  
+									  
+         <li>$$\text{Wir betrachten folgende Matrix}: M=\begin{bmatrix}
+1 &2 \\ 
+1 & 3
+\end{bmatrix}$$</li>
+									  <br>
+         <li>$$x \cdot \mathbb{I}_2 -  M=\begin{bmatrix}
+x-1 &-2 \\ 
+-1 & x-3
+\end{bmatrix}$$
+
+</li> <br>
+		  <li>$$\text{Anschliessend berechnen wir die Determinante}$$</li>
+									  
+									  <li>$$\chi_f (x) = det(\begin{bmatrix}
+x-1 &-2 \\ 
+-1 & x-3
+\end{bmatrix})
+
+=
+
+(x-1)(x-3)-(-1)(-2) = x^2-4x+1
+
+$$</li>
+									  <br>
+									  <li>$$\text{Daraus folgen folgende Quadratische Lösungen welche somit die Eigenwerte sind:}$$
+</li>
+									  <li>$$\text{Spec}(f) = \{2-\sqrt{3},2+\sqrt{3}\}$$</li>
+									  <br>
+									  <li>$$\text{Nun geht es an den Eigenvektoren von: } \lambda = 2- \sqrt{3}$$</li>
+									  <li>$$\lambda \cdot \mathbb{1}_n - M_f^{EE} \begin{bmatrix}
+\lambda &0 \\ 
+0 & \lambda
+\end{bmatrix}
+
+-
+
+\begin{bmatrix}
+1 &2 \\ 
+1 & 3
+\end{bmatrix}
+
+\rightarrow
+
+\begin{bmatrix}
+\lambda-1 &-2 \\ 
+-1 & \lambda-3
+\end{bmatrix}
+
+\cdot 
+\begin{bmatrix}
+x_1 \\ 
+x_2
+\end{bmatrix}
+
+=
+\begin{bmatrix}
+0 \\ 
+0
+\end{bmatrix}$$
+
+</li>
+									  <br>
+									  <li>$$ \text{Daraus folgt folgender Eigenvektor:} x_2 = 1$$</li>
+									  <li>$$ v = (-1-\sqrt{3},1)$$</li>
+									  <br>
+									  <li>$$ \text{Das überprüfen wir wie folgt:}$$</li>
+									  <li>$$f(v) =
+
+ \begin{bmatrix}
+1 &2 \\ 
+1 & 3
+\end{bmatrix}
+
+\cdot
+
+\begin{bmatrix}
+-1-\sqrt{3} \\ 
+1
+\end{bmatrix}
+
+=
+
+\begin{bmatrix}
+1-\sqrt{3} \\ 
+2- \sqrt{3}
+\end{bmatrix}$$</li>
+									  <li>$$\lambda \cdot v =
+
+(2-\sqrt{3}) \cdot
+
+\begin{bmatrix}
+-1-\sqrt{3} \\ 
+1
+\end{bmatrix}
+
+=
+
+\begin{bmatrix}
+(2-\sqrt{3})(-1-\sqrt{3}) \\ 
+2-\sqrt{3}
+\end{bmatrix}
+
+=
+
+\begin{bmatrix}
+1-\sqrt{3} \\ 
+2-\sqrt{3}
+\end{bmatrix}
+$$</li>
+									  
+									  <li>$$\text{folglich: } f(v) = \lambda v$$</li>
+   </ol>
+							</div>
+						</div>
+						
+						<br><br>
+						<ol style="list-style-type:none">
+							<li><b>Eigenwerte und Eigenvektoren</b>
+							</li>
+						</ol>
+
+						<div class="pre-spoiler">
+							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Aufklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Zuklappen';}" value="Aufklappen">
+							<div class="spoiler" style="display: none;">
+								  <ol style="list-style-type:none">
+									  <li><b>Die Menge aller Eigenwerte von f definiert sich wie folgt:</b></li>
+         <li>$$\text{Spec}(f) := \{ \lambda \in \mathbb{R} \mid \lambda \quad \text{ist Eigenwert von} f \}$$</li>
+									  <br>
+         <li>$$\text{Für die Nullabbildung } 0: \quad \mathbb{R}^2 \rightarrow \mathbb{R}^2 \quad \text{gelten:} $$
+
+</li>
+		  <li>$$\text{Spec}(0) = \{0\} \quad \text{und} \quad \text{Eig}(0,0) = \mathbb{R}$$</li>
+									  <br>
+									  <li>$$\text{Für die Identität } Id_{\mathbb{R}^2}: \quad \mathbb{R}^2 \rightarrow \mathbb{R}^2 \quad \text{gelten:}
+
+$$</li>
+									  <li>$$\text{Spec}(Id_{\mathbb{R}^2}) =  \{ 1 \}  \quad \text{und} \quad \text{Eig}(Id_{\mathbb{R}^2},1) = \mathbb{R}$$
+</li><br>
+									  <li>$$\text{Für die Projektion } P_x : \mathbb{R}^2 \rightarrow  \mathbb{R}^2  \quad \text{auf der X-Achse gelten:}
+
+$$</li>
+									  <li>$$\text{Spec}(P_x) =  \{ 0,1 \} \quad \text{Eig}(P_x,0) =  \langle (0,1) \rangle \quad \text{Eig}(P_x,1) =  \langle (1,0) \rangle$$</li>
+									  <br>
+									  <li>$$\text{Für die Drehung } R_{\frac{\pi}{2}} : \mathbb{R}^2 \rightarrow \mathbb{R}^2 \quad \text{um den Ursprung} \quad \frac{\pi}{2} \quad \text{gilt:}$$
+
+</li>
+									  <li>$$ \text{Spec}(R_{\frac{\pi}{2}}) =  \varnothing $$</li>
+   </ol>
+							</div>
+						</div>
+						
+									
 						<br><br>
 						<ol style="list-style-type:none">
 							<li><b>Basiswechsel mit Beispiel</b>
@@ -128,7 +294,7 @@
 									</li>
 									<br><br>
 									<li>$$\text{Nun stellen wir es mit den Basen von e dar}$$</li>
-									<li>$$d_1 = \begin{bmatrix} 1\\ 0\\ 0 \end{bmatrix} = x \cdot \begin{bmatrix} 1\\ 2\\ 3 \end{bmatrix} + y \cdot \begin{bmatrix} 3\\ 2\\ 1 \end{bmatrix} + z \cdot \begin{bmatrix} 0\\ 1\\ 0 \end{bmatrix} $$
+									<li>$$d_1 = \begin{bmatrix} 1\\ 0\\ 0 \end{bmatrix} = x \cdot \begin{bmatrix} 1\\ 2\\ 3 \end{bmatrix} + y \cdot \begin{bmatrix} 3\\ 2\\ 1 \end{bmatrix} + z \cdot \begin{bmatrix} 0\\ 1\\ 0 \end{bmatrix} = \begin{bmatrix} -\frac{1}{8}\\ \frac{3}{8}\\ -\frac{1}{2} \end{bmatrix} $$
 									</li>
 									<br><br>
 									<li>$$v=a_1e_1+a_2e_2+a_3e_3 \rightarrow \text{Gleichungssystem lösen}$$</li>

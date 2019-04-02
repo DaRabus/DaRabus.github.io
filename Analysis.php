@@ -258,6 +258,7 @@
 
 							</div>
 						</div>
+						
 						<li><b>Ableitungen + Regeln</b>
 						</li>
 						<div class="pre-spoiler">
@@ -311,12 +312,12 @@
 									</tr>
 									<tr>
 										<td width=20%></td>
-										<td width=42%>$$ \text{Anwendung auf Betrag: } \quad \mid x \mid = sgn(x) \cdot x \qquad \mid x \mid' = sgn(x) \qquad \qquad f(x) = sgn(x) \cdot x^2 \qquad f'(x) = 2 \mid x \mid $$</td>
+										<td width=42%>$$ \text{Betrag als innere Funktion} \quad f(x) = g(\mid x \mid)\qquad f'(x) = g'(\mid x \mid) \cdot sgn(x)  $$</td>
 										<td></td>
 									</tr>
 									<tr>
 										<td width=20%></td>
-										<td width=42%>$$ \text{Betrag als innere Funktion} \quad f(x) = g(\mid x \mid)\qquad f'(x) = g'(\mid x \mid}) \cdot sgn(x) $$</td>
+										<td width=42%>$$ \text{Betrag als innere Funktion} \quad f(x) = g(\mid x \mid)\qquad f'(x) = g'(\mid x \mid) \cdot sgn(x) $$</td>
 										<td></td>
 									</tr>
 									<tr>
@@ -361,6 +362,226 @@
 
 							</div>
 						</div>
+						
+						<li><b>Vektoranalysis</b>
+									</li>
+									<div class="pre-spoiler">
+										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+										<div class="spoiler" style="display: none;">
+											<table cellspacing="50" cellpadding="20">
+  <tr>
+    <th>Begriff</th>
+    <th>Erklärung</th>
+    <th>Zusatz</th>
+  </tr>
+  <tr>
+    <td><b>Funktionen mit mehreren Variablen</b></td>
+    <td>$$ f: \mathbb{R}^2 \longrightarrow \mathbb{R}, \; (x_1; \; ... \; ; x_n) \mapsto f(x_1; \; ... \; ; x_n)  $$</td>
+    <td>Der Faktor "n" gibt dabei die Anzahl der Variablen an.</td>
+  </tr>
+												<tr>
+    <td><b></b></td>
+    <td>$$\text{Falls } A = \mathbb{R}^n \quad \text{und} \quad n>1 \rightarrow f \quad  \text{surjektiv}$$</td>
+    <td></td>
+												</tr>
+													<tr>
+    <td><b>Abstand zum Ursprungspunkt</b></td>
+    <td>$$
+\begin{matrix}
+n = 2 \rightarrow r(x;y) := \sqrt{x^2+y^2} \\[1.5ex]
+n = 3 \rightarrow r(x;y;z) := \sqrt{x^2+y^2+z^2} \\
+\end{matrix}$$</td>
+    <td>Die kann man für Berechnungen verwenden um einen Punkt im Feld zu beschrieben.</td>
+  </tr>
+												<tr>
+    <td><b>Die Levelmenge</b></td>
+    <td>$$ f^{-1}(\left \{ L \right \}) :=\left \{ p\in A\mid f(p) = L \right \} $$</td>
+    <td>Man beschreibt hiermit verschiedene Punkte im Feld</td>
+  </tr>
+												<tr>
+    <td><b>Vektorfelder</b></td>
+                    <td>$$ \vec{v}: \mathbb{R}^n \rightarrow \mathbb{R}^n \\(x_1; \; ... \; ;x_n )x \mapsto \vec{v} (x_1; \; ... \; ;x_n ) = \begin{bmatrix}v_1 (x_1; \; ... \; ;x_n )\\ \text{ } \\ \vdots \\ v_n (x_1; \; ... \; ;x_n )\end{bmatrix} $$</td>
+
+    <td>Jede Komponente des Vektorfeldes ist eine Funktion in n Variablen</td>
+  </tr>
+												<tr>
+                    <td><b>Vektorbegriffe:</b></td>
+                    <td>$$\begin{matrix}
+\text{Homogen: }\vec{v} (x_1; \; ... \; ;x_n ) \equiv \text{konstant.}   \\[1ex]
+\text{Einheitsvektorfeld: }\mid \vec{v} (x_1; \; ... \; ;x_n ) \mid = 1  \\
+\end{matrix}$$</td>
+                    <td>Einheitsvektorfeld --> Richtungsvektor <br> Homogene Felder --> Plattenkondensator</td>
+                  </tr>
+												<tr>
+                    <td><b>Parameterisierte Kurven:</b></td>
+                    <td>$$\text{Allgemein  Defintion: } \vec{s} : [\tau_0 , \tau_E] \rightarrow \mathbb{R}^n \\[1ex]
+\hspace*{20mm}
+\tau \rightarrow \vec{s}(t) = \begin{bmatrix}
+s_1(\tau)\\ 
+s_...(\tau)\\ 
+s_n(\tau)
+\end{bmatrix}$$</td>
+                    <td>Es sollte möglichst Injektiv sein!</td>
+                  </tr>
+												
+												<tr>
+													<td></td>
+                    <td>$$\text{Geschwindigkeitsvektor } \vec{v}(\tau) : =  \dot{\vec{s}}(\tau) \\[1ex]
+\hspace*{6mm} \text{Bahngeschwindigkeit:  } v(\tau) : =  \mid \vec{v}(\tau) \mid \\[1ex]
+\hspace*{5mm}\text{Beschleunigungsvektor:  } \vec{a}(\tau) : =  \dot{\vec{v}}(\tau) \\[1ex]
+\hspace*{6mm}\text{Bahnvektor:  }ê(\tau) : = \hat{v}(\tau) = \frac{1}{v(\tau)} \cdot \vec{v}(\tau) \\[1ex]
+\hspace*{6mm}\text{Bahn:  } \rightarrow \text{Bildmenge von} \quad \vec{s}([\tau_0,\tau_E]) \\[1ex]
+\hspace*{6mm} \text{Kurvenlänge:  }  \Delta s := \int_{\tau_0}^{\tau_E}  v(\tau) \; \text{d}\tau  \\[1ex]
+
+
+
+
+$$
+</td>
+                  </tr>
+												<tr>
+                    <td><b>Strecken von A nach B </b></td>
+                    <td>$$ \vec{s}(\tau) = \vec{A}+ \tau \cdot (\vec{B}-\vec{A}) \small \; \text{ mit }\; \normalsize \tau \in \left [ 0,1 \right ] $$</td>
+                    <td></td>
+                  </tr>
+												<tr>
+                    <td><b>Kreis in 2D mit Radius r und Mittelpunkt am Ursprung </b></td>
+                    <td>$$ \vec{s}(\tau) = \begin{bmatrix}r\cdot \cos(\tau)\\ r\cdot \sin(\tau)\end{bmatrix} \small \; \text{ mit }\; \normalsize \tau \in \left [ 0,2 \pi \right [ $$</td>
+                    <td></td>
+                  </tr>
+												
+												<tr>
+                    <td><b>Linienintegrale</b></td>
+                    <td>$$\text{Allgemein gilt: } I := \int_{\tau_0}^{\tau_E}\left \langle \vec{w},\vec{v} \right \rangle \text{d} \tau  \\[2ex]
+\hspace*{13mm} \text{Masseinheit: } [I] = [\vec{w}]\cdot[\vec{s}] \\[4ex]
+
+\hspace*{6mm} \text{Parametrisierung durch Bogenlänge: } \\[1ex]
+\hspace*{20mm} \tau = s \Rightarrow \vec{v} = \hat{v} = \hat{e} \\[1ex]
+\hspace*{20mm} I := \int_{s_0}^{s_E}\left \langle \vec{w},\hat{e} \right \rangle \text{d} s \\[4ex]
+
+\hspace*{6mm} \text{Bei Konstanter Länge: } \Delta s \quad \text{gilt:} \\[1ex]
+\hspace*{8mm} I = \int_{s_0}^{s_E}\left \langle \vec{w},\hat{e} \right \rangle \text{d} s = \left \langle \vec{w},\hat{e} \right \rangle \cdot \Delta s \\[1ex]
+$$</td>
+                    <td></td>
+                  </tr>
+												
+												<tr>
+                    <td><b>Mehrfachintegration</b></td>
+                    <td>$$\text{Allgemein gilt: } I := \int_{G}f d V  \\[2ex]
+\hspace*{1mm} = I := \int_{...}^{...}\int_{...}^{...}\int_{...}^{...}f(x_1;x_2... x_n) dx_1 dx_2 ... dx_n  \\[4ex]
+
+\hspace*{6mm} \text{Doppelintegral für Flächen: } \\[1ex]
+\hspace*{20mm}  \int_{y_0}^{y_E}\int_{x_0}^{x_E}f \quad dx dy \\[2ex]
+
+\hspace*{6mm} \text{Dreifachintegral für Volumen: }\\[1ex]
+\hspace*{8mm} \int_{z_0}^{z_E}\int_{y_0}^{y_E}\int_{x_0}^{x_E} f \quad dx dy dz  \\[4ex]
+
+\hspace*{6mm} \text{Integrationsregeln: } \\[1ex]
+\hspace*{6mm}  \text{Faktorregel: } \int_{G} a \cdot f \quad dA  = a \cdot \int_{G}  f \quad dA  \\[1ex]
+\hspace*{6mm}  \text{Summenregel: } \int_{G}(f+g) \quad dA  = \int_{G}  f \quad dA + \int_{G}  g \quad dA \\[1ex]
+\hspace*{6mm}  \text{Gebietsregel: } \int_{G_1 \cup G_2}f \quad dA  = \int_{G_1}  f \quad dA + \int_{G_2}  f \quad dA - \int_{G_1 \cap  G_2}f \quad dA \\[1ex]
+\hspace*{6mm}  \text{Separationssatz: } \int_{y_0}^{y_E}\int_{x_0}^{x_E}g(x) \cdot h(y) \quad dx  dy  =\int_{x_0}^{x_E} g(x) dx  \cdot \int_{y_0}^{y_E} h(y) dy \\[1ex]
+\hspace*{6mm}  \text{Fubini: } \int_{y_0}^{y_E}\int_{x_0}^{x_E}f(x;y) dx  dy  = \int_{x_0}^{x_E}\int_{y_0}^{y_E}f(x;y) dy  dx\\[4ex]
+
+\hspace*{6mm} \text{Falls f = 1 dann:} \\[1ex]
+\hspace*{6mm}  \int_{G}f \quad dA = \int_{G}1 \quad dA \\[1ex]
+\hspace*{6mm} \text{Ist dies der Flächeninhalt von G geschrieben als: } M(G) \\[1ex]
+$$</td>
+                    <td></td>
+                  </tr>
+												<tr>
+                    <td><b>Parametrisierte Flächen</b></td>
+                    <td>$$\text{Allgemein gilt: } \vec{P}: U \rightarrow \mathbb{R}^3 \\[1ex]
+\hspace*{6mm}(u;v) \mapsto \vec{P}(u;v) = \begin{bmatrix}
+x(u;v)\\ 
+y(u;v)\\ 
+z(u;v)
+\end{bmatrix} \\[4ex]
+
+\hspace*{6mm}\text{Koordinatenbasis - Vektorfelder: } \\[1ex]
+\vec{e}_1 := \vec{e}_u := \vec{P},u \equiv \vec{P}(u,v)  \quad \text{abgeleitet nach u} \\[1ex]
+\vec{e}_2 := \vec{e}_v := \vec{P},v \equiv \vec{P}(u,v)  \quad \text{abgeleitet nach v} \\[4ex]
+
+\text{Die Metrik oder Gram-Matrix errechnet sich wie folgt: } \\[1ex]
+[g_{\mu v}]:= \begin{bmatrix}
+g_{11} & g_{12} \\ 
+g_{21} & g_{22}
+\end{bmatrix}
+ := \begin{bmatrix}
+<\vec{e}_1,\vec{e}_1> & <\vec{e}_1,\vec{e}_2> \\ 
+<\vec{e}_2,\vec{e}_1> & <\vec{e}_2,\vec{e}_2>
+\end{bmatrix} \\[1ex]
+\hspace*{6mm}\text{Die Matrix ist symmetrisch: }  [g_{\mu v}]^T = [g_{\mu v}] \\[4ex]
+	
+
+
+\hspace*{6mm} \text{Die Gram-Determinante / Massfunktion: } \\[1ex]
+\hspace*{16mm} g:= det([g_{\mu v}]) = g_{11} \cdot g_{22} - g_{21} \cdot g_{12} \\[1ex]
+\hspace*{18mm} \sqrt{g} \equiv \quad \text{Massfunktion} \\[1ex]
+\hspace*{18mm} \text{Es gilt: } \mid \vec{n} \mid = \sqrt{g}  \\[4ex]
+
+\hspace*{14mm} \text{Der Normalenvektor: } \\[1ex]
+\hspace*{14mm} \vec{n} := \pm  \vec{e}_1 \times \vec{e}_2 \\[1ex]
+\hspace*{6mm} \text{Der Normalenvektor sollte immer nach "aussen" zeigen } \\[1ex]
+\hspace*{14mm} \text{Ausserdem gilt: } \\[1ex]
+\hspace*{14mm}\hat{n} := \frac{1}{\mid \vec{n} \mid} \cdot \vec{n} = \frac{1}{\sqrt{g}} \cdot \vec{n} \\[4ex]
+
+\hspace*{14mm} \text{Der Flächeninhalt ergibt sich somit: } \\[1ex]
+\hspace*{14mm} A = \int _M 1 \; dA = \int _U \sqrt{g} \; dU
+$$</td>
+                    <td></td>
+                  </tr>
+	
+	<tr>
+                    <td><b>Flussintegrale</b></td>
+                    <td>$$
+\text{Der Fluss oder Flux des Vektorfeldes } \vec{v} \ \text{durch die Fläche M ist: } \\[1ex]
+\hspace*{40mm} \Phi_{\vec{v}} :=  \int_M <\vec{v} , \vec{n} > dA \\[4ex]
+\hspace*{28mm} \text{Falls } <\vec{v},\vec{n}> = \text{konstant entlang M ist: } \\[1ex]
+\hspace*{44mm} \Phi_{\vec{v}} :=  \  <\vec{v} , \vec{n} > \cdot A \\[4ex]
+\hspace*{28mm} \text{Falls } <\vec{v},\vec{n}> = 0 \text{ also } \vec{v} \ || M \ \\[1ex]
+\hspace*{54mm} \Phi_{\vec{v}} = 0 \\[4ex]
+						
+\hspace*{14mm} \text{Der Vorgehen ist folgendes:} \\[1ex]
+\hspace*{14mm} 1. \text{Fläche Parametisieren} \\[1ex]
+\vec{P}(u;v) = \begin{bmatrix}
+x(u;v)\\ 
+y(u;v)\\ 
+z(u;v)
+\end{bmatrix}
+\quad 
+\hat{n}(u;v) = \begin{bmatrix}
+n_x(u;v)\\ 
+n_y(u;v)\\ 
+n_z(u;v)
+\end{bmatrix}
+\quad 
+\sqrt{g} = \sqrt{g(u;v)} \\[1ex]
+\hspace*{14mm} 2.  \ \vec{v} \ \text{entlang M berechnen} \\[1ex]
+\hspace*{24mm} \vec{v} = \begin{bmatrix}
+v_x(x(u;v);y(u;v);z(u;v)) \\ 
+v_y(x(u;v);y(u;v);z(u;v))\\ 
+v_z(x(u;v);y(u;v);z(u;v))
+\end{bmatrix} \\[1ex]
+						
+
+\hspace*{14mm} \Phi_{\vec{v}} :=  \int_M <\vec{v} , \vec{n} > dA = \int \int <\vec{v} , \vec{n} > \sqrt{g} \ du \ dv \\[4ex]
+
+\hspace*{14mm} \text{Für Homogene Vektorfelder gilt:} \\[1ex]
+\Phi_{\vec{v}} = \int_M <\vec{v} , \vec{n} > dA = 0 \\[4ex]
+
+\hspace*{14mm} \text{Hauptanwendung Elektrodynamik:} \\[1ex]
+\hspace*{20mm} \Phi_{\vec{E}} = \oint_M <\vec{E} , \hat{n}> \ dA = \frac{1}{\epsilon_0} \cdot Q_{eg} \\[4ex]
+ \hspace*{20mm} \Phi_{\vec{B}} = \oint_M <\vec{B} , \hat{n}> \ dA = 0 \\[4ex]
+$$</td>
+                    <td></td>
+                  </tr>
+											
+  
+  </table>
+										</div>
+									</div>
+						
 						<li><b>Integral + Regeln</b>
 						</li>
 						<div class="pre-spoiler">
@@ -473,16 +694,7 @@
 											</table>
 										</div>
 									</div>
-									<li><b>Vektoranalysis</b>
-									</li>
-									<div class="pre-spoiler">
-										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
-										<div class="spoiler" style="display: none;">
-											<li><b>Funktionen mit mehren Variablen</b>
-											</li>
-											<li></li>
-										</div>
-									</div>
+									
 
 
 							</div>
