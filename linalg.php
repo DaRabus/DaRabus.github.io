@@ -33,7 +33,7 @@
 				<p class="bd-lead">Grundlagen der Linearen Algebra</p>
 				<br>
 				<h2>Lineare Abbildungen + Matrizen</h2>
-				
+
 				<div class="pre-spoiler">
 					<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 					<div class="spoiler" style="display: none;">
@@ -106,7 +106,73 @@
 
 
 						</table>
-						
+						<ol style="list-style-type:none">
+							<li><b>Diagonalisierbarkeit mit Beispiel in R4</b>
+							</li>
+						</ol>
+
+						<div class="pre-spoiler">
+							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Aufklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Zuklappen';}" value="Aufklappen">
+							<div class="spoiler" style="display: none;">
+								  <ol style="list-style-type:none">
+									  <li><b>Folgende Schritte sind das Rezept:</b></li>
+									  <li>$$\text{ 1. Wir wählen eine Basis E von V und bestimmen die Matrix } M_f^{EE}$$</li>
+									  <li>$$\text{2. Wir bestimmen das charakteristische Polynom } \\[1ex]
+\hspace*{10mm} \chi_f(x) = det(x \cdot \mathbb{I}_n - M_f^{EE}) \\[1ex]$$</li>
+									  <li>$$\text{3. Wir bestimmen die Nullstellen: } \\[1ex]$$</li>
+									  <li>$$\text{4. Die Lösungsmenge des Gleichungssystem: } \\[1ex]$$</li>
+									  <li>$$\text{5. Die Summe der Geometrischen Vielfalt aller Eigenwerte: } \\[1ex]$$</li>
+									  <li>$$\text{6. Zu jedem Eigenwert die Basis berechnen: } \\[1ex]$$</li>
+									  <li>$$\text{7. Die Basen aus Schritt 6 zu einer Matrix formen: } \\[4ex]$$</li>
+									  <br>
+									  <li>$$\text{Beispiel anhand einer } \mathbb{R}^4 \quad \text{Matrize}$$</li>
+									  <li>$$\hspace*{14mm} M_f^{EE} = \begin{bmatrix}
+1 & 1 & 1 & -1\\ 
+2 & 0 & 1 & -1 \\ 
+-4 & 4 & 3 & -4 \\ 
+0 &0  & 0 &-1 
+\end{bmatrix} \\[4ex]
+
+\text{Das Charakterische Polynom berechnet sich wie folgt: } \\[1ex]
+\chi_f(x) = det(\begin{bmatrix}
+x-1 & -1 & -1 & 1\\ 
+-2 & x & -1 & 1 \\ 
+4 & -4 & x-3 & 4 \\ 
+0 &0  & 0 &x+1 
+\end{bmatrix}) = x^4 -3x^3 -3x^2 +7x + 6 \\[1ex]
+\hspace*{12mm} Spec(f) = \{-1,2,3\}  \\[4ex]
+
+\text{Die Bestimmung des Eigenraums aller Eigenwerte } \\[1ex]
+Eig(f,-1) = \begin{bmatrix}
+-2 & -1 & -1 & 1\\ 
+-2 & -1 & -1 & 1 \\ 
+4 & -4 & -4 & 4 \\ 
+0 &0  & 0 &0 
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+x_1\\ 
+x_2 \\ 
+x_3 \\ 
+x_4
+\end{bmatrix} = 
+\begin{bmatrix}
+0\\ 
+0 \\ 
+0 \\ 
+0
+\end{bmatrix} \\[2ex]
+										  
+\text{Mit Gauss erhält mal folgendes System:} \\[1ex]
+x_1 + \frac{1}{2}x_2 + \frac{1}{2} x_3 - \frac{1}{2} x_4 = 0 \\[1ex]
+x_2 + x_3 - x_4 = 0 \\[2ex]
+\text{Daraus folgen 2 freie Variablen, wir parametisieren die Lösungsmenge.} \\[1ex]
+a = x_3 \quad b = x_4  \quad \text{somit folgt: } Eig(f,-1) = \{(0,b-a,a,b) \mid a,b \in \mathbb{R} \} \\[1ex]$$</li>
+								</ol>
+							
+									  </div>
+							</div>
+
 						<ol style="list-style-type:none">
 							<li><b>Charakteristische Polynome</b>
 							</li>
@@ -115,125 +181,46 @@
 						<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Aufklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Zuklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
-								  <ol style="list-style-type:none">
-									  <li><b>Wir Subtrahieren eine Einheitsmatrix welche wir mit X Multiplizieren von einer Matrix unserer Wahl um die Eigenwerte/vektoren zu erhalten.</b></li>
-									  
-									  
-         <li>$$\text{Wir betrachten folgende Matrix}: M=\begin{bmatrix}
-1 &2 \\ 
-1 & 3
-\end{bmatrix}$$</li>
-									  <br>
-         <li>$$x \cdot \mathbb{I}_2 -  M=\begin{bmatrix}
-x-1 &-2 \\ 
--1 & x-3
-\end{bmatrix}$$
+								<ol style="list-style-type:none">
+									<li><b>Wir Subtrahieren eine Einheitsmatrix welche wir mit X Multiplizieren von einer Matrix unserer Wahl um die Eigenwerte/vektoren zu erhalten.</b>
+									</li>
 
-</li> <br>
-		  <li>$$\text{Anschliessend berechnen wir die Determinante}$$</li>
-									  
-									  <li>$$\chi_f (x) = det(\begin{bmatrix}
-x-1 &-2 \\ 
--1 & x-3
-\end{bmatrix})
 
-=
+									<li>$$\text{Wir betrachten folgende Matrix}: M=\begin{bmatrix} 1 &2 \\ 1 & 3 \end{bmatrix}$$
+									</li>
+									<br>
+									<li>$$x \cdot \mathbb{I}_2 - M=\begin{bmatrix} x-1 &-2 \\ -1 & x-3 \end{bmatrix}$$
 
-(x-1)(x-3)-(-1)(-2) = x^2-4x+1
+									</li> <br>
+									<li>$$\text{Anschliessend berechnen wir die Determinante}$$</li>
 
-$$</li>
-									  <br>
-									  <li>$$\text{Daraus folgen folgende Quadratische Lösungen welche somit die Eigenwerte sind:}$$
-</li>
-									  <li>$$\text{Spec}(f) = \{2-\sqrt{3},2+\sqrt{3}\}$$</li>
-									  <br>
-									  <li>$$\text{Nun geht es an den Eigenvektoren von: } \lambda = 2- \sqrt{3}$$</li>
-									  <li>$$\lambda \cdot \mathbb{1}_n - M_f^{EE} \begin{bmatrix}
-\lambda &0 \\ 
-0 & \lambda
-\end{bmatrix}
+									<li>$$\chi_f (x) = det(\begin{bmatrix} x-1 &-2 \\ -1 & x-3 \end{bmatrix}) = (x-1)(x-3)-(-1)(-2) = x^2-4x+1 $$
 
--
+									</li>
+									<br>
+									<li>$$\text{Daraus folgen folgende Quadratische Lösungen welche somit die Eigenwerte sind:}$$
+									</li>
+									<li>$$\text{Spec}(f) = \{2-\sqrt{3},2+\sqrt{3}\}$$</li>
+									<br>
+									<li>$$\text{Nun geht es an den Eigenvektoren von: } \lambda = 2- \sqrt{3}$$</li>
+									<li>$$\lambda \cdot \mathbb{1}_n - M_f^{EE} \begin{bmatrix} \lambda &0 \\ 0 & \lambda \end{bmatrix} - \begin{bmatrix} 1 &2 \\ 1 & 3 \end{bmatrix} \rightarrow \begin{bmatrix} \lambda-1 &-2 \\ -1 & \lambda-3 \end{bmatrix} \cdot \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}$$
 
-\begin{bmatrix}
-1 &2 \\ 
-1 & 3
-\end{bmatrix}
+									</li>
+									<br>
+									<li>$$ \text{Daraus folgt folgender Eigenvektor:} x_2 = 1$$</li>
+									<li>$$ v = (-1-\sqrt{3},1)$$</li>
+									<br>
+									<li>$$ \text{Das überprüfen wir wie folgt:}$$</li>
+									<li>$$f(v) = \begin{bmatrix} 1 &2 \\ 1 & 3 \end{bmatrix} \cdot \begin{bmatrix} -1-\sqrt{3} \\ 1 \end{bmatrix} = \begin{bmatrix} 1-\sqrt{3} \\ 2- \sqrt{3} \end{bmatrix}$$
+									</li>
+									<li>$$\lambda \cdot v = (2-\sqrt{3}) \cdot \begin{bmatrix} -1-\sqrt{3} \\ 1 \end{bmatrix} = \begin{bmatrix} (2-\sqrt{3})(-1-\sqrt{3}) \\ 2-\sqrt{3} \end{bmatrix} = \begin{bmatrix} 1-\sqrt{3} \\ 2-\sqrt{3} \end{bmatrix} $$
+									</li>
 
-\rightarrow
-
-\begin{bmatrix}
-\lambda-1 &-2 \\ 
--1 & \lambda-3
-\end{bmatrix}
-
-\cdot 
-\begin{bmatrix}
-x_1 \\ 
-x_2
-\end{bmatrix}
-
-=
-\begin{bmatrix}
-0 \\ 
-0
-\end{bmatrix}$$
-
-</li>
-									  <br>
-									  <li>$$ \text{Daraus folgt folgender Eigenvektor:} x_2 = 1$$</li>
-									  <li>$$ v = (-1-\sqrt{3},1)$$</li>
-									  <br>
-									  <li>$$ \text{Das überprüfen wir wie folgt:}$$</li>
-									  <li>$$f(v) =
-
- \begin{bmatrix}
-1 &2 \\ 
-1 & 3
-\end{bmatrix}
-
-\cdot
-
-\begin{bmatrix}
--1-\sqrt{3} \\ 
-1
-\end{bmatrix}
-
-=
-
-\begin{bmatrix}
-1-\sqrt{3} \\ 
-2- \sqrt{3}
-\end{bmatrix}$$</li>
-									  <li>$$\lambda \cdot v =
-
-(2-\sqrt{3}) \cdot
-
-\begin{bmatrix}
--1-\sqrt{3} \\ 
-1
-\end{bmatrix}
-
-=
-
-\begin{bmatrix}
-(2-\sqrt{3})(-1-\sqrt{3}) \\ 
-2-\sqrt{3}
-\end{bmatrix}
-
-=
-
-\begin{bmatrix}
-1-\sqrt{3} \\ 
-2-\sqrt{3}
-\end{bmatrix}
-$$</li>
-									  
-									  <li>$$\text{folglich: } f(v) = \lambda v$$</li>
-   </ol>
+									<li>$$\text{folglich: } f(v) = \lambda v$$</li>
+								</ol>
 							</div>
 						</div>
-						
+
 						<br><br>
 						<ol style="list-style-type:none">
 							<li><b>Eigenwerte und Eigenvektoren</b>
@@ -243,34 +230,35 @@ $$</li>
 						<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Aufklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Zuklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
-								  <ol style="list-style-type:none">
-									  <li><b>Die Menge aller Eigenwerte von f definiert sich wie folgt:</b></li>
-         <li>$$\text{Spec}(f) := \{ \lambda \in \mathbb{R} \mid \lambda \quad \text{ist Eigenwert von} f \}$$</li>
-									  <br>
-         <li>$$\text{Für die Nullabbildung } 0: \quad \mathbb{R}^2 \rightarrow \mathbb{R}^2 \quad \text{gelten:} $$
+								<ol style="list-style-type:none">
+									<li><b>Die Menge aller Eigenwerte von f definiert sich wie folgt:</b>
+									</li>
+									<li>$$\text{Spec}(f) := \{ \lambda \in \mathbb{R} \mid \lambda \quad \text{ist Eigenwert von} f \}$$</li>
+									<br>
+									<li>$$\text{Für die Nullabbildung } 0: \quad \mathbb{R}^2 \rightarrow \mathbb{R}^2 \quad \text{gelten:} $$
 
-</li>
-		  <li>$$\text{Spec}(0) = \{0\} \quad \text{und} \quad \text{Eig}(0,0) = \mathbb{R}$$</li>
-									  <br>
-									  <li>$$\text{Für die Identität } Id_{\mathbb{R}^2}: \quad \mathbb{R}^2 \rightarrow \mathbb{R}^2 \quad \text{gelten:}
+									</li>
+									<li>$$\text{Spec}(0) = \{0\} \quad \text{und} \quad \text{Eig}(0,0) = \mathbb{R}$$</li>
+									<br>
+									<li>$$\text{Für die Identität } Id_{\mathbb{R}^2}: \quad \mathbb{R}^2 \rightarrow \mathbb{R}^2 \quad \text{gelten:} $$
 
-$$</li>
-									  <li>$$\text{Spec}(Id_{\mathbb{R}^2}) =  \{ 1 \}  \quad \text{und} \quad \text{Eig}(Id_{\mathbb{R}^2},1) = \mathbb{R}$$
-</li><br>
-									  <li>$$\text{Für die Projektion } P_x : \mathbb{R}^2 \rightarrow  \mathbb{R}^2  \quad \text{auf der X-Achse gelten:}
+									</li>
+									<li>$$\text{Spec}(Id_{\mathbb{R}^2}) = \{ 1 \} \quad \text{und} \quad \text{Eig}(Id_{\mathbb{R}^2},1) = \mathbb{R}$$
+									</li><br>
+									<li>$$\text{Für die Projektion } P_x : \mathbb{R}^2 \rightarrow \mathbb{R}^2 \quad \text{auf der X-Achse gelten:} $$
 
-$$</li>
-									  <li>$$\text{Spec}(P_x) =  \{ 0,1 \} \quad \text{Eig}(P_x,0) =  \langle (0,1) \rangle \quad \text{Eig}(P_x,1) =  \langle (1,0) \rangle$$</li>
-									  <br>
-									  <li>$$\text{Für die Drehung } R_{\frac{\pi}{2}} : \mathbb{R}^2 \rightarrow \mathbb{R}^2 \quad \text{um den Ursprung} \quad \frac{\pi}{2} \quad \text{gilt:}$$
+									</li>
+									<li>$$\text{Spec}(P_x) = \{ 0,1 \} \quad \text{Eig}(P_x,0) = \langle (0,1) \rangle \quad \text{Eig}(P_x,1) = \langle (1,0) \rangle$$</li>
+									<br>
+									<li>$$\text{Für die Drehung } R_{\frac{\pi}{2}} : \mathbb{R}^2 \rightarrow \mathbb{R}^2 \quad \text{um den Ursprung} \quad \frac{\pi}{2} \quad \text{gilt:}$$
 
-</li>
-									  <li>$$ \text{Spec}(R_{\frac{\pi}{2}}) =  \varnothing $$</li>
-   </ol>
+									</li>
+									<li>$$ \text{Spec}(R_{\frac{\pi}{2}}) = \varnothing $$</li>
+								</ol>
 							</div>
 						</div>
-						
-									
+
+
 						<br><br>
 						<ol style="list-style-type:none">
 							<li><b>Basiswechsel mit Beispiel</b>
