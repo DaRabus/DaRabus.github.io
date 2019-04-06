@@ -7,7 +7,7 @@
 
     <title>Rabus Unistuff</title>
 
-    <!-- Bootstrap core CSS -->
+   <!-- Bootstrap core CSS -->
 
     <style class="anchorjs"></style><link href="css/bootstrap.css" rel="stylesheet" >
     <link href="css/bootstrap-anchor.css" rel="stylesheet" >
@@ -31,29 +31,7 @@
     <link rel="mask-icon" href="https://getbootstrap.com/docs/4.1/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
     <link rel="icon" href="https://getbootstrap.com/favicon.ico">
     <meta name="msapplication-config" content="/docs/4.1/assets/img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#563d7c">
-
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@getbootstrap">
-    <meta name="twitter:creator" content="@getbootstrap">
-    <meta name="twitter:title" content="Utilities for layout">
-    <meta name="twitter:description" content="For faster mobile-friendly and responsive development, Bootstrap includes dozens of utility classes for showing, hiding, aligning, and spacing content.">
-    <meta name="twitter:image" content="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-social-logo.png">
-
-    <!-- Facebook -->
-    <meta property="og:url" content="https://getbootstrap.com/docs/4.1/layout/utilities-for-layout/">
-    <meta property="og:title" content="Utilities for layout">
-    <meta property="og:description" content="For faster mobile-friendly and responsive development, Bootstrap includes dozens of utility classes for showing, hiding, aligning, and spacing content.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="http://getbootstrap.com/docs/4.1/assets/brand/bootstrap-social.png">
-    <meta property="og:image:secure_url" content="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-social.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-
+<meta name="theme-color" content="#563d7c">
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
       ga('create', 'UA-146052-10', 'getbootstrap.com');

@@ -21,8 +21,6 @@
 	<div class="container-fluid">
 		<div class="row flex-xl-nowrap">
 			<div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-				<?php include ('includes/search.php'); ?>
-				<?php include ('includes/nav_mathe.php'); ?>
 			</div>
 
 
@@ -142,7 +140,7 @@ x-1 & -1 & -1 & 1\\
 \end{bmatrix}) = x^4 -3x^3 -3x^2 +7x + 6 \\[1ex]
 \hspace*{12mm} Spec(f) = \{-1,2,3\}  \\[4ex]
 
-\text{Die Bestimmung des Eigenraums aller Eigenwerte } \\[1ex]
+\text{Die Bestimmung des Eigenraums von -1 } \\[1ex]
 Eig(f,-1) = \begin{bmatrix}
 -2 & -1 & -1 & 1\\ 
 -2 & -1 & -1 & 1 \\ 
@@ -165,14 +163,134 @@ x_4
 										  
 \text{Mit Gauss erhält mal folgendes System:} \\[1ex]
 x_1 + \frac{1}{2}x_2 + \frac{1}{2} x_3 - \frac{1}{2} x_4 = 0 \\[1ex]
-x_2 + x_3 - x_4 = 0 \\[2ex]
+x_2 + x_3 - x_4 = 0 \\[3ex]
+
 \text{Daraus folgen 2 freie Variablen, wir parametisieren die Lösungsmenge.} \\[1ex]
-a = x_3 \quad b = x_4  \quad \text{somit folgt: } Eig(f,-1) = \{(0,b-a,a,b) \mid a,b \in \mathbb{R} \} \\[1ex]$$</li>
+a = x_3 \quad b = x_4  \quad \text{somit folgt: } Eig(f,-1) = \{(0,b-a,a,b) \mid a,b \in \mathbb{R} \} \\[3ex]
+
+\text{Mit den Eigenvektoren erhalten wir die Basen: } \\[1ex]
+(a,b) = (1,0) \quad (a,b) = (0,1) \rightarrow \  d_1^1 = (0,-1,1,0) \quad d_2^1 = (0,1,0,1)\\[4ex]
+										  
+										  \text{Die Bestimmung des Eigenraums von 2 } \\[1ex]
+Eig(f,2) = \begin{bmatrix}
+1 & -1 & -1 & 1\\ 
+-2 & 2 & -1 & 1 \\ 
+4 & -4 & -3 & 4 \\ 
+0 &0  & 0 &3 
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+x_1\\ 
+x_2 \\ 
+x_3 \\ 
+x_4
+\end{bmatrix} = 
+\begin{bmatrix}
+0\\ 
+0 \\ 
+0 \\ 
+0
+\end{bmatrix} \\[2ex]
+
+\text{Mit Gauss erhält mal folgendes System:} \\[1ex]
+x_1 - x_2 - x_3 = 0 \\[1ex]
+x_3 = 0 \\[1ex]
+x_4 = 0 \\[3ex]
+
+\text{Daraus folg eine freie Variable, wir parametisieren die Lösungsmenge.} \\[1ex]
+a = x_3  \quad \text{somit folgt: } Eig(f,2) = \{(a,a,0,0) \mid a,b \in \mathbb{R} \} \\[3ex]
+
+\text{Mit den Eigenvektoren erhalten wir die Basen: } \\[1ex]
+a = 1 \rightarrow \  d_1^2 = (1,1,0,0) \\[4ex]
+										  \text{Die Bestimmung des Eigenraums von 3 } \\[1ex]
+Eig(f,2) = \begin{bmatrix}
+2 & -1 & -1 & 1\\ 
+-2 & 3 & -1 & 1 \\ 
+4 & -4 & 0 & 4 \\ 
+0 &0  & 0 &4 
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+x_1\\ 
+x_2 \\ 
+x_3 \\ 
+x_4
+\end{bmatrix} = 
+\begin{bmatrix}
+0\\ 
+0 \\ 
+0 \\ 
+0
+\end{bmatrix} \\[2ex]
+
+\text{Mit Gauss erhält mal folgendes System:} \\[1ex]
+x_1 - x_2  = 0 \\[1ex]
+x_2 - x_3 = 0 \\[1ex]
+x_4 = 0 \\[3ex]
+
+\text{Daraus folg eine freie Variable, wir parametisieren die Lösungsmenge.} \\[1ex]
+a = x_3  \quad \text{somit folgt: } Eig(f,3) = \{(a,a,a,0) \mid a,b \in \mathbb{R} \} \\[3ex]
+
+\text{Mit den Eigenvektoren erhalten wir die Basen: } \\[1ex]
+a = 1 \rightarrow \  d_1^2 = (1,1,1,0) \\[4ex]
+										  
+										  \text{Wir nehmen nun alle Eigenvekoren zusammen: } \\[1ex]
+
+D = \{d_1^1,d_2^1.d_1^2.d_1^3\} = \{(0,-1,1,0),(0,1,0,1),(1,1,0,0),(1,1,1,0)\} \\[1ex]
+
+M^{ED} = \begin{bmatrix}
+0 & 0 & 1 & 1\\ 
+-1 & 1 & 1 & 1 \\ 
+1 & 0 & 0 & 1 \\ 
+0 &1  & 0 & 0 
+\end{bmatrix} \\[2ex]
+
+\text{Wir benötigen nun das Inverse der Basiswechselmatrix} \\[1ex]
+
+M^{DE} = (M^{DE})^{-1} \begin{bmatrix}
+1 & -1 & 0 & 1\\ 
+0 & 0 & 0 & 1 \\ 
+2 & -1 & -1 & 1 \\ 
+-1 &1  & 1 & -1 
+\end{bmatrix} \\[2ex]
+
+\text{Somit errechnet sich die Diagonalisierte Matrix: } \\[1ex]
+M_f^{DD} = M^{DE} \cdot M_f^{EE} \cdot  M^{ED} =  \\[1ex]
+
+
+\begin{bmatrix}
+1 & -1 & 0 & 1\\ 
+0 & 0 & 0 & 1 \\ 
+2 & -1 & -1 & 1 \\ 
+-1 &1  & 1 & -1 
+\end{bmatrix}
+\cdot 
+\begin{bmatrix}
+1 & 1 & 1 & -1\\ 
+2 & 0 & 1 & -1 \\ 
+-4 & 4 & 3 & -4 \\ 
+0 &0  & 0 &-1 
+\end{bmatrix}
+ \cdot \begin{bmatrix}
+0 & 0 & 1 & 1\\ 
+-1 & 1 & 1 & 1 \\ 
+1 & 0 & 0 & 1 \\ 
+0 &1  & 0 & 0 
+\end{bmatrix} \\[1ex]
+=
+\begin{bmatrix}
+-1 & 0 & 0 & 0\\ 
+0 & -1 & 0 & 0 \\ 
+0 & 0 & 2 & 0 \\ 
+0 & 0  & 0 & 3 
+\end{bmatrix} \\[1ex]
+										  
+										  $$</li>
 								</ol>
 							
 									  </div>
 							</div>
-
+<br>
 						<ol style="list-style-type:none">
 							<li><b>Charakteristische Polynome</b>
 							</li>

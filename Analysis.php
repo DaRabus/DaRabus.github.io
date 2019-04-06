@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 	<?php include ('includes/top_head.php'); 
-    $loc = "mathe";
+    $loc = "Analysis";
     ?>
 	<link href="spoiler.css" rel="stylesheet" type="text/css">
 </head>
@@ -21,8 +21,6 @@
 	<div class="container-fluid">
 		<div class="row flex-xl-nowrap">
 			<div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-				<?php include ('includes/search.php'); ?>
-				<?php include ('includes/nav_mathe.php'); ?>
 			</div>
 
 

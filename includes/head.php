@@ -14,14 +14,15 @@
         <a class="nav-link <?php if ($loc == "elektrotechnik") echo "active" ?>" href="elektrotechnik.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Elektrotechnik</a>
       </li>
 		<ul class="navbar-nav bd-navbar-nav flex-row">
-      <li class="nav-item">
-        <a class="nav-link <?php if ($loc == "mathe") echo "active" ?>" href="mathe.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Mathe</a>
-      </li>
     <ul class="navbar-nav bd-navbar-nav flex-row">
       <li class="nav-item">
         <a class="nav-link <?php if ($loc == "physik") echo "active" ?>" href="physik.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Physik</a>
       </li>
     </ul>
+			<ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link <?php if ($loc == "optik") echo "active" ?>" href="optik.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Optik</a>
+      </li>
   </div>
 
   <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
