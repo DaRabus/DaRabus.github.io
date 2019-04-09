@@ -30,6 +30,8 @@
 				<h1 class="bd-title" id="content">Physik</h1>
 
 				<p class="bd-lead">Grundlagen der Physik</p>
+				
+				<h2>Grundlagen der Elektronik</h2>
 <div class="pre-spoiler">
 										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 										<div class="spoiler" style="display: none;">
@@ -323,6 +325,114 @@ $$</td>
 				<br>
 	</div>
 				</div>
+				
+				<h2>Elektrodynamik</h2>
+				<div class="pre-spoiler">
+										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+										<div class="spoiler" style="display: none;">
+				<br>
+
+<table cellspacing="50" cellpadding="20" table border="1">
+  <tr>
+    <th>Begriff</th>
+    <th>Erklärung</th>
+    <th>Zusatz</th>
+  </tr>
+  <tr>
+    <td><b>Grundgleichungen: </b></td>
+    <td>$$\text{Maxwell - Gleichungen: } \\[1ex]
+div (\vec{E}) = \frac{1}{\epsilon_0 } \cdot \varrho  \qquad div(\vec{B}) = 0 \\[1ex]
+rot(\vec{E}) = - \dot{\vec{B}} \qquad rot(\vec{B}) = \epsilon_0 \mu_0 \cdot \dot{\vec{E}} + \mu_0 \cdot \vec{J} \\[4ex]
+
+\text{Lorentz- Gleichungen: } \\[1ex]
+\vec{F}_{EB} = Q \cdot (\vec{E} + \vec{v} \times \vec{B}) \\[1ex]
+P_{EB} = Q \cdot  \langle \vec{E} , \vec{v} \rangle \\[4ex]
+
+\text{Maxwell - Relation: } \\[1ex]
+\frac{1}{\sqrt{\epsilon_0 \cdot \mu_0}} = c $$</td>
+    <td>                      <b>ϱ</b> = Ladungsdichte roh<br>
+                      <b>J</b> = Stromdichte<br>
+                      <b>E</b> = Elektrisches Feld <br>
+		<b>B</b> = Magnetisches Feld<br>
+		<b>ε<sub>0</sub></b> = Elektrische Feldkonstante<br>
+		<b>μ<sub>0</sub></b> = Magnetische Feldkonstante<br>
+		<b>Q</b> = Ladung<br>
+		<b>v</b> = Geschwindigkeit<br>
+		<b>c</b> = Lichtgeschwindigkeit<br>
+	  
+	  </td>
+  </tr>  <tr>
+    <td><b>Ruhende Leiterschleife: </b></td>
+    <td>$$\text{Trafo Spannung: } \\[1ex]
+U_{ind} = \oint_{\delta G} \langle \vec{E} , \hat{e} \rangle \ ds = \Upsilon_E = \int_G \langle rot(\vec{E}) , \hat{n} \rangle \ dA = - \dot{\Phi}_B \\[4ex]
+
+\text{Spule mit N Windungen: } \\[1ex]
+U_{ind} = -N \cdot \dot{\Phi}_B \\[1ex]$$</td>
+    <td>                      
+		<b>N</b> = Windungen<br>
+		<b>ε<sub>0</sub></b> = Elektrische Feldkonstante<br>
+		<b>μ<sub>0</sub></b> = Magnetische Feldkonstante<br>
+		<b>Q</b> = Ladung<br>
+		<b>^n</b> = Normvektor<br>
+		<b>B</b> = Magnetisches Feld<br>
+		<b>Φ</b> = Flussdichte<br>
+	  
+	  </td>
+  </tr>
+	<tr>
+    <td><b>Gerade bewegter Leiter: </b></td>
+    <td>$$\text{Induktionsspannung: } \\[1ex]
+U_{ind} = \frac{1}{q} \cdot \Delta W = \frac{1}{q} \int_L \langle \vec{F}_B , \hat{e} \rangle \ ds = \langle \vec{v} \times \vec{B} , \hat{e} \rangle \cdot l \\[4ex]
+
+\text{Falls: } \vec{v} \perp \vec{B} \quad \hat{e} \perp \vec{B} \quad \hat{e} \perp \vec{v} \\[1ex]
+U_{ind} = l \cdot v \cdot B \\[1ex]$$</td>
+    <td>                      
+		<b>l</b> = Leiter Länge in [m]<br>
+		<b>q</b> = Ladung in [C]<br>
+		<b>^e</b> = Bahnvektor <br>
+		<b>B</b> = Magnetisches Feld<br>
+		<b>v</b> = Geschwindigkeit<br>
+	  
+	  </td>
+  </tr>
+	
+		<tr>
+    <td><b>Bewegte Spule mit N Windungen im <br> zeitlich veränderlichem Magnetfeld: </b></td>
+    <td>$$\text{Faraday: } \\[1ex]
+U_{ind} = - N \cdot \dot{\Phi}_B \\[4ex]$$</td>
+    <td>                      
+		<b>N</b> = Windungen<br>
+		<b>B</b> = Magnetisches Feld<br>
+		<b>U</b> = Spannung<br>
+	  
+	  </td>
+  </tr>
+			<tr>
+    <td><b>Spule im Stromkreis: </b></td>
+    <td>$$l , A , N = \ \text{Konstant} \\[1ex]
+I(t) \sim B(t) \sim \Phi_B  \rightarrow U_{ind} (t) \sim \dot{\Phi}_B(t) \\[4ex]
+
+\text{Es gilt somit: } \\[1ex]
+U_{ind} (t) \sim \dot{\Phi}_B(t) \sim \dot{B} (t) \sim \dot{I}(t) \\[1ex]
+U_{ind} = - L \cdot \dot{I} \\[4ex]
+
+\text{Basiselemente: } \\[1ex]
+\text{Spannung über Wiederstand : } U_R = R \cdot I \\[1ex]
+\text{Spannung über Kondensator: } U_C = \frac{Q}{C} \\[1ex]
+\text{Spannung über Induktion: } U_L = L \cdot \dot{I} \\[1ex]
+
+$$</td>
+    <td>                      
+		<b>L</b> = Kenngrösse in [Vs/A] oder [H] <br>
+		<b>B</b> = Magnetisches Feld<br>
+		<b>U</b> = Spannung<br>
+	  
+	  </td>
+  </tr>
+	
+	</div>
+					</div>
+					</table>
 			</main>
 		</div>
 	</div>
