@@ -413,18 +413,17 @@ n = 3 \rightarrow r(x;y;z) := \sqrt{x^2+y^2+z^2} \\
 												<tr>
                     <td><b>Parameterisierte Kurven:</b></td>
                     <td>$$\text{Allgemein  Defintion: } \vec{s} : [\tau_0 , \tau_E] \rightarrow \mathbb{R}^n \\[1ex]
-\hspace*{20mm}
 \tau \rightarrow \vec{s}(t) = \begin{bmatrix}
 s_1(\tau)\\ 
 s_...(\tau)\\ 
 s_n(\tau)
 \end{bmatrix} \\[4ex]
 \text{Geschwindigkeitsvektor } \vec{v}(\tau) : =  \dot{\vec{s}}(\tau) \\[1ex]
-\hspace*{6mm} \text{Bahngeschwindigkeit:  } v(\tau) : =  \mid \vec{v}(\tau) \mid  \\[1ex]
-\hspace*{5mm}\text{Beschleunigungsvektor:  } \vec{a}(\tau) : =  \dot{\vec{v}}(\tau) \\[1ex]
-\hspace*{6mm}\text{Bahnvektor:  }ê(\tau) : = \hat{v}(\tau) = \frac{1}{v(\tau)} \cdot \vec{v}(\tau) \\[1ex]
-\hspace*{6mm}\text{Bahn:  } \rightarrow \text{Bildmenge von} \quad \vec{s}([\tau_0,\tau_E]) \\[1ex]
-\hspace*{6mm} \text{Kurvenlänge:  }  \Delta s := \int_{\tau_0}^{\tau_E}  v(\tau) \; \text{d}\tau  \\[1ex] $$</td>
+ \text{Bahngeschwindigkeit:  } v(\tau) : =  \mid \vec{v}(\tau) \mid  \\[1ex]
+\text{Beschleunigungsvektor:  } \vec{a}(\tau) : =  \dot{\vec{v}}(\tau) \\[1ex]
+\text{Bahnvektor:  }ê(\tau) : = \hat{v}(\tau) = \frac{1}{v(\tau)} \cdot \vec{v}(\tau) \\[1ex]
+\text{Bahn:  } \rightarrow \text{Bildmenge von} \quad \vec{s}([\tau_0,\tau_E]) \\[1ex]
+\text{Kurvenlänge:  }  \Delta s := \int_{\tau_0}^{\tau_E}  v(\tau) \; \text{d}\tau  \\[1ex]  $$</td>
                     <td>Es sollte möglichst Injektiv sein!</td>
                   </tr>
 												
@@ -443,15 +442,15 @@ s_n(\tau)
 												<tr>
                     <td><b>Linienintegrale</b></td>
                     <td>$$\text{Allgemein gilt: } I := \int_{\tau_0}^{\tau_E}\left \langle \vec{w},\vec{v} \right \rangle  \ \text{d} \tau  \\[2ex]
-\hspace*{13mm} \text{Masseinheit: } [I] = [\vec{w}]\cdot[\vec{s}] \\[4ex]
+  \text{Masseinheit: } [I] = [\vec{w}]\cdot[\vec{s}] \\[4ex]
 
-\hspace*{6mm} \text{Parametrisierung durch Bogenlänge: } \\[1ex]
-\hspace*{20mm} \tau = s \Rightarrow \vec{v} = \hat{v} = \hat{e} \\[1ex]
-\hspace*{20mm} I := \int_{s_0}^{s_E}\left \langle \vec{w},\hat{e} \right \rangle \text{d} s \\[4ex]
+  \text{Parametrisierung durch Bogenlänge: } \\[1ex]
+  \tau = s \Rightarrow \vec{v} = \hat{v} = \hat{e} \\[1ex]
+  I := \int_{s_0}^{s_E}\left \langle \vec{w},\hat{e} \right \rangle \text{d} s \\[4ex]
 						
 						
 
-\hspace*{6mm} \text{Vorgehen in 2D: } \vec{s} \ \text{ist gegeben}  \\[1ex]
+  \text{Vorgehen in 2D: } \vec{s} \ \text{ist gegeben}  \\[1ex]
 \vec{s}(\tau) = \begin{bmatrix}
 s_x(\tau)\\ 
 s_y(\tau)
@@ -466,25 +465,25 @@ w_x(x;y)\\
 w_y(x;y)
 \end{bmatrix} \\[1ex]
 
-\hspace*{12mm} 1 . \ \text{Partielle Ableitung} \\[1ex]
-\hspace*{18mm} \vec{v}(\tau) = \begin{bmatrix}
+  1 . \ \text{Partielle Ableitung} \\[1ex]
+  \vec{v}(\tau) = \begin{bmatrix}
 \dot{x}(\tau)\\ 
 \dot{y}(\tau)
 \end{bmatrix} \\[1ex]
-\hspace*{12mm} 1 . \ \text{Integral Aufstellen: } \\[1ex]
-I = \int_{\tau_0}^{\tau_e} <\vec{w}(x(\tau);y(\tau)),\vec{v}(\tau) > \ d\tau \\[1ex]
-= \int_{\tau_0}^{\tau_e} <\begin{bmatrix}
+  1 . \ \text{Integral Aufstellen: } \\[1ex]
+I = \int_{\tau_0}^{\tau_e} \langle \vec{w}(x(\tau);y(\tau)),\vec{v}(\tau) \rangle \ d\tau \\[1ex]
+= \int_{\tau_0}^{\tau_e} \langle \begin{bmatrix}
 w_x(x(\tau);y(\tau))\\ 
 w_y(x(\tau);y(\tau))
 \end{bmatrix} , \begin{bmatrix}
 \dot{x}(\tau)\\ 
 \dot{y}(\tau)
-\end{bmatrix} > \ d\tau \\[4ex]
+\end{bmatrix} \rangle \ d\tau \\[4ex]
 
 
 
-\hspace*{6mm} \text{Bei Konstanter Länge: } \Delta s \quad \text{gilt:} \\[1ex]
-\hspace*{8mm} I = \int_{s_0}^{s_E}\left \langle \vec{w},\hat{e} \right \rangle \text{d} s = \left \langle \vec{w},\hat{e} \right \rangle \cdot \Delta s \\[1ex]
+  \text{Bei Konstanter Länge: } \Delta s \quad \text{gilt:} \\[1ex]
+  I = \int_{s_0}^{s_E}\left \langle \vec{w},\hat{e} \right \rangle \text{d} s = \left \langle \vec{w},\hat{e} \right \rangle \cdot \Delta s \\[1ex]
 $$</td>
                     <td></td>
                   </tr>
@@ -492,37 +491,37 @@ $$</td>
 												<tr>
                     <td><b>Mehrfachintegration</b></td>
                     <td>$$\text{Allgemein gilt: } I := \int_{G}f d V  \\[2ex]
-\hspace*{1mm} = I := \int_{...}^{...}\int_{...}^{...}\int_{...}^{...}f(x_1;x_2... x_n) dx_1 dx_2 ... dx_n  \\[4ex]
+  = I := \int_{...}^{...}\int_{...}^{...}\int_{...}^{...}f(x_1;x_2... x_n) dx_1 dx_2 ... dx_n  \\[4ex]
 
-\hspace*{6mm} \text{Doppelintegral für Flächen: } \\[1ex]
-\hspace*{20mm}  \int_{y_0}^{y_E}\int_{x_0}^{x_E}f \quad dx dy \\[2ex]
+  \text{Doppelintegral für Flächen: } \\[1ex]
+   \int_{y_0}^{y_E}\int_{x_0}^{x_E}f \quad dx dy \\[2ex]
 
-\hspace*{6mm} \text{Dreifachintegral für Volumen: }\\[1ex]
-\hspace*{8mm} \int_{z_0}^{z_E}\int_{y_0}^{y_E}\int_{x_0}^{x_E} f \quad dx dy dz  \\[4ex]
+  \text{Dreifachintegral für Volumen: }\\[1ex]
+  \int_{z_0}^{z_E}\int_{y_0}^{y_E}\int_{x_0}^{x_E} f \quad dx dy dz  \\[4ex]
 
-\hspace*{6mm} \text{Integrationsregeln: } \\[1ex]
-\hspace*{6mm}  \text{Faktorregel: } \int_{G} a \cdot f \quad dA  = a \cdot \int_{G}  f \quad dA  \\[1ex]
-\hspace*{6mm}  \text{Summenregel: } \int_{G}(f+g) \quad dA  = \int_{G}  f \quad dA + \int_{G}  g \quad dA \\[1ex]
-\hspace*{6mm}  \text{Gebietsregel: } \int_{G_1 \cup G_2}f \quad dA  = \int_{G_1}  f \quad dA + \int_{G_2}  f \quad dA - \int_{G_1 \cap  G_2}f \quad dA \\[1ex]
-\hspace*{6mm}  \text{Separationssatz: } \int_{y_0}^{y_E}\int_{x_0}^{x_E}g(x) \cdot h(y) \quad dx  dy  =\int_{x_0}^{x_E} g(x) dx  \cdot \int_{y_0}^{y_E} h(y) dy \\[1ex]
-\hspace*{6mm}  \text{Fubini: } \int_{y_0}^{y_E}\int_{x_0}^{x_E}f(x;y) dx  dy  = \int_{x_0}^{x_E}\int_{y_0}^{y_E}f(x;y) dy  dx\\[4ex]
+  \text{Integrationsregeln: } \\[1ex]
+   \text{Faktorregel: } \int_{G} a \cdot f \quad dA  = a \cdot \int_{G}  f \quad dA  \\[1ex]
+   \text{Summenregel: } \int_{G}(f+g) \quad dA  = \int_{G}  f \quad dA + \int_{G}  g \quad dA \\[1ex]
+   \text{Gebietsregel: } \int_{G_1 \cup G_2}f \quad dA  = \int_{G_1}  f \quad dA + \int_{G_2}  f \quad dA - \int_{G_1 \cap  G_2}f \quad dA \\[1ex]
+   \text{Separationssatz: } \int_{y_0}^{y_E}\int_{x_0}^{x_E}g(x) \cdot h(y) \quad dx  dy  =\int_{x_0}^{x_E} g(x) dx  \cdot \int_{y_0}^{y_E} h(y) dy \\[1ex]
+   \text{Fubini: } \int_{y_0}^{y_E}\int_{x_0}^{x_E}f(x;y) dx  dy  = \int_{x_0}^{x_E}\int_{y_0}^{y_E}f(x;y) dy  dx\\[4ex]
 
-\hspace*{6mm} \text{Falls f = 1 dann:} \\[1ex]
-\hspace*{6mm}  \int_{G}f \quad dA = \int_{G}1 \quad dA \\[1ex]
-\hspace*{6mm} \text{Ist dies der Flächeninhalt von G geschrieben als: } M(G) \\[1ex]
+  \text{Falls f = 1 dann:} \\[1ex]
+   \int_{G}f \quad dA = \int_{G}1 \quad dA \\[1ex]
+  \text{Ist dies der Flächeninhalt von G geschrieben als: } M(G) \\[1ex]
 $$</td>
                     <td></td>
                   </tr>
 												<tr>
                     <td><b>Parametrisierte Flächen</b></td>
                     <td>$$\text{Allgemein gilt: } \vec{P}: U \rightarrow \mathbb{R}^3 \\[1ex]
-\hspace*{6mm}(u;v) \mapsto \vec{P}(u;v) = \begin{bmatrix}
+ (u;v) \mapsto \vec{P}(u;v) = \begin{bmatrix}
 x(u;v)\\ 
 y(u;v)\\ 
 z(u;v)
 \end{bmatrix} \\[4ex]
 
-\hspace*{6mm}\text{Koordinatenbasis - Vektorfelder: } \\[1ex]
+ \text{Koordinatenbasis - Vektorfelder: } \\[1ex]
 \vec{e}_1 := \vec{e}_u := \vec{P},u \equiv \vec{P}(u,v)  \quad \text{abgeleitet nach u} \\[1ex]
 \vec{e}_2 := \vec{e}_v := \vec{P},v \equiv \vec{P}(u,v)  \quad \text{abgeleitet nach v} \\[4ex]
 
@@ -532,26 +531,26 @@ g_{11} & g_{12} \\
 g_{21} & g_{22}
 \end{bmatrix}
  := \begin{bmatrix}
-<\vec{e}_1,\vec{e}_1> & <\vec{e}_1,\vec{e}_2> \\ 
-<\vec{e}_2,\vec{e}_1> & <\vec{e}_2,\vec{e}_2>
+\langle \vec{e}_1,\vec{e}_1 \rangle \langle \vec{e}_1,\vec{e}_2> \\ 
+\langle \vec{e}_2,\vec{e}_1 \rangle & \langle \vec{e}_2,\vec{e}_2>
 \end{bmatrix} \\[1ex]
-\hspace*{6mm}\text{Die Matrix ist symmetrisch: }  [g_{\mu v}]^T = [g_{\mu v}] \\[4ex]
+ \text{Die Matrix ist symmetrisch: }  [g_{\mu v}]^T = [g_{\mu v}] \\[4ex]
 	
 
 
-\hspace*{6mm} \text{Die Gram-Determinante / Massfunktion: } \\[1ex]
-\hspace*{16mm} g:= det([g_{\mu v}]) = g_{11} \cdot g_{22} - g_{21} \cdot g_{12} \\[1ex]
-\hspace*{18mm} \sqrt{g} \equiv \quad \text{Massfunktion} \\[1ex]
-\hspace*{18mm} \text{Es gilt: } \mid \vec{n} \mid = \sqrt{g}  \\[4ex]
+  \text{Die Gram-Determinante / Massfunktion: } \\[1ex]
+  g:= det([g_{\mu v}]) = g_{11} \cdot g_{22} - g_{21} \cdot g_{12} \\[1ex]
+  \sqrt{g} \equiv \quad \text{Massfunktion} \\[1ex]
+  \text{Es gilt: } \mid \vec{n} \mid = \sqrt{g}  \\[4ex]
 
-\hspace*{14mm} \text{Der Normalenvektor: } \\[1ex]
-\hspace*{14mm} \vec{n} := \pm  \vec{e}_1 \times \vec{e}_2 \\[1ex]
-\hspace*{6mm} \text{Der Normalenvektor sollte immer nach "aussen" zeigen } \\[1ex]
-\hspace*{14mm} \text{Ausserdem gilt: } \\[1ex]
-\hspace*{14mm}\hat{n} := \frac{1}{\mid \vec{n} \mid} \cdot \vec{n} = \frac{1}{\sqrt{g}} \cdot \vec{n} \\[4ex]
+  \text{Der Normalenvektor: } \\[1ex]
+  \vec{n} := \pm  \vec{e}_1 \times \vec{e}_2 \\[1ex]
+  \text{Der Normalenvektor sollte immer nach "aussen" zeigen } \\[1ex]
+  \text{Ausserdem gilt: } \\[1ex]
+ \hat{n} := \frac{1}{\mid \vec{n} \mid} \cdot \vec{n} = \frac{1}{\sqrt{g}} \cdot \vec{n} \\[4ex]
 
-\hspace*{14mm} \text{Der Flächeninhalt ergibt sich somit: } \\[1ex]
-\hspace*{14mm} A = \int _M 1 \; dA = \int _U \sqrt{g} \; dU
+  \text{Der Flächeninhalt ergibt sich somit: } \\[1ex]
+  A = \int _M 1 \; dA = \int _U \sqrt{g} \; dU
 $$</td>
                     <td></td>
                   </tr>
@@ -560,14 +559,14 @@ $$</td>
                     <td><b>Flussintegrale</b></td>
                     <td>$$
 \text{Der Fluss oder Flux des Vektorfeldes } \vec{v} \ \text{durch die Fläche M ist: } \\[1ex]
-\hspace*{25mm} \Phi_{\vec{v}} :=  \int_M <\vec{v} , \vec{n} > dA \\[4ex]
-\hspace*{18mm} \text{Falls } <\vec{v},\vec{n}> = \text{konstant entlang M ist: } \\[1ex]
-\hspace*{34mm} \Phi_{\vec{v}} :=  \  <\vec{v} , \vec{n} > \cdot A \\[4ex]
-\hspace*{18mm} \text{Falls } <\vec{v},\vec{n}> = 0 \text{ also } \vec{v} \ || M \ \\[1ex]
-\hspace*{34mm} \Phi_{\vec{v}} = 0 \\[4ex]
+  \Phi_{\vec{v}} :=  \int_M \langle \vec{v} , \vec{n} \rangle dA \\[4ex]
+  \text{Falls } \langle \vec{v},\vec{n}> = \text{konstant entlang M ist: } \\[1ex]
+  \Phi_{\vec{v}} :=  \   \langle \vec{v} , \vec{n} \rangle \cdot A \\[4ex]
+  \text{Falls } \langle \vec{v},\vec{n} \rangle  = 0 \text{ also } \vec{v} \ || M \ \\[1ex]
+  \Phi_{\vec{v}} = 0 \\[4ex]
 						
-\hspace*{14mm} \text{Der Vorgehen ist folgendes:} \\[1ex]
-\hspace*{14mm} 1. \text{Fläche Parametisieren} \\[1ex]
+  \text{Der Vorgehen ist folgendes:} \\[1ex]
+  1. \text{Fläche Parametisieren} \\[1ex]
 \vec{P}(u;v) = \begin{bmatrix}
 x(u;v)\\ 
 y(u;v)\\ 
@@ -581,22 +580,22 @@ n_z(u;v)
 \end{bmatrix}
 \quad 
 \sqrt{g} = \sqrt{g(u;v)} \\[1ex]
-\hspace*{14mm} 2.  \ \vec{v} \ \text{entlang M berechnen} \\[1ex]
-\hspace*{24mm} \vec{v} = \begin{bmatrix}
+  2.  \ \vec{v} \ \text{entlang M berechnen} \\[1ex]
+  \vec{v} = \begin{bmatrix}
 v_x(x(u;v);y(u;v);z(u;v)) \\ 
 v_y(x(u;v);y(u;v);z(u;v))\\ 
 v_z(x(u;v);y(u;v);z(u;v))
 \end{bmatrix} \\[1ex]
 						
-\hspace*{6mm} 3. \text{Integral Bilden} \\[1ex]
-\hspace*{14mm} \Phi_{\vec{v}} :=  \int_M <\vec{v} , \vec{n} > dA = \int \int <\vec{v} , \vec{n} > \sqrt{g} \ du \ dv \\[4ex]
+  3. \text{Integral Bilden} \\[1ex]
+  \Phi_{\vec{v}} :=  \int_M \langle \vec{v} , \vec{n} \rangle dA = \int \int \langle \vec{v} , \vec{n} \rangle \sqrt{g} \ du \ dv \\[4ex]
 
-\hspace*{14mm} \text{Für Homogene Vektorfelder gilt:} \\[1ex]
-\Phi_{\vec{v}} = \int_M <\vec{v} , \vec{n} > dA = 0 \\[4ex]
+  \text{Für Homogene Vektorfelder gilt:} \\[1ex]
+\Phi_{\vec{v}} = \int_M \langle \vec{v} , \vec{n} \rangle dA = 0 \\[4ex]
 
-\hspace*{14mm} \text{Hauptanwendung Elektrodynamik:} \\[1ex]
-\hspace*{20mm} \Phi_{\vec{E}} = \oint_M <\vec{E} , \hat{n}> \ dA = \frac{1}{\epsilon_0} \cdot Q_{eg} \\[1ex]
- \hspace*{20mm} \Phi_{\vec{B}} = \oint_M <\vec{B} , \hat{n}> \ dA = 0 \\[4ex]
+  \text{Hauptanwendung Elektrodynamik:} \\[1ex]
+  \Phi_{\vec{E}} = \oint_M \langle \vec{E} , \hat{n} \rangle \ dA = \frac{1}{\epsilon_0} \cdot Q_{eg} \\[1ex]
+   \Phi_{\vec{B}} = \oint_M \langle \vec{B} , \hat{n} \rangle \ dA = 0 \\[4ex]
 $$</td>
                     <td></td>
                   </tr>
@@ -605,17 +604,17 @@ $$</td>
                     <td>$$
 
 
-\hspace*{6mm} \text{Der Gradient von f ist das Vektorfeld }  \\[1ex]
-\hspace*{18mm} \vec{\nabla}f := \vec{grad }(f) := \begin{bmatrix}
+  \text{Der Gradient von f ist das Vektorfeld }  \\[1ex]
+  \vec{\nabla}f := \vec{grad }(f) := \begin{bmatrix}
 f,1\\ 
 f,2\\ 
 ... \\
 f,n
 \end{bmatrix}\\[4ex]
 
-\hspace*{12mm} \text{Beispiel }  \\[1ex]
-\hspace*{12mm} f(x,y) = x^2 \cdot y^2 \\[1ex]
-\hspace*{12mm} \vec{\nabla}f = \begin{bmatrix}
+  \text{Beispiel }  \\[1ex]
+  f(x,y) = x^2 \cdot y^2 \\[1ex]
+  \vec{\nabla}f = \begin{bmatrix}
 f,1\\ 
 f,2\\ 
 \end{bmatrix} = \begin{bmatrix}
@@ -624,21 +623,21 @@ x^2\cdot 2y\\
 \end{bmatrix} \\[4ex]
 						
 
-\hspace*{12mm} \text{Rechenregeln: } \\[1ex]
-\hspace*{6mm}  \text{Summenregel: } \vec{\nabla}(g+h) = \vec{\nabla}g + \vec{\nabla}h\\[1ex]
-\hspace*{6mm}  \text{Faktorregel: }  \vec{\nabla}(a \cdot g) = a \cdot \vec{\nabla}g \\[1ex]
-\hspace*{6mm}  \text{Produktregel: }  \vec{\nabla}(g \cdot h) = ( \vec{\nabla}g) \cdot h + g \cdot ( \vec{\nabla}h) \\[1ex]
-\hspace*{6mm}  \text{Kettenregel: } \vec{\nabla} f = g'(h(x^1,...,x^n)) \cdot \vec{\nabla}h \\[1ex]
-\hspace*{6mm}  \text{Parametrisierte Kurven: } G(\tau) = f(\vec{s}(\tau)) = \dot{G}(\tau) = <\vec{\nabla}f,\vec{v}> \\[4ex]
+  \text{Rechenregeln: } \\[1ex]
+   \text{Summenregel: } \vec{\nabla}(g+h) = \vec{\nabla}g + \vec{\nabla}h\\[1ex]
+   \text{Faktorregel: }  \vec{\nabla}(a \cdot g) = a \cdot \vec{\nabla}g \\[1ex]
+   \text{Produktregel: }  \vec{\nabla}(g \cdot h) = ( \vec{\nabla}g) \cdot h + g \cdot ( \vec{\nabla}h) \\[1ex]
+   \text{Kettenregel: } \vec{\nabla} f = g'(h(x^1,...,x^n)) \cdot \vec{\nabla}h \\[1ex]
+   \text{Parametrisierte Kurven: } G(\tau) = f(\vec{s}(\tau)) = \dot{G}(\tau) = \langle \vec{\nabla}f,\vec{v} \rangle \\[4ex]
 
-\hspace*{6mm} \text{Die Hesse - Matrix: } \\[1ex]
+  \text{Die Hesse - Matrix: } \\[1ex]
 \vec{\nabla}^2 f = \begin{bmatrix}
 f,1,1 & f,1,2 & ... & f,1,n\\ 
 f,2,1 & f,2,2 & ... & f,2,n\\ 
 f,n,1 & f,n,2 & ... & f,n,n\\ 
 \end{bmatrix} \\[2ex]
 
-\hspace*{12mm} \text{Beispiel dazu: } \\[1ex]
+  \text{Beispiel dazu: } \\[1ex]
 f(x;y) = x^2y^2 \\[1ex]
 \vec{\nabla}f = \begin{bmatrix}
 f,1\\ 
@@ -660,10 +659,10 @@ f,2,1 & f,2,2\\
 4xy & 2x^2\\ 
 \end{bmatrix} \\[4ex]
 
-\hspace*{6mm} \text{Die Hesse - Matrix ist symmetrisch: } \\[1ex]
-\hspace*{6mm}f,\mu,v = f,v,\mu \qquad (\vec{\nabla}^2f)^T = \vec{\nabla}^2f \\[4ex]
+  \text{Die Hesse - Matrix ist symmetrisch: } \\[1ex]
+ f,\mu,v = f,v,\mu \qquad (\vec{\nabla}^2f)^T = \vec{\nabla}^2f \\[4ex]
 
-\hspace*{6mm} \text{Die Laplace - Ableitung von f ist: } \\[1ex]
+  \text{Die Laplace - Ableitung von f ist: } \\[1ex]
 \Delta f = tr(\vec{\nabla}^2f) = f,1,1 + f,2,2 + ... + f,n,n \\[4ex]
 $$</td>
                     <td></td>
@@ -672,16 +671,16 @@ $$</td>
                     <td><b>Divergenz von Vektorfeldern</b></td>
                     <td>$$
 
-\hspace*{6mm} \text{Die Divergenz ist ein Mass für die Quellendichte: } \\[1ex]
-\hspace*{6mm} \text{Wir gehen von einem folgendem Vektorfeld aus: } \\[1ex]
-\hspace*{18mm} \vec{v}(x^1;...;x^n) = \begin{bmatrix}
+  \text{Die Divergenz ist ein Mass für die Quellendichte: } \\[1ex]
+  \text{Wir gehen von einem folgendem Vektorfeld aus: } \\[1ex]
+  \vec{v}(x^1;...;x^n) = \begin{bmatrix}
 v^1(x^1;...;x^n)\\ 
 .... \\
 v^n(x^1;...;x^n)\\ 
 \end{bmatrix} \\[4ex]
 
-\hspace*{16mm}	\text{Die Divergenz ist somit:} \\[1ex]
-\hspace*{16mm} div(\vec{v}):= v^1,1 + v^2,2 + ... + v^n,n \\[4ex]
+ 	\text{Die Divergenz ist somit:} \\[1ex]
+  div(\vec{v}):= v^1,1 + v^2,2 + ... + v^n,n \\[4ex]
 
 \text{Beispiel: } \\[1ex]
 \vec{v} (x;y) = \begin{bmatrix}
@@ -694,7 +693,7 @@ div(\vec{v}) = (x \cdot y^2),x + (x^3 \cdot y^3),y \\[1ex]
 \text{Rechenregeln: } \\[1ex]
 a) \quad div(\vec{v} + \vec{w}) = div(\vec{v}) + div(\vec{w}) \\[1ex]
 b) \quad div(a \cdot \vec{v}) = a \cdot div(\vec{v}) \\[1ex]
-c) \quad div(f \cdot \vec{v}) = \ <\vec{\nabla}f,\vec{v} > + f \cdot div(\vec{v}) \\[4ex]
+c) \quad div(f \cdot \vec{v}) = \ \langle \vec{\nabla}f,\vec{v} \rangle + f \cdot div(\vec{v}) \\[4ex]
 						
 						
 						$$</td>
@@ -703,24 +702,24 @@ c) \quad div(f \cdot \vec{v}) = \ <\vec{\nabla}f,\vec{v} > + f \cdot div(\vec{v}
 						<tr>
                     <td><b>Rotation von Vektorfeldern</b></td>
                     <td>$$ \text{Die Rotation ist ein Mass für die Wirbeldichte: } \\[1ex]
-\hspace*{6mm} \text{Für 2D gilt folgendes: } \\[1ex]
-\hspace*{14mm} \vec{v}(x^1;x^2) = \begin{bmatrix}
+  \text{Für 2D gilt folgendes: } \\[1ex]
+  \vec{v}(x^1;x^2) = \begin{bmatrix}
 v^1(x^1;x^2)\\ 
 v^2(x^1;x^2)\\ 
 \end{bmatrix} \\[4ex]
 
-\hspace*{6mm}	\text{Die Rotation im 2D:} \\[1ex]
-\hspace*{6mm} rot(\vec{v}):= v^2,1 - v^1,2 \\[4ex]
+ 	\text{Die Rotation im 2D:} \\[1ex]
+  rot(\vec{v}):= v^2,1 - v^1,2 \\[4ex]
 
-\hspace*{6mm} \text{Für 3D gilt folgendes: } \\[1ex]
-\hspace*{6mm} \vec{v}(x^1;x^2;x^3) = \begin{bmatrix}
+  \text{Für 3D gilt folgendes: } \\[1ex]
+  \vec{v}(x^1;x^2;x^3) = \begin{bmatrix}
 v^1(x^1;x^2;x^3)\\ 
 v^2(x^1;x^2;x^3)\\ 
 v^3(x^1;x^2;x^3)\\ 
 \end{bmatrix} \\[4ex]
 
-\hspace*{6mm}	\text{Die Rotation im 3D:} \\[1ex]
-\hspace*{6mm} rot(\vec{v}):= \begin{bmatrix}
+ 	\text{Die Rotation im 3D:} \\[1ex]
+  rot(\vec{v}):= \begin{bmatrix}
 v^3,2 - v^2,3 \\ 
 v^1,3 - v^3,1 \\ 
 v^2,1 - v^1,2 
@@ -729,14 +728,14 @@ v^2,1 - v^1,2
 \text{Rechenregeln: } \\[1ex]
 a) \quad rot(\vec{v} + \vec{w}) = rot(\vec{v}) + rot(\vec{w}) \\[1ex]
 b) \quad rot(a \cdot \vec{v}) = a \cdot rot(\vec{v}) \\[1ex]
-c) \quad \text{3D: } rot(f \cdot \vec{v}) =  <\vec{\nabla}f,\vec{v} > + f \cdot rot(\vec{v}) \\[1ex]
+c) \quad \text{3D: } rot(f \cdot \vec{v}) =  \langle \vec{\nabla}f,\vec{v} \rangle + f \cdot rot(\vec{v}) \\[1ex]
 d) \quad \text{nD: }  \quad div(\vec{\nabla}f) = \Delta f \\[1ex]
 e) \quad \text{2D/3D: } rot(\vec{\nabla}f) = 0 \\[1ex]
 f) \quad \text{3D: } \quad div(rot( \vec{v})) = 0 \\[1ex]
 g) \quad \text{3D: } \quad rot(rot( \vec{v})) = \vec{\nabla}div(\vec{v}) - \Delta \vec{v} \\[4ex]						
 
 \text{Kreuzproduktregeln in 3D: } \\[1ex]
-a) \quad div(\vec{v} \times \vec{w}) = < rot( \vec{v} ), \vec{w} > - <\vec{v}, rot(\vec{w})> \\[1ex]
+a) \quad div(\vec{v} \times \vec{w}) = \langle rot( \vec{v} ), \vec{w} \rangle - \langle \vec{v}, rot(\vec{w}) \rangle \\[1ex]
 b) \quad rot(\vec{v} \times \vec{w}) = \vec{\nabla}_{\vec{w}} \vec{v} - \vec{\nabla}_{\vec{v}} \vec{w} + div(\vec{w}) \cdot \vec{v} - div(\vec{v}) \cdot \vec{w} \\[1ex]
 c)\quad  div(\vec{\nabla} g \times \vec{\nabla} h ) = 0 \\[1ex] $$
 						</td>
@@ -746,9 +745,9 @@ c)\quad  div(\vec{\nabla} g \times \vec{\nabla} h ) = 0 \\[1ex] $$
                     <td><b>Anwendungen Vektorfelder</b></td>
                     <td>$$
 \text{Einen Quellenfreies Vektorfeld ist:} \\[1ex]
-\hspace*{10mm} div(\vec{v}) = 0 \\[2ex]
-\hspace*{6mm}\text{Einen Wirbelfreies Vektorfeld ist:} \\[1ex]
-\hspace*{10mm} rot(\vec{v}) = 0 \\[4ex]
+  div(\vec{v}) = 0 \\[2ex]
+ \text{Einen Wirbelfreies Vektorfeld ist:} \\[1ex]
+  rot(\vec{v}) = 0 \\[4ex]
 
 \text{Anwendungen in der Hydrodynamik:} \\[1ex]
 \vec{v} \rightarrow \ \text{Geschwindigkeitsfeld des Wassers} \\[1ex]
@@ -769,21 +768,21 @@ div(\vec{B}) = 0 & rot(\vec{B}) = \mu_0 \vec{J} + \epsilon_0 \cdot \mu_0 \dot{\v
                     <td><b>Richtungsableitungen</b></td>
                     <td>$$
 \text{Die Steigung eines Weges auf dem Funktionsgraphen in Richtung: } \\[1ex]
-\hspace*{6mm} \hat{e} \ \text{am Punkt: } (x_0;y_0) \ \text{beträgt:} \\[1ex]
-\hspace*{14mm} m = < \hat{e} , \vec{\nabla} f (x_0 ; y_0) > \\[4ex]
+  \hat{e} \ \text{am Punkt: } (x_0;y_0) \ \text{beträgt:} \\[1ex]
+  m = \langle \hat{e} , \vec{\nabla} f (x_0 ; y_0) \rangle \\[4ex]
 
 \text{Die Richtungsableitung beträgt demnach: } \\[1ex]
-\hspace*{14mm} \vec{\nabla}_{\hat{e}} f = < \hat{e} , \vec{\nabla} f  > \\[2ex]
+  \vec{\nabla}_{\hat{e}} f = \langle \hat{e} , \vec{\nabla} f  \rangle \\[2ex]
 
 
 \text{Für den Zwischenwinkel gilt: } \\[1ex]
-\hspace*{6mm} \vec{\nabla}_{\hat{e}} f = < \hat{e} , \vec{\nabla} f  > = cos(\alpha) \cdot \mid \vec{\nabla} f \mid \\[4ex]
+  \vec{\nabla}_{\hat{e}} f = \langle \hat{e} , \vec{\nabla} f  \rangle = cos(\alpha) \cdot \mid \vec{\nabla} f \mid \\[4ex]
 \text{Eigenschaften des Gradienten: } \\[1ex]
-\hspace*{6mm} \vec{\nabla}_{\hat{e}} f  \in [-\mid  \vec{\nabla} f \mid , \mid  \vec{\nabla} f \mid] \\[1ex]
-\hspace*{6mm} \alpha = 0 \rightarrow  \hat{e} \ // \ \vec{\nabla}f \rightarrow \vec{\nabla}_{\hat{e}}f = \ \mid  \vec{\nabla} f \mid \ \text{maximal}  \\[1ex]
-\hspace*{6mm} \alpha = \pi \rightarrow  \hat{e} \ // \ - \vec{\nabla}f \rightarrow \vec{\nabla}_{\hat{e}}f = \ - \mid  \vec{\nabla} f \mid \ \text{minimal}  \\[1ex]
-\hspace*{6mm} \alpha \in \{\frac{\pi}{2}, \frac{3\pi}{2}\} \rightarrow \hat{e} \perp \vec{\nabla} f \rightarrow \vec{\nabla}_{\hat{e}}f = 0 \\[1ex]
-\hspace*{12mm} \rightarrow \vec{\nabla}f \perp \ \text{Level -  Linien} \\[4ex]
+  \vec{\nabla}_{\hat{e}} f  \in [-\mid  \vec{\nabla} f \mid , \mid  \vec{\nabla} f \mid] \\[1ex]
+  \alpha = 0 \rightarrow  \hat{e} \ // \ \vec{\nabla}f \rightarrow \vec{\nabla}_{\hat{e}}f = \ \mid  \vec{\nabla} f \mid \ \text{maximal}  \\[1ex]
+  \alpha = \pi \rightarrow  \hat{e} \ // \ - \vec{\nabla}f \rightarrow \vec{\nabla}_{\hat{e}}f = \ - \mid  \vec{\nabla} f \mid \ \text{minimal}  \\[1ex]
+  \alpha \in \{\frac{\pi}{2}, \frac{3\pi}{2}\} \rightarrow \hat{e} \perp \vec{\nabla} f \rightarrow \vec{\nabla}_{\hat{e}}f = 0 \\[1ex]
+  \rightarrow \vec{\nabla}f \perp \ \text{Level -  Linien} \\[4ex]
 						
 						$$</td>
                     <td></td>
@@ -792,7 +791,7 @@ div(\vec{B}) = 0 & rot(\vec{B}) = \mu_0 \vec{J} + \epsilon_0 \cdot \mu_0 \dot{\v
                     <td><b>Gauss - Integralsatz</b></td>
                     <td>$$
 \text{Es gilt in allen Dimensionen: } \\[1ex]
-\hspace*{24mm} \oint_{\delta K} < \vec{v} , \vec{n} > \ dA = \Phi_{\vec{v}} = \int_K div(\vec{v}) \ dV   \\[4ex]
+  \oint_{\delta K} < \vec{v} , \vec{n} > \ dA = \Phi_{\vec{v}} = \int_K div(\vec{v}) \ dV   \\[4ex]
 
 \text{Anwendung in der MaxwellG:} \\[1ex]
 div(\vec{E}) = \frac{1}{\epsilon_0} \cdot \delta \\[1ex]
@@ -811,7 +810,7 @@ div(\vec{B}) = 0 \\[2ex]
                     <td><b>Stokes - Integralsatz</b></td>
                     <td>$$
 \text{Es gilt im 3D: } \\[1ex]
-\hspace*{14mm} \oint_{\delta K} < \vec{v} , \hat{e}_s > \ ds = \Upsilon_{rot(\vec{v})} = \int_G <  rot(\vec{v}), \hat{n} > \ dA   \\[4ex]
+  \oint_{\delta K} < \vec{v} , \hat{e}_s > \ ds = \Upsilon_{rot(\vec{v})} = \int_G <  rot(\vec{v}), \hat{n} > \ dA   \\[4ex]
 \text{Anwendung in der MaxwellG:} \\[1ex]
 rot(\vec{E}) = -\dot{\vec{E}} \\[1ex]
 rot(\vec{B}) = \mu_0 \cdot \vec{J} + \mu_0 \cdot \epsilon_0 \cdot \dot{\vec{E}} \\[4ex]
@@ -839,7 +838,7 @@ div(rot(\vec{v})) = 0 \\[4ex]
 
 \text{Skalarer Potentialsatz für ein Vektorfeld v mit rot = 0 } \\[1ex]
 \text{Die Skalare Funktion ist dann: } \\[1ex]
-\hspace*{14mm} \vec{v} = \vec{\nabla} \phi  \\[4ex]
+  \vec{v} = \vec{\nabla} \phi  \\[4ex]
 
 
 \text{Bemerkungen dazu:} \\[1ex]
@@ -849,7 +848,7 @@ div(rot(\vec{v})) = 0 \\[4ex]
 
 \text{Vektor Potentialsatz für ein Vektorfeld v mit div = 0 } \\[1ex]
 \text{Das Vektorfeld A ist dann: } \\[1ex]
-\hspace*{14mm} \vec{v} = rot(\vec{A})  \\[4ex]
+  \vec{v} = rot(\vec{A})  \\[4ex]
 
 
 \text{Bemerkungen dazu:} \\[1ex]
@@ -868,11 +867,11 @@ div(\vec{B}) = 0 \rightarrow \vec{B} = rot(\vec{A})
                     <td><b>Zerlegungssatz</b></td>
                     <td>$$
 \text{Jedes Vektorfeld ist schriebbar als: } \\[1ex]
-\hspace*{14mm} \vec{v} = \vec{w} + \vec{q} + \vec{h}  \\[1ex]
+  \vec{v} = \vec{w} + \vec{q} + \vec{h}  \\[1ex]
 \rightarrow div(\vec{w}) = 0 \rightarrow rot(\vec{q}) = 0 \rightarrow \vec{h} = konstant \\[4ex]
 
 \text{Daraus folgt:} \\[1ex]
-\hspace*{24mm} \vec{v} = rot(\vec{A}) + \vec{\nabla} \phi  + \vec{h} \\[1ex]				
+  \vec{v} = rot(\vec{A}) + \vec{\nabla} \phi  + \vec{h} \\[1ex]				
 						$$</td>
                     <td></td>
                   </tr>
@@ -880,15 +879,15 @@ div(\vec{B}) = 0 \rightarrow \vec{B} = rot(\vec{A})
                     <td><b>Quellen bzw. Wirbelfreie Felder</b></td>
                     <td>$$
 \text{Ein Vektorfeld ist Quellenfrei falls:: } \\[1ex]
-\hspace*{14mm} div(\vec{v}) = 0  \\[1ex]
-\hspace*{24mm} \Phi_{\vec{v}} = \oint_{\delta K} <\vec{v}, \hat{n} > \ dA  = 0 \\[1ex]
-\hspace*{14mm} \vec{v} = rot(\vec{A}) \\[4ex]
+  div(\vec{v}) = 0  \\[1ex]
+  \Phi_{\vec{v}} = \oint_{\delta K} <\vec{v}, \hat{n} > \ dA  = 0 \\[1ex]
+  \vec{v} = rot(\vec{A}) \\[4ex]
 
 \text{Ein Vektorfeld ist Wirbelfrei falls:: } \\[1ex]
-\hspace*{14mm} rot(\vec{v}) = 0  \\[1ex]
-\hspace*{24mm} \Upsilon_{\vec{v}} = \oint_{\delta G} <\vec{v}, \hat{e} > \ ds  = 0 \\[1ex]
-\hspace*{24mm} \vec{v} = \vec{\nabla} f = - \vec{\nabla} \phi \\[1ex]
-\hspace*{24mm} I = \int_{s_0}^{s_e} <\vec{v}, \hat{e} > \ ds = f(s_e) - f(s_0) \\[1ex]				
+  rot(\vec{v}) = 0  \\[1ex]
+  \Upsilon_{\vec{v}} = \oint_{\delta G} <\vec{v}, \hat{e} > \ ds  = 0 \\[1ex]
+  \vec{v} = \vec{\nabla} f = - \vec{\nabla} \phi \\[1ex]
+  I = \int_{s_0}^{s_e} <\vec{v}, \hat{e} > \ ds = f(s_e) - f(s_0) \\[1ex]				
 						$$</td>
                     <td></td>
                   </tr>
@@ -920,6 +919,85 @@ div(\vec{B}) = 0 \rightarrow \vec{B} = rot(\vec{A})
 									<li><b>Grenzen vertauschen dreht das Vorzeichen um</b>
 									</li>
 									<li>$$ \int_{x_{E}}^{x_{0}}f(x) \:dx = -\int_{x_{0}}^{x_{E}}f(x) \:dx$$</li>
+									
+									<li><b>Integrationsmethoden</b>
+									</li>
+									<div class="pre-spoiler">
+										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+										<div class="spoiler" style="display: none;">
+											
+											
+<table cellspacing="50" cellpadding="20" table border="1">
+  <tr>
+    <th>Begriff</th>
+    <th>Erklärung</th>
+    <th>Zusatz</th>
+  </tr>
+  <tr>
+    <td><b>Substitution: </b></td>
+    <td>$$\text{Sei folgendes Gegeben: } F'(u) = f(u) \quad \text{dann gilt für die Funktion } u(x) \\[1ex]
+\int f(u(x)) \cdot u'(x) \ dx = \int f(u) \ du = F (u(x)) + c \\[1ex]
+\int_{x_0}^{x_e} f(u(x)) \cdot u'(x) \ dx = \int_{u(x_0)}^{u(x_e)} f(u) \ du = F (u(x_e))-F (u(x_0)) \\[4ex]
+
+\text{Beispiel: } \\[1ex]
+\int x \cdot cos(x^2) \ dx \\[1ex]
+\text{Substitution } u(x) = x^2 \rightarrow u'(x) = 2x \\[1ex]
+\frac{dU}{dx} = u'(x) \rightarrow dx = \frac{1}{2x} \cdot dU \\[1ex]
+\int \frac{1}{2x} \cdot x \cdot cos(u) \ du \\[1ex]
+\frac{1}{2} sin(x^2) + c \\[1ex]
+ $$</td>
+      <td>Die Idee ist die Umkehrung der Kettenregel</td>
+  </tr>
+	 <tr>
+    <td><b>Partielle Integration: </b></td>
+    <td>$$\int \overset{\downarrow}{g(x)} \cdot \overset{\uparrow}{h'(x)} \ dx = g(x) \cdot h(x) - \int g'(x) \cdot h(x) \ dx \\[1ex]
+\int_{x_0}^{x_e} \overset{\downarrow}{g(x)} \cdot \overset{\uparrow}{h'(x)} = [g(x) \cdot h(x)]|^{x_E}_{x_0} - \int_{x_0}^{x_e} g'(x) \cdot h(x) \ dx \\[4ex] 
+
+\text{Beispiel: } \\[1ex]
+\int \overset{\downarrow}{ln(x)} \cdot \overset{\uparrow}{1} \ dx  = ln(x) \cdot x - \int \frac{1}{x} \cdot x \ dx \\[1ex] 
+\rightarrow ln(x) \cdot x - x + c \\[4ex]
+
+\text{Der 1-er Trick: } \\[1ex]
+\int f(x) \ dx = \int \overset{\downarrow}{f(x)} \cdot \overset{\uparrow}{1} \ dx = f(x) \cdot x - \int f'(x) \cdot x \ dx \\[1ex]
+
+
+ $$</td>
+      <td>Die Idee ist die Umkehrung der Produkt - Regel</td>
+  </tr>
+	 <tr>
+    <td><b>Uneigentliche Integrale: </b></td>
+    <td>$$\text{Integrale in die Richtung } \infin \\[1ex]
+I = \int_{x_0}^{\infin} f(x) \ dx = \underset{s \rightarrow \infin}{\lim} \int_{x_0}^{s} f(x) dx \\[4ex]
+
+\text{Vorgehen: } \\[1ex]
+1. \text{f Aufleiten} \rightarrow F \\[1ex]
+2. \text{Einsetzen von } x_0 / s \rightarrow F(s) - F(x_0) \\[1ex]
+3. \text{Grenzwert berechnen für }s \rightarrow \infin \\[4ex]
+
+\text{Beispiel:} \\[1ex]
+I = \int_{2}^{\infin} \frac{1}{x^2} \ dx = \underset{s \rightarrow \infin}{\lim} \int_{2}^{s} \frac{1}{x^2} \ dx \\[1ex]
+\underset{s \rightarrow \infin}{\lim} [-\frac{1}{x}]|^s_2 = 0+ \frac{1}{2} = \frac{1}{2} \\[4ex]
+		
+		\text{Sei: } x_0 > 0 \quad \text{dann gilt:} \\[1ex]
+		\boxed{
+		\int_{x_0}^{\infin} \frac{1}{x^p} \ dx = \begin{cases}
+   \frac{1}{p-1} \cdot \frac{1}{x_0^{p-1}} &| p > 1 \\
+   \text{divergent} & | p \leq 1
+\end{cases} }\\[4ex]
+		
+		\text{Analoger Fall: } \\[1ex]
+I = I = \int_{-\infin}^{x_e} f(x) \ dx = \underset{s \rightarrow \infin}{\lim} \int_{-s}^{x_e} f(x) dx \\[4ex]
+		
+		\text{Bei Integration über ganz } \mathbb{R} \\[1ex]
+I = I = \int_{-\infin}^{\infin} f(x) \ dx = \underset{r \rightarrow \infin}{\lim} \int_{-r}^{x_0} f(x) \ dx + \int_{x_0}^{s} f(x) \  dx  \\[1ex] 
+\rightarrow x_0 \in \mathbb{R} \\[4ex]
+
+ $$</td>
+      <td>Unendliche Grenzen und soooo </td>
+  </tr>
+											</table>
+											</div>
+									</div>
 
 									<li><b>Newton-Leibniz Formel</b>
 									</li>

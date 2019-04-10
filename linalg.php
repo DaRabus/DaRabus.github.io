@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 	<?php include ('includes/top_head.php'); 
-    $loc = "mathe";
+    $loc = "linalg";
     ?>
 	<link href="spoiler.css" rel="stylesheet" type="text/css">
 </head>

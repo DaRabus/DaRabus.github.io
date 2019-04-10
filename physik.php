@@ -44,9 +44,31 @@
     <th>Zusatz</th>
   </tr>
   <tr>
-    <td><b>Ladung eines Elektrons: </b></td>
-    <td>$$ q_{e^{-}} = -1.602 \ 176 \ 634 \cdot 10^{-19} C \\[1ex] $$</td>
-    <td></td>
+    <td><b>Einheiten in der Elektrik: </b></td>
+    <td>$$\text{Ladung des Elektrons: } q_{e^{-}} = -1.602 \ 176 \ 634 \cdot 10^{-19} C \\[4ex]
+
+\text{System von Gauss: } \\[1ex]
+ \gamma_E = 1 \qquad \gamma_B = 10^{-7} \frac{N}{A^2} \qquad \gamma_B = \frac{\gamma_E}{c^2} = \frac{1}{c^2} \\[1ex]
+\varepsilon_0 = \frac{1}{4\pi \gamma_E} = \frac{1}{4 \pi} \qquad \mu_0 = 4 \pi \gamma_B = \frac{4 \pi}{c^2} \qquad \frac{\gamma_E}{\gamma_B} = c^2 \\[3ex]
+
+\mu_0 = 4 \pi \cdot 10^{-7} \frac{N}{A^2} \\[1ex]
+\varepsilon_0 = 8.854 \ 187 \ 817 \ 620 \ 39 \cdot 10^{-12} \frac{C^2}{Nm^2} \\[1ex]
+Q_A = N_A \cdot e =  9,649 \cdot 10^{4} \frac{C}{mol}  \\[1ex]
+\rightarrow N_A = 6,022 \ 140 \ 76 \cdot 10^{-23} \frac{1}{mol} \\[1ex]
+		\rightarrow e = 1,602 \ 176 \ 634 \cdot 10^{-19} C \\[4ex]
+		
+		\text{Masse Proton: } m_p \approx 1.673 \cdot 10^{-27} KG \\[1ex]
+\text{Masse Elektron: } m_e \approx 9.109 \cdot 10^{-31} KG \\[1ex]
+
+ $$</td>
+      <td><b>γ<sub>E</sub></b> = Coulomb Konstante [A·s/(V·m)] = [A<sup>2</sup>·s<sup>4</sup>/(kg·m<sup>3</sup>)]<br>
+                      <b>γ<sub>B</sub></b> = Ampere Konstante ≈ 10<sup>-7</sup> [N/A<sup>2</sup>]<br>
+                      <b>ϵ<sub>0</sub></b> = Elektrische Feldkonstante [A·s/(V·m)] = [F/m] <br>
+		  <b>Q<sub>A</sub></b> = Faraday-konstante [C/mol] <br>
+		  <b>N<sub>A</sub></b> = Avogadro Zahl [1/mol] <br>
+		  <b>e</b> = Elementarladung [C] <br>
+                      <b>μ<sub>0</sub></b> = Magnetische Feldkonstante = 4·π·10<sup>-7</sup> [N/A<sup>2</sup>]<br>
+                      <b>c</b> = Lichtgeschwindigkeit [m/s]</td>
   </tr>
 	<tr>
     <td><b>Ladungsstrom </b></td>
@@ -105,16 +127,7 @@
                       <b>r</b> = Abstand der Massenmittelpunkte [m]<br>
                       <b>r</b> = Richtungsvektor [-]</td>
   </tr>
-	<tr>
-    <td><b>Maxwell - Relation </b></td>
-    <td>$$\frac{\gamma_E}{\gamma_B} = \frac{1}{\epsilon_0 \cdot \mu_0} = c^2 \\[1ex]$$</td>
-    <td><b>γ<sub>E</sub></b> = Coulomb Konstante [A·s/(V·m)] = [A<sup>2</sup>·s<sup>4</sup>/(kg·m<sup>3</sup>)]<br>
-                      <b>γ<sub>B</sub></b> = Ampere Konstante ≈ 10<sup>-7</sup> [N/A<sup>2</sup>]<br>
-                      <b>ϵ<sub>0</sub></b> = Elektrische Feldkonstante [A·s/(V·m)] = [F/m] <br>
-                      <b>μ<sub>0</sub></b> = Magnetische Feldkonstante = 4·π·10<sup>-7</sup> [N/A<sup>2</sup>]<br>
-                      <b>c</b> = Lichtgeschwindigkeit [m/s]</td>
-  </tr>
-		<tr>
+
     <td><b>Elektrisches Feld </b></td>
     <td>$$ \vec{E}(t;x;y;z) := \frac{1}{q} \cdot \vec{F}_E (t;x;y;z) \\[4ex]
 \text{Allgemeine Kraftgleichung im E-Feld: } \\[1ex]
@@ -156,9 +169,20 @@ P_{EB} = \left \langle \vec{v},\vec{F}_{EB} \right \rangle \\[1ex]$$</td>
                     <b>F<sub>EB</sub></b> = Kraft des E-B_Feldes [N]<br>
                   </td>
   </tr>
+				<tr>
+    <td><b>Der Bahnvektor </b></td>
+    <td>$$  
+		\text{Bahnvektor:  }\hat{r} : = \hat{r} = \frac{1}{\mid r \mid } \cdot \vec{r} \\[1ex]
+$$</td>
+                  <td>
+ 				Um den Bahnvektor zu berechnen benötigt man die Formel
+                  </td>
+  </tr>
 	<tr>
     <td><b>E-Feld einer Punktladung </b></td>
-    <td>$$  \vec{E} = \frac{1}{4\pi\varepsilon _0}\cdot \frac{Q}{r^2}\cdot \hat{r} = \frac{1}{4\pi \varepsilon _0} \cdot \frac{Q}{r^3}\cdot \vec{r} \\[4ex]
+    <td>$$  
+		
+		\vec{E} = \frac{1}{4\pi\varepsilon _0}\cdot \frac{Q}{r^2}\cdot \hat{r} = \frac{1}{4\pi \varepsilon _0} \cdot \frac{Q}{r^3}\cdot \vec{r} \\[4ex]
 
 \text{Die Elektrische Kraft definiert sich somit:} \\[1ex]
 \vec{F}_E = \frac{1}{4\pi\varepsilon _0} \cdot \frac{Q \cdot q}{r^2} \cdot \hat{r} \\[4ex]
@@ -193,7 +217,10 @@ $$</td>
   </tr>
 			<tr>
     <td><b>Elektrisches Potential </b></td>
-    <td>$$ \phi (r) = \frac{1}{4\pi\varepsilon _0}\frac{Q}{r}
+    <td>$$ \phi (r) = \frac{1}{4\pi\varepsilon _0}\frac{Q}{r} \\[1ex]
+
+\text{Für n Ladungen gilt: } \\[1ex]
+\frac{1}{4\pi\varepsilon _0} \cdot \sum_{k=1}^{n} \frac{Q_k}{r_k}
 $$</td>
                   <td>
 <b>ϵ<sub>0</sub></b> = Elektrische Feldkonstante [A·s/(V·m)] = [F/m] <br>
@@ -382,10 +409,14 @@ U_{ind} = -N \cdot \dot{\Phi}_B \\[1ex]$$</td>
 	<tr>
     <td><b>Gerade bewegter Leiter: </b></td>
     <td>$$\text{Induktionsspannung: } \\[1ex]
-U_{ind} = \frac{1}{q} \cdot \Delta W = \frac{1}{q} \int_L \langle \vec{F}_B , \hat{e} \rangle \ ds = \langle \vec{v} \times \vec{B} , \hat{e} \rangle \cdot l \\[4ex]
+U_{ind} = \frac{1}{q} \cdot \Delta W = \frac{1}{q} \int_{s_0}^{s_e} \langle \vec{F}_B , \hat{e} \rangle \ ds = \int_{s_0}^{s_e} \langle \vec{v} \times \vec{B} , \hat{e} \rangle \ ds \\[4ex]
 
 \text{Falls: } \vec{v} \perp \vec{B} \quad \hat{e} \perp \vec{B} \quad \hat{e} \perp \vec{v} \\[1ex]
-U_{ind} = l \cdot v \cdot B \\[1ex]$$</td>
+U_{ind} = l \cdot v \cdot B \\[4ex]
+
+\text{Falls: } v \ll c \\[1ex]
+\vec{E} = \vec{v} \times \vec{B} \\[1ex]
+U_{ind} = \int_{s_0}^{s_e} \langle \vec{E} , \hat{e} \rangle \ ds \\[1ex]$$</td>
     <td>                      
 		<b>l</b> = Leiter Länge in [m]<br>
 		<b>q</b> = Ladung in [C]<br>
@@ -414,7 +445,7 @@ I(t) \sim B(t) \sim \Phi_B  \rightarrow U_{ind} (t) \sim \dot{\Phi}_B(t) \\[4ex]
 
 \text{Es gilt somit: } \\[1ex]
 U_{ind} (t) \sim \dot{\Phi}_B(t) \sim \dot{B} (t) \sim \dot{I}(t) \\[1ex]
-U_{ind} = - L \cdot \dot{I} \\[4ex]
+U_{ind} = - L \cdot \dot{I}(t) \\[4ex]
 
 \text{Basiselemente: } \\[1ex]
 \text{Spannung über Wiederstand : } U_R = R \cdot I \\[1ex]
@@ -426,6 +457,56 @@ $$</td>
 		<b>L</b> = Kenngrösse in [Vs/A] oder [H] <br>
 		<b>B</b> = Magnetisches Feld<br>
 		<b>U</b> = Spannung<br>
+	  
+	  </td>
+  </tr>
+	<tr>
+    <td><b>Lange dünne Spule: </b></td>
+    <td>$$\text{Es gilt: } \\[1ex]
+L \approx \mu_0 \cdot N^2 \cdot \frac{A}{l} \\[4ex]
+
+\text{Der Magnetische Fluss ist demnach: } \\[1ex]
+\Phi_B (t) = B(t) \cdot A \approx \mu_0 \cdot N \cdot \frac{1}{l} \cdot I(t) \cdot A \\[4ex]
+
+\text{Die Induktionsspannung ist demnach: } \\[1ex]
+U_{ind} = - N \cdot \dot{\Phi}_B(t) = - \mu_0 \cdot N^2 \cdot \frac{A}{l}  \cdot \dot{I}(t) \\[4ex]
+
+
+\text{Somit folgt: } \\[1ex]
+L \approx \mu_0 \cdot N^2 \cdot \frac{A}{l} \\[4ex]
+$$</td>
+    <td>                      
+		<b>L</b> = Kenngrösse in [Vs/A] oder [H] <br>
+		<b>B</b> = Magnetisches Feld<br>
+		<b>U</b> = Spannung<br>
+		<b>A</b> = Querschnittsfläche in [m^2]<br>
+		<b>N</b> = Windungen<br>
+		<b>l</b> = Länge der Spule in [m]<br>
+	  
+	  </td>
+  </tr>
+		<tr>
+    <td><b>Induktivität an Wechselspannung: </b></td>
+    <td>$$\text{Es gilt: } \\[1ex]
+U(t) = U_a \cdot sin(wt + \varphi) \\[4ex]
+
+\text{Die Spannung über der Spule: } \\[1ex]
+U_L(t) = U(t) = L \cdot \dot{I}(t) \\[1ex]
+\rightarrow \dot{I}(t) = \frac{U(t)}{L} \\[4ex]
+
+\text{Die Phasenverscheibung erklärt sich so: } \\[1ex]
+I(t) = \frac{1}{L} \int U(t) dt = -\frac{U_a}{wL} \cdot cos(wt+ \varphi) + I_0 \\[4ex]
+
+\text{Daraus folgt für Amplituden oder Effektiwerte:} \\[1ex]
+\rightarrow I_a = \frac{U_a}{wL} \\[1ex]
+\rightarrow I_{eff} = \frac{U_{eff}}{wL} \\[1ex]
+\rightarrow \text{Strom und Spannung sind verschoben um: } \frac{\pi}{2} \\[1ex]
+$$</td>
+    <td>                      
+		<b>L</b> = Kenngrösse in [Vs/A] oder [H] <br>
+		<b>B</b> = Magnetisches Feld<br>
+		<b>U</b> = Spannung<br>
+		<b>I</b> = Strom<br>
 	  
 	  </td>
   </tr>
