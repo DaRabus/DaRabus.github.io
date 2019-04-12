@@ -18,23 +18,29 @@
     <div class="container-fluid">
       <div class="row flex-xl-nowrap">
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-
-        </div>
+         </div>
 
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="optik">Informatik</h1>
           <p class="bd-lead">Wichtige Sachen für die Informatik Prüfung.</p>
-			
-			
-						<h2>Thema2 </h2>
+			<h2>Pinout Gscheiduino </h2>
 			<div class="pre-spoiler">
 										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 										<div class="spoiler" style="display: none;">
-											
+			<img src="Pinout.jpg" width="80%" height="70%" alt=""/>
 				</div>
 			</div>
 			
+						<h2>Intrrupt Vektor Table </h2>
+			<div class="pre-spoiler">
+										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+										<div class="spoiler" style="display: none;">
+										
+		        <img src="I_V_T.jpg" width="60%" height="60%"  alt="" />
+			    <img src="vec_Table.jpg" width="683" height="691"  alt="" /> </div>
+			</div>
+			<br>
 			<h2>Timer 0|1|2 </h2>
 			<div class="pre-spoiler">
 										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
