@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 	<?php include ('includes/top_head.php'); 
-    $loc = "physik";
+    $loc = "elektrotechnik";
     ?>
 	<link href="spoiler.css" rel="stylesheet" type="text/css">
 </head>
@@ -21,8 +21,6 @@
 	<div class="container-fluid">
 		<div class="row flex-xl-nowrap">
 			<div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-				<?php include ('includes/search.php'); ?>
-				<?php include ('includes/nav_physik.php'); ?>
 			</div>
 
 
@@ -32,7 +30,31 @@
 			<main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
 				<h1 class="bd-title" id="content">Elektrotechnik</h1>
 
+			<h2>Periodische Signale</h2>	
+		<div class="pre-spoiler">
+							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+							<div class="spoiler" style="display: none;">
+								<table cellspacing="50" cellpadding="20" table border="1">
+  <tr>
+    <th>Begriff</th>
+    <th>Erklärung</th>
+    <th>Zusatz</th>
+  </tr>
+  <tr>
+    <td><b>Substitution: </b></td>
+    <td>$$\text{Periodische Signale sind sich wiederholende Signale} \\[1ex]
 
+ $$</td>
+      <td>Die Idee ist die Umkehrung der Kettenregel</td>
+  </tr>
+								</table>
+			</div>
+				</div>
+				
+<h2>Semester 1</h2>
+<div class="pre-spoiler">
+							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+							<div class="spoiler" style="display: none;">
 				<br><br>
 				<h2 id="periodische_signale">Periodische Signale</h2>
 <div class="pre-spoiler">
@@ -831,7 +853,8 @@
 						</table>
 					</div>
 				</div>
-
+				</div>
+				</div>
 
 
 

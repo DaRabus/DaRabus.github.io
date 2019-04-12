@@ -118,6 +118,53 @@ j_W = \frac{dI_W}{dA} \\[4ex]
 	  </td>
 
 	</tr>
+				  <tr>
+    <td><b>Elektromagnetische Wellen </b></td>
+    <td>$$\text{Wellengleichung in 1D} \\[1ex]
+\frac{\partial^2 y}{\partial x^2} = \frac{1}{v^2} \cdot \frac{\partial^2 y}{\partial t^2} \\[4ex]
+
+\text{Intensität mit Polarfilter: } \\[1ex]
+I_2 = I_1 \cdot cos^2(\theta ) \\[4ex]
+
+\text{Umrechnung Fotometrie(F) / Radiometrie(R): } \\[1ex]
+F = R \cdot K_m \cdot V(\lambda ) \\[4ex]
+ $$</td>
+    <td>                      
+		<b>v</b> = Ausbereitungsgeschwindigkeit in [m/s^2] <br>
+		<b>K<sub>m</sub></b> = photometrische Strahlungsäquivalent 638 [lm/W] <br>
+		<b>V</b> = relative Hellempfindlichkeitskurve<br>
+	  </td>
+
+	</tr>
+					  <tr>
+    <td><b>Interferenz</b></td>
+    <td>$$\text{Konstruktive} \\[1ex]
+\Delta s = n \cdot \lambda \quad (n \in \mathbb{Z}) \\[4ex]
+
+\text{Destruktive} \\[1ex]
+\Delta s = \frac{\lambda}{2} +n \cdot \lambda \quad (n \in \mathbb{Z}) \\[4ex]
+
+\text{Phasendifferenz <--> Gangunterschied} \\[1ex]
+\delta  = k \cdot \Delta x = \frac{2\pi}{\lambda} \Delta x \\[4ex]
+
+\text{Schwebungsfrequenz} \\[1ex]
+f_s = \Delta f \\[4ex]
+
+\text{Eigenfrequenzen} \\[1ex]
+\text{beidseitig fest/frei: } f_n = (n+1) \cdot f_0 \\[1ex]
+\text{beidseitig offen/geschlossen: } f_n = (n+1) \cdot f_0 \\[1ex]
+\text{einseitig offen/frei: } f_n = (2n+1) \cdot f_0 \\[4ex]
+
+\text{Optische Weglänge:} \\[1ex]
+L = n \cdot x\\[4ex]
+ $$</td>
+    <td>                      
+		<b>v</b> = Ausbereitungsgeschwindigkeit in [m/s^2] <br>
+		<b>f<sub>0</sub></b> = Grundfrequenz <br>
+		<b> λ</b> = Wellenlänge<br>
+	  </td>
+
+	</tr>
 	
 	
 						</table>

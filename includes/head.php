@@ -1,5 +1,6 @@
 
 
+
   <div class="navbar-nav-scroll">
     <ul class="navbar-nav bd-navbar-nav flex-row">
       <li class="nav-item">
@@ -22,6 +23,10 @@
 			<ul class="navbar-nav bd-navbar-nav flex-row">
       <li class="nav-item">
         <a class="nav-link <?php if ($loc == "optik") echo "active" ?>" href="optik.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Optik</a>
+      </li>
+				    <ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link <?php if ($loc == "info") echo "active" ?>" href="info.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Informatik</a>
       </li>
   </div>
 

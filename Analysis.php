@@ -680,14 +680,14 @@ v^n(x^1;...;x^n)\\
 \end{bmatrix} \\[4ex]
 
  	\text{Die Divergenz ist somit:} \\[1ex]
-  div(\vec{v}):= v^1,1 + v^2,2 + ... + v^n,n \\[4ex]
+  div(\vec{v}):= v^1_{,1} + v^2_{,2} + ... + v^n_{,n} \\[4ex]
 
 \text{Beispiel: } \\[1ex]
 \vec{v} (x;y) = \begin{bmatrix}
 x\cdot y^2\\ 
 x^3 \cdot y^3
 \end{bmatrix} \\[1ex]
-div(\vec{v}) = (x \cdot y^2),x + (x^3 \cdot y^3),y \\[1ex]
+div(\vec{v}) = (x \cdot y^2)_{,x} + (x^3 \cdot y^3)_{,y} \\[1ex]
 = y^2+x^3\cdot 3y^2 \\[4ex]
 						
 \text{Rechenregeln: } \\[1ex]
