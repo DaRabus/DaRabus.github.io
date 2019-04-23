@@ -419,9 +419,9 @@ s_...(\tau)\\
 s_n(\tau)
 \end{bmatrix} \\[4ex]
 \text{Geschwindigkeitsvektor } \vec{v}(\tau) : =  \dot{\vec{s}}(\tau) \\[1ex]
- \text{Bahngeschwindigkeit:  } v(\tau) : =  \mid \vec{v}(\tau) \mid  \\[1ex]
+ \text{Bahngeschwindigkeit:  } v(\tau) : =  \mid \vec{v}( \tau ) \mid   \\[1ex]
 \text{Beschleunigungsvektor:  } \vec{a}(\tau) : =  \dot{\vec{v}}(\tau) \\[1ex]
-\text{Bahnvektor:  }ê(\tau) : = \hat{v}(\tau) = \frac{1}{v(\tau)} \cdot \vec{v}(\tau) \\[1ex]
+\text{Bahnvektor:  }ê(\tau) : = \hat{v}(\tau) = \frac{1}{\mid  v(\tau) \mid } \cdot \vec{v}(\tau) \\[1ex]
 \text{Bahn:  } \rightarrow \text{Bildmenge von} \quad \vec{s}([\tau_0,\tau_E]) \\[1ex]
 \text{Kurvenlänge:  }  \Delta s := \int_{\tau_0}^{\tau_E}  v(\tau) \; \text{d}\tau  \\[1ex]  $$</td>
                     <td>Es sollte möglichst Injektiv sein!</td>
@@ -709,7 +709,7 @@ v^2(x^1;x^2)\\
 \end{bmatrix} \\[4ex]
 
  	\text{Die Rotation im 2D:} \\[1ex]
-  rot(\vec{v}):= v^2,1 - v^1,2 \\[4ex]
+  rot(\vec{v}):= v^2_{,1} - v^1_{,2} \\[4ex]
 
   \text{Für 3D gilt folgendes: } \\[1ex]
   \vec{v}(x^1;x^2;x^3) = \begin{bmatrix}
@@ -720,9 +720,9 @@ v^3(x^1;x^2;x^3)\\
 
  	\text{Die Rotation im 3D:} \\[1ex]
   rot(\vec{v}):= \begin{bmatrix}
-v^3,2 - v^2,3 \\ 
-v^1,3 - v^3,1 \\ 
-v^2,1 - v^1,2 
+v^3_{,2} - v^2_{,3} \\ 
+v^1_{,3} - v^3_{,1} \\ 
+v^2_{,1} - v^1_{,2} 
 \end{bmatrix} \\[4ex]
 	
 \text{Rechenregeln: } \\[1ex]
@@ -1280,7 +1280,7 @@ I = I = \int_{-\infin}^{\infin} f(x) \ dx = \underset{r \rightarrow \infin}{\lim
 									</li>
 									<li>$$x = sgn(x) \cdot \mid x \mid $$</li>
 									<li> $$ \mid x \mid = sgn(x) \cdot x $$ </li>
-									<li> $$ x \neq 0 \rightarrow sgn(x) = \frac{1}{sgn(x)}$$</li>
+									<li> $$ x \not = 0 \rightarrow sgn(x) = \frac{1}{sgn(x)}$$</li>
 
 									<table class="table">
 										<tr>

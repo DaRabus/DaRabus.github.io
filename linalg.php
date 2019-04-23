@@ -29,6 +29,211 @@
 				<h1 class="bd-title" id="content">Lineare Algebra</h1>
 
 				<p class="bd-lead">Grundlagen der Linearen Algebra</p>
+				
+							<h2>Skalarprodukte </h2>
+			<div class="pre-spoiler">
+										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+										<div class="spoiler" style="display: none;">
+				<br>
+
+<table cellspacing="50" cellpadding="20" table border="1">
+  <tr>
+    <th>Begriff</th>
+    <th>Erklärung</th>
+    <th>Zusatz</th>
+  </tr>
+	  <tr>
+    <td><b>Die Billinearform auf V </b></td>
+    <td>$$\text{Zur überprüfung folgende Bedienungen: } \\[1ex]
+\text{Für } x, x^{'} , y \in V \text{ gilt } \Phi(x+x^{'} , y) = \Phi(x,y) + \Phi(x^{'},y) \\[1ex]
+\text{Für } x , y , y^{'} \in V \text{ gilt } \Phi(x,y + y^{'}) = \Phi(x,y) + \Phi(x,y^{'}) \\[1ex]
+\text{Für } x , y  \in V \text{ und } r \in \mathbb{R} \text{ gilt } \Phi(rx,y) = r \Phi(x,y) \\[1ex]
+\text{Für } x , y  \in V \text{ und } r \in \mathbb{R} \text{ gilt } \Phi(x,ry) = r \Phi(x,y) \\[4ex]
+
+\text{Schneller gehts so: } \\[1ex]
+\rightarrow \text{ Für } x,x^{'},y,y^{'} \in V \text{ und } r,s \in \mathbb{R} \text{ gilt} \\[1ex]
+\Phi (rx+x^{'},sy + y^{'}) = rs \Phi (x,y) + r \Phi (x,y^{'}) + s \Phi (x^{'},y) + \Phi (x^{'},y^{'}) \\[1ex]
+$$</td>
+    <td>                      
+	  </td>
+  <tr>
+	  	  <tr>
+    <td><b>Bilinearformen und Matrizen </b></td>
+    <td>$$\text{Die Matrix von } \Phi \text{ bezüglich E:}  \\[1ex]
+M_{\Phi}^{E} = (\Phi(e_i,e_j))_{1\leq i, j\leq n} = \begin{bmatrix}
+\Phi(e_1,e_1) & \Phi(e_1,e_2) & ... & \Phi(e_1,e_n)\\ 
+\Phi(e_2,e_1) & \Phi(e_2,e_2) & ... & \Phi(e_2,e_n) \\ 
+... & ... & ... & ... \\ 
+\Phi(e_n,e_1) & \Phi(e_n,e_2) & ... & \Phi(e_n,e_n) 
+\end{bmatrix} 
+ \in M(n) \\[4ex]
+
+\text{Gleichzeitig auch die Bilinearform von M auf E} \\[1ex]
+
+\Phi_{M}^{E} : V \times V \rightarrow \mathbb{R} , (x,y) \mapsto (x^E)^t \cdot M \cdot y^E
+$$</td>
+    <td>                      
+	  </td>
+  <tr>
+	  	  	  <tr>
+    <td><b>Die euklidische Bilinearformen </b></td>
+    <td>$$\Phi (x,y) = x_+y_1 + ... + x_ny_n \\[4ex]
+		\text{Beispield dazu:} \\[1ex]
+\Phi_1 : \mathbb{R}^2 \rightarrow \mathbb{R} , (x,y) \mapsto (x^E)^t \cdot M_1 \cdot y^E \\[1ex]
+((x_1,x_2),(y_1,y_2)) \mapsto [x_1,x_2] \cdot \begin{bmatrix}
+1 & 2\\ 
+1 & 0
+\end{bmatrix} \cdot \begin{bmatrix}
+y_1 \\
+y_2 \\
+\end{bmatrix} \\[1ex]
+\rightarrow x_1y_2 + 2x_1y_2 + x_2y_1 \\[1ex]
+
+\Phi_1 ((3,1),(2,-5)) = 6-30+2 = -22 \\[1ex]
+
+$$</td>
+    <td> Die normale Form                     
+	  </td>
+  <tr>
+	  	  	  	  <tr>
+    <td><b>Die minkowskische Bilinearformen </b></td>
+    <td>$$\Phi (x,y) = x_+y_1 - ... - x_ny_n \\[4ex]
+		\text{Beispield dazu:} \\[1ex]
+\Phi_1 : \mathbb{R}^2 \rightarrow \mathbb{R} , (x,y) \mapsto (x^E)^t \cdot M_1 \cdot y^E \\[1ex]
+((x_1,x_2),(y_1,y_2)) \mapsto [x_1,x_2] \cdot \begin{bmatrix}
+1 & 2\\ 
+1 & 0
+\end{bmatrix} \cdot \begin{bmatrix}
+y_1 \\
+y_2 \\
+\end{bmatrix} \\[1ex]
+\rightarrow x_1y_2 + 2x_1y_2 + x_2y_1 \\[1ex]
+
+\Phi_1 ((3,1),(2,-5)) = 6+30-2 = 34 \\[1ex]
+
+$$</td>
+    <td> Gleiche aber negative                     
+	  </td>
+  <tr>
+	  	  	  	  	  <tr>
+    <td><b>Basiswechsel der Bilinearformen </b></td>
+    <td>$$\text{Seien } \Phi \text{ eine Bilinearform auf V und E und D zwei Basen von V} \\[1ex]
+M_{\Phi}^{D} = (M^{ED})^t \cdot M_{\Phi}^{E} \cdot M^{ED}
+
+$$</td>
+    <td> Transponierte Matrix nicht inverse.                    
+	  </td>
+  <tr>
+	  
+	  	  	  	  	  	  <tr>
+    <td><b>Symmetrie der Bilinearformen </b></td>
+    <td>$$\text{ Symmetrisch wenn:} \\[1ex]
+\Phi (x,y) = \Phi (y,x) \\[4ex]
+
+\text{Im euklidischen:} \\[1ex]
+x_1 y_1 + ... + x_n y_n =  y_1 x_1 + ... +  y_n x_n \\[4ex]
+
+\text{Im minkowskischen:} \\[1ex]
+x_1 y_1 - ... - x_n y_n =  y_1 x_1 - ... -  y_n x_n \\[4ex]
+		
+		
+\text{Zusätzlich gilt:}  \\[1ex]
+\rightarrow \Phi \text{ ist symmetrisch} \\[1ex]
+\rightarrow \text{ Für jede Basis von E von V ist } M_{\Phi}^{E} \text{ symmetrisch} \\[1ex]
+$$</td>
+    <td>                    
+	  </td>
+  <tr>
+	  	  	  	  	  	  	  <tr>
+    <td><b>Orthogonalität der Bilinearformen </b></td>
+    <td>$$\text{Orthogonalität wird wie folgt ausgedrückt:} \\[1ex]
+ x \perp_{\Phi} y \\[4ex]
+
+\text{Es gilt falls:} \\[1ex]
+\Phi(x,y) = 0 \\[4ex]
+
+\text{euklidisches Beispiel:} \\[1ex]
+\Phi((1,-1,1)(1,1,0)) = 0 \\[4ex]
+
+\text{minkowskischesBeispiel:} \\[1ex]
+\Phi((1,-1,1)(1,1,2)) = 0 \\[4ex]
+$$</td>
+    <td>                   
+	  </td>
+  <tr>
+	  	  	  	  	  	  	  	  <tr>
+    <td><b>Orthogonalbasen der Bilinearformen </b></td>
+    <td>$$\text{Für die Orthogonalbasis gilt:} \\[1ex]
+\Phi (e_i,e_j) = 0 \quad i \not = j \\[4ex]
+\rightarrow \text{Diagonalmatrizen} \\[1ex]
+$$</td>
+    <td>                  
+	  </td>
+  <tr>
+	  	  	  	  	  	  	  	  	  <tr>
+    <td><b>Isotropie der Bilinearformen </b></td>
+    <td>$$\text{Eine Billinearform ist isotrop wenn:} \\[1ex]
+x \perp x \\[1ex]
+$$</td>
+    <td>                   
+	  </td>
+  <tr>
+	  	  	  	  	  	  	  	  	  	  <tr>
+    <td><b>Degenerierte Bilinearformen </b></td>
+    <td>$$\text{Eine Billinearform ist degeneriert wenn:} \\[1ex]
+x^{\perp} = V  \quad \Leftrightarrow  \quad x = 0\\[4ex]
+
+\text{Für nicht degenerierte Billinearformen gilt: } \\[1ex]
+\rightarrow \text{ Sie sind invertierbar}
+
+$$</td>
+    <td>                   
+	  </td>
+  <tr>
+	  	  	  	  	  	  	  	  	  	  	  <tr>
+    <td><b>Positivität von Bilinearformen </b></td>
+    <td>$$\text{Eine Billinearform ist positiv wenn:} \\[1ex]
+\Phi(x,y) \geq 0 \quad x \in V \\[4ex]
+
+\text{Eine Billinearform ist positiv definit wenn:} \\[1ex]
+\Phi(x,y) > 0 \quad x \in V  \quad x \neq 0\\[4ex]
+
+\text{Für 2 positive symmetrische BilF gilt:} \\[1ex]
+\text{Ungleichheit von Chauchy - Schwarz:} \\[1ex]
+\Phi(x,y)^2 \leq  \Phi(x,x) \Phi(y,y)\\[4ex]
+
+
+$$</td>
+    <td>                   
+	  </td>
+  <tr>
+	  	  	  	  	  	  	  	  	  	  	  	  <tr>
+    <td><b>Orthogonalisierungsverfahren </b></td>
+    <td>$$\text{Vorraussetzungen:} \\[1ex]
+\Phi \rightarrow \text{ symmetrische Billinearform auf } V \\[1ex]
+E=\{e_1,...,e_n\} \rightarrow \text{Basis von V} \\[4ex]
+
+\text{Wir setzen ein: } \\[1ex]
+\rightarrow D_{11} = 1; \\[1ex]
+\rightarrow D_{ji} = (-1)^{j+i} \ det(\widehat{M(i)_{ji}}) \quad | i \in {2,...,n} \quad j\in{1,...,n} \quad j\leq i ; \\[1ex]
+\rightarrow D_{n+1,n+1} = det(M_{\Phi}^{E}); \\[1ex]
+\rightarrow b_i = \sum_{j=1}^{i} \frac{D_{ji}}{D_{ii}}e_j \quad | i\in \{1,...,n\}; \\[1ex]
+\rightarrow B = \{b_1,...,b_n\}; \\[4ex]
+
+\text{Dann gilt: }\\[1ex]
+M_{\Phi}^{B} = diag(\frac{D_{22}}{D_{11}} ,\frac{D_{33}}{D_{22}},..., \frac{D_{n+1,n+1}}{D_{nn}})
+
+
+
+$$</td>
+    <td> von Gram-Schmidt                  
+	  </td>
+  <tr>
+	  
+											</table>
+				</div>
+				</div>
+				
 				<br>
 				<h2>Lineare Abbildungen + Matrizen</h2>
 
@@ -794,7 +999,7 @@ M_f^{DD} = M^{DE} \cdot M_f^{EE} \cdot  M^{ED} =  \\[1ex]
 									</li>
 									<li>$$\overline{z\pm w} = \overline{z} \pm \overline{w}$$</li>
 									<li>$$\overline{z \cdot w} = \overline{z} \cdot \overline{w}$$</li>
-									<li>$$\overline{(\frac{z}{w})} = \frac{\overline{z}}{\overline{w}} \quad falls w \quad \neq (0,0)$$</li>
+									<li>$$\overline{(\frac{z}{w})} = \frac{\overline{z}}{\overline{w}} \quad falls w \quad \not = (0,0)$$</li>
 								</div>
 							</div>
 							<li><b>Betrag von Komplexen Zahlen</b>
@@ -807,12 +1012,12 @@ M_f^{DD} = M^{DE} \cdot M_f^{EE} \cdot  M^{ED} =  \\[1ex]
 									<li>$$\vert \overline{z} \vert = \vert z \vert$$</li>
 									<li>$$\vert \overline{z} \vert = \sqrt{Re(z)^2 + Im(z)^2}$$</li>
 									<li>$$ z\overline{z} = \vert z \vert ^2$$</li>
-									<li>$$ \frac{1}{z} = \frac{\overline{z}}{\vert z \vert ^2} \text{falls} z \neq (0,0)$$</li>
+									<li>$$ \frac{1}{z} = \frac{\overline{z}}{\vert z \vert ^2} \text{falls} z \not = (0,0)$$</li>
 
 									<li><b>Bei 2 Zahlen gilt somit:</b>
 									</li>
 									<li>$$\vert z \cdot w \vert = \vert z \vert \cdot \vert w \vert $$</li>
-									<li>$$ \vert \frac{z}{w} \vert = \frac{\vert z \vert}{\vert w \vert} \quad \text{falls} \quad w \quad \neq (0,0)$$</li>
+									<li>$$ \vert \frac{z}{w} \vert = \frac{\vert z \vert}{\vert w \vert} \quad \text{falls} \quad w \quad \not = (0,0)$$</li>
 
 								</div>
 							</div>
@@ -841,7 +1046,7 @@ M_f^{DD} = M^{DE} \cdot M_f^{EE} \cdot  M^{ED} =  \\[1ex]
 									<li>$$\overline{x+yi} = x-yi$$</li>
 									<li>$$(x+yi) \pm (v+wi) = x \pm v + (y \pm w)i$$</li>
 									<li>$$(x+yi) \cdot (v+wi) = xv - yw + (xw + yv)i$$</li>
-									<li>$$\frac{x+yi}{v+wi} = \frac{xv+yw}{v^2+w^2} + \frac{yv - xw}{v^2 +w^2} \text{falls} v+wi \neq 0$$</li>
+									<li>$$\frac{x+yi}{v+wi} = \frac{xv+yw}{v^2+w^2} + \frac{yv - xw}{v^2 +w^2} \text{falls} v+wi \not = 0$$</li>
 
 								</div>
 							</div>
@@ -858,7 +1063,7 @@ M_f^{DD} = M^{DE} \cdot M_f^{EE} \cdot  M^{ED} =  \\[1ex]
 									<li><b>Der Punkt mit den kartesischen Koordinaten (x,y) wird zu</b>
 									</li>
 									<li>$$(\sqrt{x^2+y^2},\phi), \phi \epsilon [0,2\pi[$$</li>
-									<li>$$\frac{x+yi}{v+wi} = \frac{xv+yw}{v^2+w^2} + \frac{yv - xw}{v^2 +w^2} \quad \text{falls} \quad v+wi \quad \neq \quad 0$$</li>
+									<li>$$\frac{x+yi}{v+wi} = \frac{xv+yw}{v^2+w^2} + \frac{yv - xw}{v^2 +w^2} \quad \text{falls} \quad v+wi \quad \not = \quad 0$$</li>
 									<li><b>Bedienungen</b>
 									</li>
 									<li>$$\text{Falls} \quad x > 0 \; \text{und}\; y \geq 0, \;\text{so gilt} \;\phi = arctan(\frac{y}{x}) $$</li>
@@ -883,8 +1088,8 @@ M_f^{DD} = M^{DE} \cdot M_f^{EE} \cdot  M^{ED} =  \\[1ex]
 									<li>$$\vert r\cdot cis(\phi) \vert = r$$</li>
 									<li>$$\overline{r\cdot cis(\phi)} = r\cdot cis(-\phi)$$</li>
 									<li>$$r\cdot cis(\phi) \cdot s\cdot cis(\gamma) = r\cdot s\cdot cis(\phi + \gamma)$$</li>
-									<li>$$(r\cdot cis(\phi))^{-1} =\frac{1}{r} \cdot cis(-\gamma) ;\ \text{falls} \; r\cdot cis(\phi) \neq 0$$</li>
-									<li>$$ \frac{r\cdot cis(\phi)}{s\cdot cis(\gamma)} = \frac{r}{s} \cdot cis(\phi - \gamma) \; \text{falls} \; s\cdot cis(\gamma) \neq 0 $$</li>
+									<li>$$(r\cdot cis(\phi))^{-1} =\frac{1}{r} \cdot cis(-\gamma) ;\ \text{falls} \; r\cdot cis(\phi) \not = 0$$</li>
+									<li>$$ \frac{r\cdot cis(\phi)}{s\cdot cis(\gamma)} = \frac{r}{s} \cdot cis(\phi - \gamma) \; \text{falls} \; s\cdot cis(\gamma) \not = 0 $$</li>
 
 								</div>
 							</div>
@@ -903,8 +1108,8 @@ M_f^{DD} = M^{DE} \cdot M_f^{EE} \cdot  M^{ED} =  \\[1ex]
 									<li>$$\vert r\cdot e^{i\phi} \vert = r$$</li>
 									<li>$$\overline{r\cdot e^{i\phi}} = r\cdot e^{-i\phi}$$</li>
 									<li>$$r\cdot e^{i\phi} \cdot s\cdot e^{i\gamma} = r\cdot s\cdot e^{(\phi + \gamma)}$$</li>
-									<li>$$(r\cdot e^{i\phi})^{-1} =\frac{1}{r} \cdot e^{-i\phi} \; \text{falls} \; r\cdot e^{i\phi} \neq 0$$</li>
-									<li>$$ \frac{r\cdot e^{i\phi}}{s\cdot e^{i\gamma}} = \frac{r}{s} \cdot e^{(\phi - \gamma)} \; \text{falls} \; s\cdot e^{i\gamma} \neq 0 $$</li>
+									<li>$$(r\cdot e^{i\phi})^{-1} =\frac{1}{r} \cdot e^{-i\phi} \; \text{falls} \; r\cdot e^{i\phi} \not = 0$$</li>
+									<li>$$ \frac{r\cdot e^{i\phi}}{s\cdot e^{i\gamma}} = \frac{r}{s} \cdot e^{(\phi - \gamma)} \; \text{falls} \; s\cdot e^{i\gamma} \not = 0 $$</li>
 
 								</div>
 							</div>
@@ -951,7 +1156,7 @@ M_f^{DD} = M^{DE} \cdot M_f^{EE} \cdot  M^{ED} =  \\[1ex]
 							<tr>
 								<td>Gleichungen mit einer Variablen</td>
 								<td>$$ \qquad \mathbb{L} \quad von \quad ax + b = cx + d \qquad$$ </td>
-								<td>$$a \quad \neq \quad c, \text{so gilt:}\; \mathbb{L} = \{\frac{d - b}{a - c}\} \\ a = c \;\text{und}\; b = d, \text{so gilt:}\; \mathbb{L} = \{\mathbb{R}\} \\ a = c\; \text{und}\; b \neq d, \text{so gilt:}\; \mathbb{L} = \{\emptyset\} $$
+								<td>$$a \quad \not = \quad c, \text{so gilt:}\; \mathbb{L} = \{\frac{d - b}{a - c}\} \\ a = c \;\text{und}\; b = d, \text{so gilt:}\; \mathbb{L} = \{\mathbb{R}\} \\ a = c\; \text{und}\; b \not = d, \text{so gilt:}\; \mathbb{L} = \{\emptyset\} $$
 								</td>
 							</tr>
 							<tr>
@@ -1165,7 +1370,7 @@ M_f^{DD} = M^{DE} \cdot M_f^{EE} \cdot  M^{ED} =  \\[1ex]
 							</tr>
 							<tr>
 								<td width=20%>1.</td>
-								<td width=42%>$$ U \neq \varnothing \longleftrightarrow \vec{0} \in U $$</td>
+								<td width=42%>$$ U \not = \varnothing \longleftrightarrow \vec{0} \in U $$</td>
 								<td>Objekt nichtleer?</td>
 							</tr>
 							<tr>
