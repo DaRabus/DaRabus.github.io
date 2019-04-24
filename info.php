@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
   <head>
     <?php include ('includes/top_head.php'); 
     $loc = "info";?>
@@ -24,6 +24,54 @@
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="optik">Informatik</h1>
           <p class="bd-lead">Wichtige Sachen für die Informatik Prüfung.</p>
+			
+			<h2>Wichtige Informatik Begriffe </h2>
+			<div class="pre-spoiler">
+										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+										<div class="spoiler" style="display: none;">
+										
+											  <ol style="list-style-type:none">
+   <li><b>ISP --> In-System-Programming</b>
+         <li>Programmierung ohne den Speicher entnehmen zu müssen</li>
+												    <li><b>EEPROM --> Electrically-Erasable-Programmable-Read-Only-Memory</b>
+         <li>Speicher welcher die Daten auch ohne Strom speichert.</li>
+												    <li><b>Pulls</b>
+         <li>Je nach Positionierung des Wiederstandes wird es ein Pull-up/down</li>
+		 <ul>
+         <li>Pull-down</li>
+			 		 <ul>
+         <li>Setzte die Spanung herunter</li>
+		  </ul>
+			 <li>Pull-up</li>
+			 <ul>
+         <li>Setzte die Spanung herauf</li>
+		  </ul>
+		  </ul>
+												   <li><b>I/O --> Input/Output</b>
+         <li>Ein/Ausgang für das System um Daten zu senden/empfangen</li>
+												   <li><b>PWM --> Pulsemodulation</b>
+         <li>Ein oft verwendeter ADC</li>
+												  <li><b>CTC --> Clear Timer on Compare Match</b>
+         <li>Timer Modus welcher den Timer nach erreichen des Wertes wieder auf 0 setzt.</li>
+												  <li><b>ADC --> Analog - Digital - Converter</b>
+         <li>Wandelt Analoge Signale zu digitalen um.</li>
+												  <ul><li><b>Wichtige Werte</b></li>
+												  <ul><li>Resolution</li> <li>Accuracy</li> <li>Sampling Rate</li><li>Relative Speed and precision</li></ul>
+												  <li><b>Typische Typen</b></li>
+												  <ul><li>Parallel comparator ADC</li> <li>Counter Type ADC</li> <li>Servo Tracking ADC</li></ul>
+													  <li><b>DAC --> Digital - Analog - Converter</b>
+         <li>Wandelt Digitale Signale zu Analogen um.</li>
+												  <ul><li><b>Wichtige Werte</b></li>
+												  <ul><li>Resolution</li> <li>Dynamic Range</li> <li>Maximum Sampling Rate</li><li>Monotoicity</li></ul>
+												  <li><b>Typische Typen</b></li>
+												  <ul><li>PWMs</li> <li>Oversampling DAC</li> </ul>
+												  
+												  </ul>
+   </li>
+   </ol>
+											
+		         </div>
+			</div>
 			<h2>Pinout Gscheiduino </h2>
 			<div class="pre-spoiler">
 										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
@@ -47,7 +95,6 @@
 										<div class="spoiler" style="display: none;">
 			
 <h4>Wichtige Register</h4>
-<p>
 <table cellspacing="50" cellpadding="20" table border="1">
     <tr>
         <th>Abk&uuml;rzung</th>
@@ -83,7 +130,6 @@
 </p><br>
 
 <h4>Prescaler</h4>
-<p>
 <table cellspacing="50" cellpadding="20" table border="1">
     <tr>
         <th>CS<b>X</b>2</th>
@@ -143,7 +189,6 @@
 </p><br>
 
 <h4>Timer zur&uuml;cksetzen</h4>
-<p>
 <pre>
 <span style="color: #7E7E7E;">//&nbsp;reset&nbsp;a&nbsp;timer&nbsp;unit&nbsp;(replace&nbsp;X&nbsp;by&nbsp;timer&nbsp;number)</span>
 TCCRXA&nbsp;=&nbsp;0;&nbsp;<span style="color: #7E7E7E;">// set TCCRXA register to 0</span>
@@ -154,7 +199,6 @@ TCNTX&nbsp;&nbsp;=&nbsp;0;&nbsp;<span style="color: #7E7E7E;">// reset counter v
 </p><br>
 
 <h4>Timer aktivieren</h4>
-<p>
 <pre>
 TCCR0A&nbsp;|=&nbsp;(1&nbsp;&lt;&lt;&nbsp;WGM01);&nbsp;<span style="color: #7E7E7E;">// enable timer0 CTC mode</span>
 TIMSK0&nbsp;|=&nbsp;(1&nbsp;&lt;&lt;&nbsp;OCIE0A);&nbsp;<span style="color: #7E7E7E;">// enable timer0 compare interrupt</span>
@@ -171,7 +215,6 @@ Hinweis: Bei Timer1 unterscheidet sich die Bezeichungen teilweise.
 
 
 <h4>Timer Vergleichswert setzen</h4>
-<p>
 <pre>
 OCR0A&nbsp;=&nbsp;124;&nbsp;<span style="color: #7E7E7E;">// set compare match register of timer 0 (max. value: 255 = 2^8 - 1)</span>
 OCR1A&nbsp;=&nbsp;20233;&nbsp;<span style="color: #7E7E7E;">// set compare match register of timer 1 (max. value: 65535 = 2^16 - 1)</span>
@@ -181,7 +224,6 @@ OCR2A&nbsp;=&nbsp;20;&nbsp;<span style="color: #7E7E7E;">// set compare match re
 </p><br>
 
 <h4>Prescaler einstellen</h4>
-<p>
 <pre>
 <span style="color: #7E7E7E;">//&nbsp;no&nbsp;prescaling&nbsp;for&nbsp;timer0</span>
 TCCR0B&nbsp;|=&nbsp;(1&nbsp;&lt;&lt;&nbsp;CS00);&nbsp;&nbsp;
@@ -196,7 +238,6 @@ TCCR2B&nbsp;|=&nbsp;(1&nbsp;&lt;&lt;&nbsp;CS22)&nbsp;|&nbsp;(1&nbsp;&lt;&lt;&nbs
 </p><br>
 
 <h4>Bei Interrupt aufgerufenen Funktion</h4>
-<p>
 <pre>
 ISR(TIMER0_COMPA_vect)&nbsp;{&nbsp;<span style="color: #7E7E7E;">// called by timer0</span>
 &nbsp;&nbsp;
@@ -216,8 +257,7 @@ ISR(TIMER2_COMPA_vect)&nbsp;{&nbsp;<span style="color: #7E7E7E;">// called by ti
 
 
 <h4>Beispiel mit Timer1</h4>
-<p>
-    <code style="background-color: #eee; ">
+<code style="background-color: #eee; ">
     <pre>
 <span style="color: #CC6600;">long</span> i = 1;
 
@@ -258,8 +298,6 @@ ISR(TIMER1_COMPA_vect)&nbsp;{ <span style="color: #7E7E7E;">// function which wi
 </p><br>
 
 <h4>Beispiel mit allen drei Timern</h4>
-<p>
-
 <pre>
 <span style="color: #7E7E7E;">//&nbsp;timer0&nbsp;will&nbsp;interrupt&nbsp;at&nbsp;2kHz</span>
 <span style="color: #7E7E7E;">//&nbsp;timer1&nbsp;will&nbsp;interrupt&nbsp;at&nbsp;1Hz</span>
@@ -335,7 +373,7 @@ ISR(TIMER2_COMPA_vect)&nbsp;{
 
 </pre>
     
-</p><br>                <br clear="all" style="margin: 0; padding: 0; height: 0; width: 0; " /></p>
+</p><br>                <br clear="all" style=" padding: 0; height: 0; width: 0; "/></p>
             </div>
           
 </div>

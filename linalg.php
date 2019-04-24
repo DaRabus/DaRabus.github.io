@@ -22,6 +22,16 @@
 		<div class="row flex-xl-nowrap">
 			<div class="col-12 col-md-3 col-xl-2 bd-sidebar">
 			</div>
+                  <!-- Start Formelrad -->
+                    <div class="modal fade bd-formelrad-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div align="center" class="modal-content">
+                          <br>
+                          <img src="Beispiel_Ortho.jpg" width="100%" height="80%" alt=""/><br>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- End Formelrad -->
 
 
 
@@ -97,7 +107,7 @@ $$</td>
   <tr>
 	  	  	  	  <tr>
     <td><b>Die minkowskische Bilinearformen </b></td>
-    <td>$$\Phi (x,y) = x_+y_1 - ... - x_ny_n \\[4ex]
+    <td>$$\Phi (x,y) = x_1y_1 - ... - x_ny_n \\[4ex]
 		\text{Beispield dazu:} \\[1ex]
 \Phi_1 : \mathbb{R}^2 \rightarrow \mathbb{R} , (x,y) \mapsto (x^E)^t \cdot M_1 \cdot y^E \\[1ex]
 ((x_1,x_2),(y_1,y_2)) \mapsto [x_1,x_2] \cdot \begin{bmatrix}
@@ -107,7 +117,7 @@ $$</td>
 y_1 \\
 y_2 \\
 \end{bmatrix} \\[1ex]
-\rightarrow x_1y_2 + 2x_1y_2 + x_2y_1 \\[1ex]
+\rightarrow x_1y_2 - 2x_1y_2 - x_2y_1 \\[1ex]
 
 \Phi_1 ((3,1),(2,-5)) = 6+30-2 = 34 \\[1ex]
 
@@ -164,7 +174,7 @@ $$</td>
 	  	  	  	  	  	  	  	  <tr>
     <td><b>Orthogonalbasen der Bilinearformen </b></td>
     <td>$$\text{Für die Orthogonalbasis gilt:} \\[1ex]
-\Phi (e_i,e_j) = 0 \quad i \not = j \\[4ex]
+\Phi (e_i,e_j) = 0 \quad i = \not  j \\[4ex]
 \rightarrow \text{Diagonalmatrizen} \\[1ex]
 $$</td>
     <td>                  
@@ -226,7 +236,8 @@ M_{\Phi}^{B} = diag(\frac{D_{22}}{D_{11}} ,\frac{D_{33}}{D_{22}},..., \frac{D_{n
 
 
 $$</td>
-    <td> von Gram-Schmidt                  
+    <td> von Gram-Schmidt  hier ein Beispiel:  <a href="#bannerformmodal" data-toggle="modal" data-target=".bd-formelrad-modal-lg">
+<font color="black"><i class="fas fa-dharmachakra"></font></i></a>                
 	  </td>
   <tr>
 	  
