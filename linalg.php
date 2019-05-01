@@ -170,7 +170,7 @@ $$</td>
 $$</td>
     <td>                   
 	  </td>
-  <tr>
+  </tr>
 	  	  	  	  	  	  	  	  <tr>
     <td><b>Orthogonalbasen der Bilinearformen </b></td>
     <td>$$\text{Für die Orthogonalbasis gilt:} \\[1ex]
@@ -179,7 +179,7 @@ $$</td>
 $$</td>
     <td>                  
 	  </td>
-  <tr>
+  </tr>
 	  	  	  	  	  	  	  	  	  <tr>
     <td><b>Isotropie der Bilinearformen </b></td>
     <td>$$\text{Eine Billinearform ist isotrop wenn:} \\[1ex]
@@ -187,7 +187,7 @@ x \perp x \\[1ex]
 $$</td>
     <td>                   
 	  </td>
-  <tr>
+  </tr>
 	  	  	  	  	  	  	  	  	  	  <tr>
     <td><b>Degenerierte Bilinearformen </b></td>
     <td>$$\text{Eine Billinearform ist degeneriert wenn:} \\[1ex]
@@ -199,14 +199,22 @@ x^{\perp} = V  \quad \Leftrightarrow  \quad x = 0\\[4ex]
 $$</td>
     <td>                   
 	  </td>
-  <tr>
+  </tr>
 	  	  	  	  	  	  	  	  	  	  	  <tr>
     <td><b>Positivität von Bilinearformen </b></td>
     <td>$$\text{Eine Billinearform ist positiv wenn:} \\[1ex]
-\Phi(x,y) \geq 0 \quad x \in V \\[4ex]
+\Phi(x,y) \geq 0 \quad x \in V \\[2ex]
+
+\text{Die Matrize davon ist somit:} \\[1ex]
+\rightarrow \text{ Die Diagonaleinträge sind positiv} \\[4ex]
 
 \text{Eine Billinearform ist positiv definit wenn:} \\[1ex]
-\Phi(x,y) > 0 \quad x \in V  \quad x \neq 0\\[4ex]
+\Phi(x,y) > 0 \quad x \in V  \quad x \neq 0\\[2ex]
+
+
+\text{Die Matrize davon ist somit:} \\[1ex]
+\rightarrow \text{ Die Diagonaleinträge sind positiv} \\[1ex]
+\rightarrow \text{ Ist invertierbar} \\[4ex]
 
 \text{Für 2 positive symmetrische BilF gilt:} \\[1ex]
 \text{Ungleichheit von Chauchy - Schwarz:} \\[1ex]
@@ -239,8 +247,87 @@ $$</td>
     <td> von Gram-Schmidt  hier ein Beispiel:  <a href="#bannerformmodal" data-toggle="modal" data-target=".bd-formelrad-modal-lg">
 <font color="black"><i class="fas fa-dharmachakra"></font></i></a>                
 	  </td>
+	</tr>
   <tr>
-	  
+    <td><b>Normen im Raum </b></td>
+    <td>$$\text{Für die Norm gelten folgende Aussagen:} \\[1ex]
+\Vert \cdot \Vert : V \rightarrow \mathbb{R}_{\geq 0}, \quad x \mapsto \Vert x \Vert  \\[3ex]
+i_{)} \Vert rx \Vert = \vert r \vert \cdot \Vert x \Vert \quad r \in \mathbb{R} \\[1ex]
+ii_{)} \Vert x + y \Vert \leq  \Vert x \Vert + \Vert y \Vert \quad x,y \in V \\[1ex]
+iii_{)} \Vert x \Vert = 0 \quad \text{ wenn } x = 0 \\[3ex]
+
+\rightarrow \text{ Die Norm ist im Grunde die Länge des Vektors:} \\[1ex]
+
+$$</td>
+    <td>                   
+	  </td>
+  </tr>
+	  <tr>
+    <td><b>Metrik im Raum </b></td>
+    <td>$$\text{Für die Metrik gelten folgende Aussagen:} \\[1ex]
+d: V \times V \rightarrow \mathbb{R}_{\geq 0} , \quad (x,y) \mapsto d(x,y)  \\[3ex]
+
+i_{)} \quad d(x,y) = d(y,x) \quad x,y \in V \\[1ex]
+ii_{)} \quad  d(x,z) \leq d(x,y) + d(y,z) \quad x,y,z \in V \\[1ex]
+iii_{)} \quad d(x,y) = 0 \quad \text{ wenn } x = y \\[3ex]
+
+\rightarrow \text{ Die Metrik ist der Abstand von 2 Punkten:} \\[1ex]
+
+$$</td>
+    <td>                   
+	  </td>
+  </tr>
+		  <tr>
+    <td><b>Orthonormalbasen </b></td>
+    <td>$$\text{Eine Orthonormalbasis ist wie folgt:} \\[1ex]
+\Vert e_i \Vert_{\Phi} = 1 \quad i \in \{1,2,...,n \} \\[3ex]
+
+\text{Grundsätzlich ist die Basis E eine Orthonormalbasis wenn:} \\[1ex]
+\rightarrow \quad M_{\Phi}^{E} = \mathbb{I}_n
+$$</td>
+    <td>                   
+	  </td>
+  </tr>
+			  <tr>
+    <td><b>Winkel zwischen 2 Vektoren </b></td>
+    <td>$$\text{Verallgemeinert gilt:} \\[1ex]
+-1 \leq  \frac{ \Phi (x,y)}{ \Vert x \Vert_{ \Phi} \cdot \Vert y \Vert_{ \Phi}} \leq 1 \\[4ex]
+
+\text{Für den Winkel gilt somit:} \\[1ex]
+\sphericalangle_{\Phi} (x,y) = arccos (\frac{ \Phi (x,y)}{ \Vert x \Vert_{ \Phi} \cdot \Vert y \Vert_{ \Phi}}) \quad \in [0,\pi] \\[4ex]
+
+\text{Mit dem Fall einer Diagonalmatrize gilt:} \\[1ex]
+\sphericalangle_{\Phi} (x,y) = arccos (\frac{ \sum_{i=1}^{n} a_ix_iy_i}{\sqrt{ \sum_{i=1}^{n} a_i x^2_i \cdot \sum_{i=1}^{n} a_i y^2_i}}) \quad \in [0,\pi]
+$$</td>
+    <td>                   
+	  </td>
+  </tr>
+				  <tr>
+    <td><b>Geometrie von Minkowskiräumen </b></td>
+    <td>$$\text{Man unterscheidet hier zwischen verschiedenen Mengen:} \\[1ex]
+(R^n)^+ := \{x \in \mathbb{R}^n \vert \Phi (x,x) > 0 \} \\[1ex]
+(R^n)^- := \{x \in \mathbb{R}^n \vert \Phi (x,x) < 0 \} \\[1ex]
+(R^n)^0 := \{x \in \mathbb{R}^n \vert \Phi (x,x) = 0 \} \\[2ex]
+
+\rightarrow \quad \text{Sind keine Untervektorräume von } \mathbb{R}^n
+$$</td>
+    <td> <img src="bilder/minkows.png" width="393" height="404" alt=""/></td>
+  </tr>
+	  <tr>
+    <td><b>Lorenztransformation </b></td>
+    <td>$$\text{Lorenztransformation wandelt alles zur mink. Matrize um:} \\[1ex]
+
+\mathscr{M}_n = \begin{bmatrix}
+1 & 0 & 0 &0 \\ 
+0 &-1  & 0 &0\\ 
+0 &0  &-1  &0 \\ 
+0 &0  & 0 & -1
+\end{bmatrix} \\[4ex]
+
+(M^{ED})^t \cdot \mathscr{M}_n \cdot M^{ED} = \mathscr{M}_n
+$$</td>
+    <td> Wird erst mit der Physik interessant </td>
+  </tr>
 											</table>
 				</div>
 				</div>
@@ -1143,7 +1230,7 @@ M_f^{DD} = M^{DE} \cdot M_f^{EE} \cdot  M^{ED} =  \\[1ex]
 				<div class="pre-spoiler">
 					<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 					<div class="spoiler" style="display: none;">
-						<table>
+						<table cellspacing="50" cellpadding="20" table border="1">
 							<tr>
 								<th>Definition</th>
 								<th>Gleichung</th>
@@ -1179,7 +1266,7 @@ M_f^{DD} = M^{DE} \cdot M_f^{EE} \cdot  M^{ED} =  \\[1ex]
 								<td>Quadratische Gleichung</td>
 								<td>$$\mathbb{L} \quad von \quad ax^2 + bx + c = 0 \\ D = b^2 - 4ac$$</td>
 								<td>$$D
-									< 0, \text{so gilt:} \; \mathbb{L}=\ emptyset \\ D=0 , \text{so gilt:} \; \mathbb{L}=\ {\frac{-b}{2a}\} \\ D> 0, \text{so gilt} \; \mathbb{L} = \{\frac{-b+\sqrt{D}}{2a},\frac{-b-\sqrt{D}}{2a}\} $$</td>
+									< 0, \text{so gilt:} \; \mathbb{L}=\emptyset \\ D=0 , \text{so gilt:} \; \mathbb{L}=\{\frac{-b}{2a}\} \\ D> 0, \text{so gilt} \; \mathbb{L} = \{\frac{-b+\sqrt{D}}{2a},\frac{-b-\sqrt{D}}{2a}\} $$</td>
 							</tr>
 						</table>
 						<li><b>Gleichungssysteme</b>

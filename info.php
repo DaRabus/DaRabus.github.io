@@ -33,8 +33,10 @@
 											  <ol style="list-style-type:none">
    <li><b>ISP --> In-System-Programming</b>
          <li>Programmierung ohne den Speicher entnehmen zu müssen</li>
+												  <br>
 												    <li><b>EEPROM --> Electrically-Erasable-Programmable-Read-Only-Memory</b>
          <li>Speicher welcher die Daten auch ohne Strom speichert.</li>
+												  <br>
 												    <li><b>Pulls</b>
          <li>Je nach Positionierung des Wiederstandes wird es ein Pull-up/down</li>
 		 <ul>
@@ -47,19 +49,19 @@
          <li>Setzte die Spanung herauf</li>
 		  </ul>
 		  </ul>
-												   <li><b>I/O --> Input/Output</b>
+												  <br> <li><b>I/O --> Input/Output</b>
          <li>Ein/Ausgang für das System um Daten zu senden/empfangen</li>
-												   <li><b>PWM --> Pulsemodulation</b>
+												  <br> <li><b>PWM --> Pulsemodulation</b>
          <li>Ein oft verwendeter ADC</li>
-												  <li><b>CTC --> Clear Timer on Compare Match</b>
+												 <br> <li><b>CTC --> Clear Timer on Compare Match</b></li>
          <li>Timer Modus welcher den Timer nach erreichen des Wertes wieder auf 0 setzt.</li>
-												  <li><b>ADC --> Analog - Digital - Converter</b>
+												<br>  <li><b>ADC --> Analog - Digital - Converter</b></li>
          <li>Wandelt Analoge Signale zu digitalen um.</li>
 												  <ul><li><b>Wichtige Werte</b></li>
 												  <ul><li>Resolution</li> <li>Accuracy</li> <li>Sampling Rate</li><li>Relative Speed and precision</li></ul>
 												  <li><b>Typische Typen</b></li>
-												  <ul><li>Parallel comparator ADC</li> <li>Counter Type ADC</li> <li>Servo Tracking ADC</li></ul>
-													  <li><b>DAC --> Digital - Analog - Converter</b>
+												  <ul><li>Parallel comparator ADC</li> <li>Counter Type ADC</li> <li>Servo Tracking ADC</li></ul> </ul>
+												<br>	  <li><b>DAC --> Digital - Analog - Converter</b></li>
          <li>Wandelt Digitale Signale zu Analogen um.</li>
 												  <ul><li><b>Wichtige Werte</b></li>
 												  <ul><li>Resolution</li> <li>Dynamic Range</li> <li>Maximum Sampling Rate</li><li>Monotoicity</li></ul>
@@ -67,7 +69,7 @@
 												  <ul><li>PWMs</li> <li>Oversampling DAC</li> </ul>
 												  
 												  </ul>
-   </li>
+  
    </ol>
 											
 		         </div>
