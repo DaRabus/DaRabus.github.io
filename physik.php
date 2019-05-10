@@ -510,10 +510,101 @@ $$</td>
 	  
 	  </td>
   </tr>
-	
+	</table>
 	</div>
 					</div>
-					</table>
+					<h2>Elektrostatik</h2>
+<div class="pre-spoiler">
+										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+										<div class="spoiler" style="display: none;">
+				<br>
+<table cellspacing="50" cellpadding="20" table border="1">
+	<tr>
+    <th>Begriff</th>
+    <th>Erklärung</th>
+    <th>Zusatz</th>
+  </tr>
+  <tr>
+    <td><b>Grundgleichungen: </b></td>
+    <td>$$\text{Maxwell - Gleichungen: } \\[1ex]
+div (\vec{E}) = \frac{1}{\epsilon_0 } \cdot \varrho  \qquad div(\vec{B}) = 0 \\[1ex]
+rot(\vec{E}) = - \dot{\vec{B}} \qquad rot(\vec{B}) = \epsilon_0 \mu_0 \cdot \dot{\vec{E}} + \mu_0 \cdot \vec{J} \\[4ex]
+
+\text{Lorentz- Gleichungen: } \\[1ex]
+\vec{F}_{EB} = Q \cdot (\vec{E} + \vec{v} \times \vec{B}) \\[1ex]
+P_{EB} = Q \cdot  \langle \vec{E} , \vec{v} \rangle \\[4ex]
+
+\text{Maxwell - Relation: } \\[1ex]
+\frac{1}{\sqrt{\epsilon_0 \cdot \mu_0}} = c $$</td>
+	  
+    <td>                      <b>ϱ</b> = Ladungsdichte roh<br>
+                      <b>J</b> = Stromdichte<br>
+                      <b>E</b> = Elektrisches Feld <br>
+		<b>B</b> = Magnetisches Feld<br>
+		<b>ε<sub>0</sub></b> = Elektrische Feldkonstante<br>
+		<b>μ<sub>0</sub></b> = Magnetische Feldkonstante<br>
+		<b>Q</b> = Ladung<br>
+		<b>v</b> = Geschwindigkeit<br>
+		<b>c</b> = Lichtgeschwindigkeit<br>
+	  
+	  </td>
+  </tr>
+	<tr>
+    <td><b>Geladene Leitende Hohlkugel: </b></td>
+    <td>$$\text{Der Innenraum ist ladungsfrei: } \\[1ex]
+\rightarrow \text{ Man rechnet über den Rand mit Gauss: } \\[4ex]
+
+\Phi_E = \oiint_{K} \vec{E} \ d\vec{f} = 4 \pi r^2 \cdot \vert \vec{E} \vert \\[4ex]
+
+\text{Für das Potential folgt: } \\[1ex]
+\phi(r) = - \int_{\infty}^{r} \vec{E} \ dr = \frac{Q}{4 \pi \varepsilon_0} \cdot \frac{1}{r} \\[4ex]
+
+\text{Für diesen Fall gilt somit: } \\[1ex]
+\vert \vec{E} \vert = \frac{\phi}{r} $$</td>
+	  
+    <td>                      <b>&#x03C6</b> = Potential<br>
+                      <b>E</b> = Elektrisches Feld <br>
+		<b>ε<sub>0</sub></b> = Elektrische Feldkonstante<br>
+		<b>μ<sub>0</sub></b> = Magnetische Feldkonstante<br>
+		<b>Q</b> = Ladung<br>
+		<b>r</b> = Radius um die Kugel<br>
+		<b>K</b> = Rand der Kugel<br>
+	  
+	  </td>
+  </tr>
+		<tr>
+    <td><b>Geladener Leitender Hohlzylinder: </b></td>
+    <td>$$\text{Der Innenraum ist ladungsfrei: } \\[1ex]
+\rightarrow \text{ Man rechnet über den Rand mit Gauss: } \\[4ex]
+
+\Phi_E = \oiint_{Z} \vec{E} \ d\vec{r} = 2 \pi r \cdot l \cdot \vert \vec{E} \vert \\[4ex]
+
+\text{Es gilt somit: } \\[1ex]
+\Phi_E = \frac{Q}{\varepsilon_0} = \frac{\lambda \cdot l}{\varepsilon_0} \\[1ex]
+E = \frac{\lambda}{2 \pi \varepsilon_0} \cdot \frac{1}{r} \\[4ex]
+		\text{Für das Potential folgt: } \\[1ex]
+\phi(r) = - \frac{\lambda}{2 \pi \varepsilon_0} \ln({\vert \frac{r}{R} \vert}) \\[4ex]
+
+\text{Für diesen Fall gilt somit: } \\[1ex]
+\vert \vec{E} \vert = \frac{\phi}{r}
+		$$</td>
+	  
+    <td>                      <b>&#x03C6</b> = Potential<br>
+                      <b>E</b> = Elektrisches Feld <br>
+		<b>l</b> = Zylinderlänge <br>
+		<b>&#x03BB</b> = Ladung/Länge [C/m]<br>
+		<b>ε<sub>0</sub></b> = Elektrische Feldkonstante<br>
+		<b>μ<sub>0</sub></b> = Magnetische Feldkonstante<br>
+		<b>Q</b> = Ladung<br>
+		<b>r</b> = Radius um den Zylinder<br>
+		<b>R</b> = Radius vom Zylinder<br>
+	  
+	  </td>
+  </tr>
+	
+											</table>
+	</div>
+			</div>
 			</main>
 		</div>
 	</div>

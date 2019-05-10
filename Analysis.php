@@ -896,6 +896,78 @@ div(\vec{B}) = 0 \rightarrow \vec{B} = rot(\vec{A})
   </table>
 										</div>
 									</div>
+						<li><b>Taylor - Entwicklungen</b>
+									</li>
+									<div class="pre-spoiler">
+										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+										<div class="spoiler" style="display: none;">
+											<table cellspacing="50" cellpadding="20" table border="1">
+  <tr>
+    <th>Begriff</th>
+    <th>Erklärung</th>
+    <th>Zusatz</th>
+  </tr>
+  <tr>
+    <td><b>Fakulitäten</b></td>
+    <td>$$0! = 1 \\[1ex]
+1! = 1 \\[1ex]
+2! = 1 \cdot 2  = 2 \\[1ex]
+3! = 1 \cdot 2 \cdot 3 = 6 \\[1ex]
+4! = 1 \cdot 2 \cdot 3 \cdot 4 = 24 \\[1ex]
+5! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 = 120 \\[1ex]
+6! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 = 720 \\[1ex] $$</td>
+    <td></td>
+  </tr>
+												  <tr>
+    <td><b>Im Allgemeinen</b></td>
+    <td>$$\text{unendlich oft differenzierbar: } \\[1ex]
+f(x) = Tn(x) + Rn(x) \\[1ex]
+\rightarrow Tn = \text{ Taylor-Polynom} \\[1ex]
+\rightarrow Rn = \text{ Restglied} \\[3ex]
+
+Tn(x) = \sum_{k=0}^{n} \frac{f^{(k)}(0)}{k!} \cdot x^k = f(0) + f'(0) \cdot x + \frac{f''(0)}{2!} \cdot x^2 + ... + \frac{f^{n}(0)}{n!} \cdot x^n \\[3ex]
+
+Rn(x) = \frac{(-1)^n}{n!} \cdot \int_{0}^{x} f^{n+1}(s) \cdot (s-x)^n ds \\[3ex]
+
+\text{Sie ist analytisch falls gilt:} \\[1ex]
+\underset{n \mapsto \infty}{lim} Rn(x) = 0 \\[1ex]
+\text{Dann kann man Rn weglassen: } \\[1ex]
+f(x) = \sum_{k=0}^{n} \frac{f^{(k)}(0)}{k!} \cdot x^k \\[2ex] 
+\rightarrow \text{ z.B: } e^x,sin,cos,sinh,cosh \\[4ex] 
+
+\text{Wichtige Symmetrie Regeln: } \\[1ex]
+f \text{ pos. Parität } \Rightarrow \text{ Tn enthält nur gerade Potenzen von x} \\[1ex]
+f \text{ neg. Parität } \Rightarrow \text{ Tn enthält nur ungerade Potenzen von x} \\[4ex]
+
+\text{Spezialfall Exponentialreihe: } \\[1ex]
+e^x = \sum_{k=0}^{\infty} \frac{x^k}{k!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + ...
+
+       $$</td>
+    <td> Zentrum bei 0 </td>
+  </tr>
+																								  <tr>
+    <td><b>Allg. Taylor Entwicklungen</b></td>
+    <td>$$
+		\text{unendlich oft differenzierbar: } \\[1ex]
+f(x) = Tn(x) + Rn(x) \\[1ex]
+\rightarrow Tn = \text{ Taylor-Polynom} \\[1ex]
+\rightarrow Rn = \text{ Restglied} \\[3ex]
+
+Tn(x) = \sum_{k=0}^{n} \frac{f^{(k)}(x_0)}{k!} \cdot (x-x_0)^k  \\[3ex]
+
+Rn(x) = \frac{(-1)^n}{n!} \cdot \int_{0}^{x} f^{n+1}(s) \cdot (s-x)^n ds \\[4ex]
+		\text{Sie ist analytisch falls gilt:} \\[1ex]
+Rn(x) \underset{n \mapsto \infty}{\longrightarrow}   0 \\[1ex]
+\text{Dann kann man Rn weglassen: } \\[1ex]
+f(x) = \sum_{k=0}^{\infty} \frac{f^{(k)}(x_0)}{k!} \cdot (x-x_0)^k \\[4ex] 
+
+       $$</td>
+    <td>Zentrum nicht bei 0</td>
+  </tr>
+												
+											</table>
+										</div>
+						</div>
 						
 						<li><b>Integral + Regeln</b>
 						</li>
@@ -1208,7 +1280,7 @@ I = I = \int_{-\infin}^{\infin} f(x) \ dx = \underset{r \rightarrow \infin}{\lim
 								<ol style="list-style-type:none">
 									<li><b>Modifikationen</b>
 									</li>
-									<li>$$\text{Sei} \quad g:A\rightarrow \mathbb{R}$ mit $A \subseteq \mathbb{R}$$ </li><br>
+									<li>$$\text{Sei} \quad g:A\rightarrow \mathbb{R} \text{ mit } A \subseteq \mathbb{R}$$ </li><br>
 
 									<li>$$\text{nach rechts um} \delta x : f(X) = g(x -\delta x)$$</li>
 									<li>$$\text{nach links um} \delta x : f(X) = g(x +\delta x)$$</li>
@@ -1217,13 +1289,13 @@ I = I = \int_{-\infin}^{\infin} f(x) \ dx = \underset{r \rightarrow \infin}{\lim
 
 									<li><b>Skalierungen</b>
 									</li>
-									<li>$$\text{Sei} \quad g:A\rightarrow \mathbb{R}$ mit $A \subseteq \mathbb{R}$$ </li><br>
+									<li>$$\text{Sei} \quad g:A\rightarrow \mathbb{R} \text{ mit } A \subseteq \mathbb{R}$$ </li><br>
 									<li>$$\text{entlang der X - Achse um} \quad \delta : f(X) = g(\frac{x}{\delta} )$$</li>
 									<li>$$\text{entlang der Y - Achse um} \quad \delta : f(X) = g(x) \cdot \delta$$</li>
 
 									<li><b>Spiegelungen</b>
 									</li>
-									<li>$$\text{Sei} \quad g:A\rightarrow \mathbb{R}$ mit $A \subseteq \mathbb{R}$$ </li><br>
+									<li>$$\text{Sei} \quad g:A\rightarrow \mathbb{R} \text{ mit } A \subseteq \mathbb{R}$$ </li><br>
 									<li>$$\text{an der Y - Achse: } \quad f(X) = g(-x) \Leftrightarrow$$</li>
 									<li>$$\text{an der X - Achse: } \quad f(X) = - g(x)$$</li>
 								</ol>

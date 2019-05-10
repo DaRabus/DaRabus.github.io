@@ -324,9 +324,43 @@ $$</td>
 0 &0  & 0 & -1
 \end{bmatrix} \\[4ex]
 
-(M^{ED})^t \cdot \mathscr{M}_n \cdot M^{ED} = \mathscr{M}_n
+L^t \cdot \mathscr{M}_n \cdot L = \mathscr{M}_n
 $$</td>
     <td> Wird erst mit der Physik interessant </td>
+  </tr>
+		  <tr>
+    <td><b>Orthogonalität von Endomorphismen </b></td>
+    <td>$$\text{Ein Emorph heisst orthogonal, falls:} \\[1ex]
+
+\langle f(x), f(y) \rangle =  \langle x,y \rangle \qquad x,y \in V \\[3ex]
+
+\text{Beispiele:} \\[1ex]
+\mathbb{R}^2 \rightarrow \mathbb{R}^2 , (x_1,x_2) \mapsto (x_1 , -x_2) \\[1ex]
+\rightarrow \langle (x_1,-x_2) , (y_1,-y_2) \rangle = x_1 y_1 + x_2 y_2 = \langle x,y \rangle \\[3ex]
+
+\mathbb{R}^2 \rightarrow \mathbb{R}^2 , (x_1,x_2) \mapsto (x_2 , x_1) \\[1ex]
+\rightarrow \langle (x_2,x_1) , (y_2,y_1) \rangle = x_2 y_2 + x_1 y_1 = \langle x,y \rangle \\[3ex]
+		
+		
+\text{Ein Endmorph ist längentreu falls: } \\[1ex]
+\Vert f(x) \Vert = \Vert x \Vert \\[3ex]
+
+\text{Somit gilt im } \mathbb{R}^2 \\[1ex]
+\rightarrow \text{ Orthogonale Endomorph sind längentreu} \\[1ex]
+\rightarrow \text{ Längentreue Endomorph sind Isomorph} \\[1ex]
+\rightarrow \text{ Orthogonale Endomorph sind Isomorph} \\[4ex]
+		
+\text{Orthogonale Matrizen haben Koordinaten Matrizen: } \\[1ex]
+M = \begin{bmatrix}
+cos(\varphi) & -sin(\varphi) \\ 
+sin(\varphi) & cos(\varphi)
+\end{bmatrix} = A_{\varphi} \qquad M = \begin{bmatrix}
+cos(\varphi) & sin(\varphi) \\ 
+sin(\varphi) & -cos(\varphi)
+\end{bmatrix} = B_{\varphi}
+
+$$</td>
+    <td>  </td>
   </tr>
 											</table>
 				</div>
