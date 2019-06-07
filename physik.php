@@ -598,9 +598,263 @@ E = \frac{\lambda}{2 \pi \varepsilon_0} \cdot \frac{1}{r} \\[4ex]
 		<b>Q</b> = Ladung<br>
 		<b>r</b> = Radius um den Zylinder<br>
 		<b>R</b> = Radius vom Zylinder<br>
+		<b>Z</b> = Aussenfläche<br>
 	  
 	  </td>
   </tr>
+	
+											</table>
+	</div>
+			</div>
+			<h2>Spezielle Relativität</h2>
+<div class="pre-spoiler">
+										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+										<div class="spoiler" style="display: none;">
+				<br>
+<table cellspacing="50" cellpadding="20" table border="1">
+	<tr>
+    <th>Begriff</th>
+    <th>Erklärung</th>
+    <th>Zusatz</th>
+  </tr>
+  <tr>
+    <td><b>Minkowsky Metrik: </b></td>
+    <td>$$
+\text{Die Minkowski Metrik:}\\[1ex]
+\begin{bmatrix}
+1 & 0 & 0 &0 \\ 
+0 & -1 & 0 &0 \\ 
+0& 0 & -1 & 0\\ 
+0 & 0 & 0 & -1
+\end{bmatrix} = g = \mathscr{M} \\[4ex]
+
+		
+\text{Die Metrik(Abstand) zwischen 2 Punkten} \\[1ex]
+\vec{v} = \begin{bmatrix}
+v_0\\ 
+v_1\\ 
+v_2\\ 
+v_3
+\end{bmatrix} \quad \vec{w} =  \begin{bmatrix}
+w_0\\ 
+w_1\\ 
+w_2\\ 
+w_3
+\end{bmatrix} \\[1ex]
+
+\langle \vec{v},\vec{w} \rangle = \vec{v}^T \cdot g \cdot \vec{w} \\[1ex]
+\begin{bmatrix}
+v_0 & v_1  & v_2  & v_3 
+\end{bmatrix} \cdot \begin{bmatrix}
+1 & 0 & 0 &0 \\ 
+0 & -1 & 0 &0 \\ 
+0& 0 & -1 & 0\\ 
+0 & 0 & 0 & -1
+\end{bmatrix} \cdot \begin{bmatrix}
+w_0\\ 
+w_1\\ 
+w_2\\ 
+w_3
+\end{bmatrix}  \\[1ex]
+= (v_0 \cdot w_0) - (v_1 \cdot w_1) - (v_2 \cdot w_2) - (v_3 \cdot w_3) \\[4ex]
+		
+		\text{Für die Länge eines Vektors folgt demnach: } \\[1ex]
+\vert v \vert = \sqrt{\vert \langle \vec{v} , \vec{v} \rangle \vert} \\[4ex]
+		
+\text{Teilmengen des Minkowski Raums} \\[1ex]
+(R^n)^+ := \{x \in \mathbb{R}^n \vert \Phi (x,x) > 0 \} \\[1ex]
+\rightarrow \text{ Zeitartige Vektoren} \\[1ex]
+(R^n)^- := \{x \in \mathbb{R}^n \vert \Phi (x,x) < 0 \} \\[1ex]
+\rightarrow \text{ RaumartigeVektoren} \\[1ex]
+(R^n)^0 := \{x \in \mathbb{R}^n \vert \Phi (x,x) = 0 \} \\[1ex]
+\rightarrow \text{ Lichtartige Vektoren} \\[1ex]$$</td>
+	  
+    <td>                     
+	  
+	  </td>
+  </tr>
+	  <tr>
+    <td><b>Lorentz Transformation: </b></td>
+    <td>$$
+\text{Eine Matrix heisst Lorentz-Transformation falls: } \\[1ex]
+\mathscr{M}^T \cdot g \cdot \mathscr{M} = g \\[4ex]
+
+	
+\text{Der Lorentz Boost ist wie folgt} \\[1ex]
+\mathscr{M} = \begin{bmatrix}
+cosh(\chi ) & sinh(\chi )  & 0 &0 \\ 
+sinh(\chi )  & cosh(\chi )  & 0 &0 \\ 
+0& 0 & 1 & 0\\ 
+0 & 0 & 0 & 1 \\
+\end{bmatrix} = \begin{bmatrix}
+\gamma  & \beta \gamma  & 0 &0 \\ 
+\beta \gamma  & \gamma  & 0 &0 \\ 
+0& 0 & 1 & 0\\ 
+0 & 0 & 0 & 1 \\
+\end{bmatrix} \quad 
+
+\begin{alignedat}{4}
+   \chi = arctanh(\frac{v}{c}) \\
+   \beta = \frac{v}{c} = tanh(\chi) \\
+\chi = arctanh(\beta) \\
+\gamma = \frac{1}{\sqrt{1-\beta^2}} = cosh(\chi)
+\end{alignedat} \\[4ex]
+		
+		$$</td>
+	  
+    <td>                     
+	  
+	  </td>
+  </tr>
+	  <tr>
+    <td><b>Relativistische Kinematik: </b></td>
+    <td>$$
+\tau = \text{Die Zeit aus der Sicht des Bewegten Teilchens} \\[2ex]
+
+\text{Es gilt für } \gamma \\[1ex]
+\frac{dt}{d\tau} = \gamma \\[4ex]
+
+\text{Die 4D Formeln folgen somit: } \\[1ex]
+\vec{v} = \frac{ds}{d\tau} = \vec{\dot{s}} = \gamma \cdot \begin{bmatrix}
+c\\ 
+\vec{\dot{s}}
+\end{bmatrix} \\[1ex]
+\vec{a} = \frac{dv}{d\tau} \\[1ex]
+s = v \cdot \gamma \cdot \tau
+		
+		$$</td>
+	  
+    <td>   
+		<b>E</b> = Energie in [eV]<br>
+          <b>p</b> = Impuls in [eV/c]<br>      
+	  <b>m</b> = Masse in [eV/c^2]<br>
+		<b>P</b> = Leistung in [eV/c]<br>
+	  </td>
+  </tr>
+		  <tr>
+    <td><b>Relativistische Dynamik: </b></td>
+    <td>$$
+\text{Die Dynamik ist wie folgt} \\[2ex]
+
+\vec{p} = m \cdot \gamma \begin{bmatrix}
+c\\ 
+\vec{v}
+\end{bmatrix} = \begin{bmatrix}
+m \cdot \gamma \cdot c \\ 
+m \cdot \gamma \cdot \vec{v} 
+\end{bmatrix} \\[4ex]
+		
+		\text{Energie - Impuls Beziehung} \\[1ex]
+\langle \vec{p}, \vec{p} \rangle = m^2 \cdot c^2 \\[1ex]
+E^2 - p^2 \cdot c^2 = m^2 \cdot c^4 \\[4ex]
+
+\text{Für den Erhaltungssatz gilt} \\[1ex]
+\vec{p} =m \cdot \gamma \cdot \vec{v} = m \cdot \gamma \begin{bmatrix}
+c\\ 
+\vec{v}
+\end{bmatrix} = \begin{bmatrix}
+m \cdot \gamma \cdot c \\ 
+m \cdot \gamma \cdot \vec{v} 
+\end{bmatrix} = \begin{bmatrix}
+\frac{E}{c} \\ 
+\vec{P}
+\end{bmatrix} \\[4ex]
+		
+		\text{Aktionsprinzipe} \\[1ex]
+\frac{d\vec{P}}{d\tau} = \gamma \cdot \begin{bmatrix}
+\frac{\vec{P}}{c} \\ 
+\vec{F}
+\end{bmatrix} \\[4ex]
+		
+		
+		\text{Ruhende Energie ist wie folgt} \\[1ex]
+
+E_{r} = m \cdot \gamma \cdot c^2 \qquad \gamma = 1\\[4ex]
+
+\text{Für die Kinetische Energie folgt} \\[1ex]
+E = E_r + E_k  = m \cdot \gamma \cdot c^2 \\[1ex]
+E_k = (\gamma -1) \cdot m \cdot c^2 \\[1ex]
+		$$</td>
+    <td>   
+		<b>E</b> = Energie in [eV]<br>
+          <b>p</b> = Impuls in [eV/c]<br>      
+	  <b>m</b> = Masse in [eV/c^2]<br>
+		<b>P</b> = Leistung in [eV/c]<br>
+	  </td>
+  </tr>
+			  <tr>
+    <td><b>Relativistische Elektrodynamik </b></td>
+    <td>$$
+\text{Die Feldmatrix} \\[1ex]
+F = \begin{bmatrix}
+O & C^1 & C^2 & C^3 \\ 
+C^1 & 0 & B^3 & -B^2 \\ 
+C^2 & -B^3  & 0 & B^1\\ 
+C^3 & B^2 & -B^1 & 0
+\end{bmatrix} \quad \Bigg\vert \begin{aligned}
+   \vec{B} = \begin{bmatrix}
+B^1\\ 
+B^2\\ 
+B^3
+\end{bmatrix} \\
+   \begin{bmatrix}
+C^1\\ 
+C^2\\ 
+C^3
+\end{bmatrix} = \frac{1}{c} \begin{bmatrix}
+E^1\\ 
+E^2\\ 
+E^3
+\end{bmatrix}
+\end{aligned} \\[3ex]
+		
+		\text{Es gilt:} \\[1ex]
+F \cdot \vec{v} = \gamma \cdot \begin{bmatrix}
+\frac{1}{c} \cdot \langle \vec{E}, \vec{v} \rangle \\
+\vec{E} + \vec{v} \times \vec{B}
+\end{bmatrix} \\[3ex]
+		\text{Die Lorentzgleichung im 4D} \\[1ex]
+\frac{\delta \vec{P}}{\delta \tau} = q \cdot F \cdot \vec{v} \\[3ex]
+
+\text{Aus der Impulsgleichung folgt} \vec{p} = m \cdot \vec{v} \\[1ex]
+\frac{\delta \vec{v}}{\delta \tau} = \frac{q}{m} \cdot F \cdot \vec{v} \\[3ex]
+
+		$$</td>
+    <td>                     
+	  
+	  </td>
+  </tr>
+				  <tr>
+    <td><b>Feldtransformation</b></td>
+    <td>$$
+\text{Die Feldtransformation für 2 Beobachter auf Felder} \\[1ex]
+F = \mathscr{M} \cdot \tilde{F} \cdot \mathscr{M}^{-1} \\[1ex]
+\tilde{F} = \mathscr{M}^{-1} \cdot F \cdot \mathscr{M} \\[3ex]
+
+\text{Daraus folgt:} \\[1ex]
+tr(\tilde{F}) = tr(F) \\[1ex]
+det(\tilde{F}) =det(F) \\[1ex]
+P_{\tilde{F}}(\lambda) = P_F (\lambda) \\[3ex]
+
+\text{Daraus folgt:} \\[1ex]
+tr(F) = 0 \\[1ex]
+det(F) = - \frac{1}{c^2} \cdot (\langle \vec{E} , \vec{B} \rangle)^2 \\[1ex]
+P_F =  \lambda^4  + (B^2-\frac{1}{c^2} \cdot E^2) \cdot \lambda^2 - \frac{1}{c^2} \cdot (\langle \vec{E} , \vec{B} \rangle)^2\\[3ex]
+		\text{Elektromagnetische Invariation} \\[1ex]
+I_1 = (\langle \vec{E} , \vec{B} \rangle)^2 \\[1ex]
+I_2 = B^2-\frac{1}{c^2} \cdot E^2 \\[1ex]
+\rightarrow \text{ In jedem Initialsystem gleich!} \\[3ex]
+
+\text{Für technische Anwendungen gilt } v \rangle \rangle  c \\[1ex]
+\vec{B} \approx \tilde{\vec{B}} \\[1ex]
+\vec{E} \approx \tilde{\vec{E}} - \vec{v} \times \tilde{\vec{B}} \approx \tilde{\vec{E}} - \vec{v} \times \vec{B}
+
+		$$</td>
+    <td>                     
+	  
+	  </td>
+  </tr>
+
 	
 											</table>
 	</div>

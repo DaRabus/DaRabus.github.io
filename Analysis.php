@@ -63,101 +63,219 @@
 
 					</div>
 				</div>
+
+					<br>
+						<h2>Differentialgleichungen</h2>
+									
+									<div class="pre-spoiler">
+										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+										<div class="spoiler" style="display: none;">
+											<table cellspacing="50" cellpadding="20" table border="1">
+  <tr>
+    <th>Begriff</th>
+    <th>Erklärung</th>
+    <th>Zusatz</th>
+  </tr>
+  <tr>
+    <td><b>Eigenschaften einer ODE</b></td>
+    <td>$$\text{Der Grad der ODE ist die höchste Ableitung} \\[3ex]
+\text{Verschiedene Eigenschaften: } \\[4ex]
+
+\text{analytisch isolierbar:}\\[1ex]
+\boxed{y' = x^2 \cdot y^2} \\[1ex]
+\rightarrow \text{ Ableitungen auf einer Seite} \\[4ex]
+
+
+\text{elementar integrierbar:}\\[1ex]
+\boxed{y' = g(x)} \\[1ex]
+y(x) = \int g(x) \ dx \\[1ex]
+\rightarrow \text{ Aufleitbar} \\[4ex]
+
+\text{autonom:}\\[1ex]
+\boxed{y' =y^2 + 1} \\[1ex]
+\rightarrow \text{ Es kommt kein x vor} \\[4ex]
+
+\text{separierbar:}\\[1ex]
+\boxed{y' =g(x) \cdot h(x)} \\[1ex]
+\rightarrow \text{ analytisch isolierbar} \\[4ex]
+
+\text{linear:}\\[1ex]
+\boxed{y' = m(x) \cdot y(x) + q(x)} \\[1ex]
+y' = 5y + 7 \\[1ex]
+\rightarrow \text{ halt linear...} \\[4ex]
+
+\text{linear homogen:}\\[1ex]
+\boxed{y' = m(x) \cdot y(x)} \\[1ex]
+y' = 7x^2 \cdot y \\[1ex]
+\rightarrow \text{ ohne additiver Faktor} \\[4ex]
+
+\text{linear mit konst. Koeffizienten:}\\[1ex]
+\boxed{y' = m \cdot y + q(x)} \\[1ex]
+y' = -3y + cos(2x) \\[1ex]
+\rightarrow \text{ nicht abhängiger Koeffizient} \\[4ex]$$</td>
+    <td>Eine Beziehung zwischen einer Funktion und ihren Ableitungen</td>
+  </tr>
+												  <tr>
+    <td><b>Statische Lösungen einer ODE</b></td>
+    <td>$$\text{Statische Lösungen erhält man durch 0 setzen:}\\[1ex]
+y'=y''=y'''=0 \\[1ex]
+\text{Diese Lösungen sollten jeweils zuerst bestimmt werden.} \\[1ex]
+y'=2y+8 \\[1ex]
+0=2y+8 \\[1ex]
+y = -4 \\[1ex]$$</td>
+    <td></td>
+  </tr>
+																								  <tr>
+    <td><b>Visualisierung einer ODE</b></td>
+    <td>$$
+\text{Ausgangspunkt:}\\[1ex]
+ODE: y' = f(x;y) \\[1ex]
+IC: y(x_0) = y_0 \\[3ex]
+
+\text{Für den Richtungsvektor folgt: } \hat{v} \\[1ex]
+\hat{v} = \frac{1}{\sqrt{1+f^2(x;y)}} \cdot \begin{bmatrix}
+1\\ 
+f(x;y)
+\end{bmatrix} \\[4ex]
+
+\text{Stabilitätsbeurteilung anhand des RVF} \\[1ex]
+\searrow\searrow \qquad  \rightarrow stabil \\[1ex]
+\nearrow\nearrow \qquad  \rightarrow instabil \\[1ex]
+
+
+$$</td>
+    <td><img src="bilder/visODE.jpg" width="80%" height="80%"></td>
+  </tr>
+																																		<tr>
+    <td><b>Die Allgemeine Lösung</b></td>
+    <td>$$
+\text{Ausgangspunkt:}\\[1ex]
+ODE: y' = x^2 \cdot y \\[3ex]
+
+S1_) \text{ Die Statischen Lösungen} \\[1ex]
+y_s(x) = 0 \\[3ex]
+
+S2_) \text{ Nichtstatische Lösungen} \\[1ex]
+y' = x^2 \cdot y \\[1ex]
+\frac{1}{y} \cdot y' = x^2 \\[1ex]
+\int \frac{1}{y} \cdot \frac{dy}{dx} dx = \int x^2 dx \\[1ex]
+\int \frac{1}{y} dy = \int x^2 dx \\[1ex]
+ln(\vert y \vert) = \frac{1}{3} \cdot x^3 + c \\[1ex]
+\vert y \vert = e^{\frac{1}{3} \cdot x^3 + c} = e^c \cdot e^{\frac{1}{3} \cdot x^3} \\[1ex]
+y = \pm e^c \cdot e^{\frac{1}{3} \cdot x^3} \\[3ex]
+
+S3_) \text{ Die Allgemeine Lösung} \\[1ex]
+y(x) = C \cdot e^{\frac{1}{3} \cdot x^3} \quad \vert C \in \mathbb{R} \\[3ex]
+\text{Grundform:}\\[1ex]
+ODE: y' = g(x) \cdot h(y) \quad \rightarrow \text{separierbar} \\[3ex]
+
+S1_) \text{ Die Statischen Lösungen} \\[1ex]
+h(y_s) = 0 \quad \rightarrow y_s \in \{....\} \\[3ex]
+
+S2_) \text{ Nichtstatische Lösungen} \\[1ex]
+y' = g(x) \cdot h(y) \\[1ex]
+\frac{1}{h(y)} \cdot y' = g(x) \\[1ex]
+\int \frac{1}{h(y)} \cdot \frac{dy}{dx} dx = \int g(x) dx \\[1ex]
+\int \frac{1}{h(y)} dy = \int g(x) dx \\[1ex]
+F(y) = G(x) + c \\[1ex]
+y(x) = \text{ Formel } (x;c) \\[3ex]
+
+S3_) \text{ Die Allgemeine Lösung} \\[1ex]
+\text{Kombination aus S2 und S1} \\[1ex]
+y(x) = \text{ Formel } (x;C) \quad \vert C \in \mathbb{R} \\[3ex]
+
+
+
+$$</td>
+    <td></td>
+  </tr>
+
+												  <tr>
+    <td><b>Die Spezielle Lösung</b></td>
+    <td>$$
+
+\text{Grundform:}\\[1ex]
+ODE: y' = g(x) \cdot h(y) \\[1ex]
+IC:  y(x_0) = y_0 \\[3ex]
+\textcolor{blue}{Variante 1} \\[2ex]
+S1_) \text{ Allgemeine Lösung berechnen} \\[1ex]
+y(x) = \text{ Formel } (x;C) \\[3ex]
+
+S2_) \text{ IC einsetzen} \\[1ex]
+y_0 = y(x_0) = \text{ Formel } (x;C) \\[1ex]
+\rightarrow \text{ auflösen nach C} \\[3ex]
+
+\textcolor{blue}{Variante 2} \\[2ex]
+S1_) \text{ Statische Lösungen} \\[1ex]
+h(y_s) = 0 \quad \rightarrow y_s \in \{...\} \\[3ex]
+y_0 = y_s = \begin{cases}
+   \text{ja} & y(x) = y_s = y_0 \\
+   \text{nein} &\text{S2) } 
+\end{cases} \\[3ex]
+		
+		
+S2_) \text{ Nichtstatische Lösungen} \\[1ex]
+y' = g(x) \cdot h(y) \\[1ex]
+\frac{1}{h(y)} \cdot y' = g(x) \\[1ex]
+\int_{x_0}^{x} \frac{1}{h(y)} \cdot \frac{dy}{dx} dx = \int_{x_0}^{x} g(x) dx \\[1ex]
+\int_{y_0}^{y} \frac{1}{h(y)} dy = \int_{x_0}^{x} g(x) dx \\[1ex]
+F(y) - F(y_0) = G(x) - G(x_0) \\[1ex]
+y(x) = .... \\[3ex]
+
+$$</td>
+    <td></td>
+  </tr>
+																								<tr>
+    <td><b>Schaltkreise</b></td>
+    <td>$$
+\text{Der Wiederstand R} \\[1ex]
+U_R = R \cdot I \\[3ex]
+
+\text{Die Induktivität L} \\[1ex]
+U_L = L \cdot \dot{I} \\[3ex]
+
+\text{Die Kapazität C} \\[1ex]
+U_C = \frac{Q}{C} \quad \vert \quad I = \dot{Q} \\[3ex]
+$$</td>
+    <td></td>
+  </tr>
+																																				<tr>
+    <td><b>Toricelli Probleme</b></td>
+    <td>$$
+\text{Die Ausflussgeschwindigkeit} \\[1ex]
+v = \sqrt{2gh} \\[3ex]
+
+\text{Der Volumenfluss} \\[1ex]
+Q = A \cdot v \\[3ex]
+
+\text{Die ODE dazu} \\[1ex]
+ODE: \quad \dot{h} = \frac{1}{A} \cdot Q \quad ; \quad \frac{A_a}{A} \cdot \sqrt{2gh} \\[1ex]
+IC: \quad h(t_0) = h_0 \\[3ex]
+
+$$</td>
+    <td><img src="bilder/toricelli.jpg" width="60%" height="60%"></td>
+  </tr>
+																																				<tr>
+    <td><b>Mechanik</b></td>
+    <td>$$
+\text{Falls F wegabhängig} \\[1ex]
+m \ddot{s} = F_1(s) + ... + F_n(s) \\[3ex]
+
+\text{Falls F geschwindigkeitsabhängig ist} \\[1ex]
+m \dot{v} = F_1(v) + ... + F_n(v)\\[3ex]
+
+$$</td>
+    <td><img src="bilder/mech.jpg" width="50%" height="50%"></td>
+  </tr>
+	
+												
+											</table>
+										</div>
+						</div>
 				<br>
-				<h2>Mengenlehre</h2>
-				<div class="pre-spoiler">
-					<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
-					<div class="spoiler" style="display: none;">
 
-						<p class="bd-lead">Eine Zusammenfassung von Elementen zu einer Menge die explizite Angabe sieht wie folgt aus: $$A=\{1,2,3\}$$ </p>
-						<p class="bd-lead">
-							Angabe durch Eigenschaft: $$A = \{n \in \mathbb{N} \mid 0
-							< n < 4 \}$$ </p>
-
-
-
-								<br><br>
-								<h5 id="allgemien">Allgemein</h5>
-
-								<table class="table">
-									<thead>
-										<tr>
-											<th scope="col" width=20%>Bezeichnung</th>
-											<th scope="col" width=42%>Formel</th>
-											<th scope="col">Grafik</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td rowspan="2">Menge</td>
-											<td>$$ b \in A$$</td>
-											<td rowspan="2"><img src="bilder/mengenlehre/menge.png" style="max-height:50%; max-width:50%">
-											</td>
-										</tr>
-										<tr>
-											<td>$$ A = \left \{ a, b, c \right \} $$</td>
-										</tr>
-										<tr>
-											<td rowspan="2">Echte Teilmenge</td>
-											<td>$$A\subset B \: \text{oder} \: A \subseteq B $$</td>
-											<td rowspan="2"><img src="bilder/mengenlehre/teilmenge.png" style="max-height:50%; max-width:50%">
-											</td>
-										</tr>
-										<tr>
-											<td>$$A = \left \{ b, d \right \}, B = \left \{ a, b, c, d, e \right \} $$</td>
-										</tr>
-										<tr>
-											<td rowspan="2">Teilmenge</td>
-											<td>$$A \subseteq B $$</td>
-											<td rowspan="2"><img src="bilder/mengenlehre/teilmenge_necht.png" style="max-height:50%; max-width:50%">
-											</td>
-										</tr>
-										<tr>
-											<td>$$A = \left \{ a, b, c, d, e \right \}, B = \left \{ a, b, c, d, e \right \} $$</td>
-										</tr>
-										<tr>
-											<td>Durchschnittsmenge</td>
-											<td>$$ A\cap B $$</td>
-											<td><img src="bilder/mengenlehre/schnittmenge.png" style="max-height:50%; max-width:50%">
-											</td>
-										</tr>
-										<tr>
-											<td>Vereinigungsmenge</td>
-											<td>$$ A\cup B $$</td>
-											<td><img src="bilder/mengenlehre/vereinigungsmenge.png" style="max-height:50%; max-width:50%">
-											</td>
-										</tr>
-										<tr>
-											<td>Differenzmenge</td>
-											<td>$$ A \setminus B $$</td>
-											<td><img src="bilder/mengenlehre/differenzmenge.png" style="max-height:50%; max-width:50%">
-											</td>
-										</tr>
-										<tr>
-											<td>Symmetrische Differenz</td>
-											<td>$$ A \bigtriangleup B $$</td>
-											<td><img src="bilder/mengenlehre/symmetrische_differenz.png" style="max-height:50%; max-width:50%">
-											</td>
-										</tr>
-										<tr>
-											<td>Komplementärmenge</td>
-											<td>$$ \bar{A}:=G \setminus A $$</td>
-											<td><img src="bilder/mengenlehre/komplement.png" style="max-height:50%; max-width:50%">
-											</td>
-										</tr>
-									</tbody>
-								</table>
-					</div>
-				</div>
-				<br>
-				<h2>Funktionen</h2>
-				<div class="pre-spoiler">
-					<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
-					<div class="spoiler" style="display: none;">
-						<p class="bd-lead">Eine Funktion f ist eine Abbildung, die jedem Element x einer Definitionsmenge D genau ein Element y einer Zielmenge Z zuordnet.</p>
-
-						<li><b>Tabelle für wichtige Ableitungen/Aufleitungen</b>
-						</li>
+						<h2>Tabelle für wichtige Ableitungen/Aufleitungen</h2>
+						
 						<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
@@ -256,9 +374,9 @@
 
 							</div>
 						</div>
+						<br>
+						<h2>Ableitungen + Regeln</h2>
 						
-						<li><b>Ableitungen + Regeln</b>
-						</li>
 						<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
@@ -360,9 +478,9 @@
 
 							</div>
 						</div>
-						
-						<li><b>Vektoranalysis</b>
-									</li>
+						<br>
+						<h2>Vektoranalysis</h2>
+		
 									<div class="pre-spoiler">
 										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 										<div class="spoiler" style="display: none;">
@@ -896,8 +1014,9 @@ div(\vec{B}) = 0 \rightarrow \vec{B} = rot(\vec{A})
   </table>
 										</div>
 									</div>
-						<li><b>Taylor - Entwicklungen</b>
-									</li>
+						<br>
+						<h2>Taylor - Entwicklungen</h2>
+									
 									<div class="pre-spoiler">
 										<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 										<div class="spoiler" style="display: none;">
@@ -968,9 +1087,9 @@ f(x) = \sum_{k=0}^{\infty} \frac{f^{(k)}(x_0)}{k!} \cdot (x-x_0)^k \\[4ex]
 											</table>
 										</div>
 						</div>
+						<br>
+						<h2>Integral + Regeln</h2>
 						
-						<li><b>Integral + Regeln</b>
-						</li>
 						<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
@@ -1165,8 +1284,9 @@ I = I = \int_{-\infin}^{\infin} f(x) \ dx = \underset{r \rightarrow \infin}{\lim
 
 							</div>
 						</div>
-						<li><b>Verallgemeinerte Exponentialfunktionen</b>
-						</li>
+							<br>
+						<h2>Verallgemeinerte Exponentialfunktionen</h2>
+						
 						<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
@@ -1201,8 +1321,9 @@ I = I = \int_{-\infin}^{\infin} f(x) \ dx = \underset{r \rightarrow \infin}{\lim
 								</table>
 							</div>
 						</div>
-						<li><b>Beispiel einer Bestimmung der Extremalstellen</b>
-						</li>
+							<br>
+						<h2>Beispiel einer Bestimmung der Extremalstellen</h2>
+						
 						<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Aufklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Zuklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
@@ -1272,8 +1393,8 @@ I = I = \int_{-\infin}^{\infin} f(x) \ dx = \underset{r \rightarrow \infin}{\lim
 								</table>
 							</div>
 						</div>
-						<li><b>Funktionsmodifikationen und Verschiebungen</b>
-						</li>
+						<br>
+						<h2>Funktionsmodifikationen und Verschiebungen</h2>
 						<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
@@ -1301,8 +1422,8 @@ I = I = \int_{-\infin}^{\infin} f(x) \ dx = \underset{r \rightarrow \infin}{\lim
 								</ol>
 							</div>
 						</div>
-						<li><b>Surjektive, injektive und bijektive</b>
-						</li>
+						<br>
+						<h2>Surjektive, injektive und bijektive</h2>
 						<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
@@ -1339,8 +1460,8 @@ I = I = \int_{-\infin}^{\infin} f(x) \ dx = \underset{r \rightarrow \infin}{\lim
 								</table>
 							</div>
 						</div>
-						<li><b>Betrag und Vorzeichen</b>
-						</li>
+						<br>
+						<h2>Betrag und Vorzeichen</h2>
 						<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
@@ -1366,8 +1487,8 @@ I = I = \int_{-\infin}^{\infin} f(x) \ dx = \underset{r \rightarrow \infin}{\lim
 									</table>
 							</div>
 						</div>
-						<li><b>Bild/Urbild</b>
-						</li>
+							<br>
+						<h2>Bild/Urbild</h2>
 						<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
@@ -1388,8 +1509,8 @@ I = I = \int_{-\infin}^{\infin} f(x) \ dx = \underset{r \rightarrow \infin}{\lim
 
 							</div>
 						</div>
-						<li><b>Parität</b>
-						</li>
+							<br>
+						<h2>Parität</h2>
 						<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
@@ -1410,8 +1531,8 @@ I = I = \int_{-\infin}^{\infin} f(x) \ dx = \underset{r \rightarrow \infin}{\lim
 								</ol>
 							</div>
 						</div>
-						<li><b>Lokale Extrema</b>
-						</li>
+							<br>
+						<h2>Lokale Extrema</h2>
 						<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
@@ -1466,8 +1587,8 @@ I = I = \int_{-\infin}^{\infin} f(x) \ dx = \underset{r \rightarrow \infin}{\lim
 								</table>
 							</div>
 						</div>
-						<li><b>Globale Extrema</b>
-						</li>
+							<br>
+						<h2>Globale Extrema</h2>
 						<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Aufklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Zuklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
@@ -1490,8 +1611,8 @@ I = I = \int_{-\infin}^{\infin} f(x) \ dx = \underset{r \rightarrow \infin}{\lim
 								</table>
 							</div>
 						</div>
-						<li><b>Wendepunkte</b>
-						</li>
+							<br>
+						<h2>Wendepunkte</h2>
 						<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
@@ -1511,8 +1632,8 @@ Um die Punkte zu finden muss man die <b>f''(x) = 0</b> setzten </h3>
 								</table>
 							</div>
 						</div>
-						<li><b>Krümmung</b>
-						</li>
+							<br>
+						<h2>Krümmung</h2>
 						<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
@@ -1556,38 +1677,8 @@ Um die Punkte zu finden muss man die <b>f''(x) = 0</b> setzten </h3>
 
 							</div>
 						</div>
-						<li><b>Tools</b>
-						</li>
-						<div class="pre-spoiler">
-							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
-							<div class="spoiler" style="display: none;">
-
-								<table class="table">
-									<tr>
-										<td width=20%>Mathematica</td>
-										<td width=42%></td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>Wolframalpha</td>
-										<td>
-											<figure class="highlight"><pre><code class="language-html" data-lang="html">extrema -(x^3)/80.0+20*x </code></pre>
-											</figure>
-										</td>
-										<td>Gibt die lokalen so wie die globalen extremstellen an. Wird auch angezeigt, wenn nur die Funktion eingegeben wird. </td>
-									</tr>
-									<tr>
-										<td>Matlab</td>
-										<td></td>
-										<td></td>
-									</tr>
-								</table>
-							</div>
-						</div>
-
-					</div>
-				</div>
-				<br>
+							<br>
+						
 				<h2>Folgen und Reihen</h2>
 				<div class="pre-spoiler">
 					<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
@@ -1818,6 +1909,92 @@ Um die Punkte zu finden muss man die <b>f''(x) = 0</b> setzten </h3>
 								<li>$$\sin 2x = 2 \sin x \cdot \cos x $$</li>
 								<li>$$ \cos 2x = \cos^2 x - \sin^2 x = 2\cos^2 (x - 1)$$</li>
 							</li>
+					</div>
+				</div>
+												<br>
+				<h2>Mengenlehre</h2>
+				<div class="pre-spoiler">
+					<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
+					<div class="spoiler" style="display: none;">
+
+						<p class="bd-lead">Eine Zusammenfassung von Elementen zu einer Menge die explizite Angabe sieht wie folgt aus: $$A=\{1,2,3\}$$ </p>
+						<p class="bd-lead">
+							Angabe durch Eigenschaft: $$A = \{n \in \mathbb{N} \mid 0
+							< n < 4 \}$$ </p>
+
+
+
+								<br><br>
+								<h5 id="allgemien">Allgemein</h5>
+
+								<table class="table">
+									<thead>
+										<tr>
+											<th scope="col" width=20%>Bezeichnung</th>
+											<th scope="col" width=42%>Formel</th>
+											<th scope="col">Grafik</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td rowspan="2">Menge</td>
+											<td>$$ b \in A$$</td>
+											<td rowspan="2"><img src="bilder/mengenlehre/menge.png" style="max-height:50%; max-width:50%">
+											</td>
+										</tr>
+										<tr>
+											<td>$$ A = \left \{ a, b, c \right \} $$</td>
+										</tr>
+										<tr>
+											<td rowspan="2">Echte Teilmenge</td>
+											<td>$$A\subset B \: \text{oder} \: A \subseteq B $$</td>
+											<td rowspan="2"><img src="bilder/mengenlehre/teilmenge.png" style="max-height:50%; max-width:50%">
+											</td>
+										</tr>
+										<tr>
+											<td>$$A = \left \{ b, d \right \}, B = \left \{ a, b, c, d, e \right \} $$</td>
+										</tr>
+										<tr>
+											<td rowspan="2">Teilmenge</td>
+											<td>$$A \subseteq B $$</td>
+											<td rowspan="2"><img src="bilder/mengenlehre/teilmenge_necht.png" style="max-height:50%; max-width:50%">
+											</td>
+										</tr>
+										<tr>
+											<td>$$A = \left \{ a, b, c, d, e \right \}, B = \left \{ a, b, c, d, e \right \} $$</td>
+										</tr>
+										<tr>
+											<td>Durchschnittsmenge</td>
+											<td>$$ A\cap B $$</td>
+											<td><img src="bilder/mengenlehre/schnittmenge.png" style="max-height:50%; max-width:50%">
+											</td>
+										</tr>
+										<tr>
+											<td>Vereinigungsmenge</td>
+											<td>$$ A\cup B $$</td>
+											<td><img src="bilder/mengenlehre/vereinigungsmenge.png" style="max-height:50%; max-width:50%">
+											</td>
+										</tr>
+										<tr>
+											<td>Differenzmenge</td>
+											<td>$$ A \setminus B $$</td>
+											<td><img src="bilder/mengenlehre/differenzmenge.png" style="max-height:50%; max-width:50%">
+											</td>
+										</tr>
+										<tr>
+											<td>Symmetrische Differenz</td>
+											<td>$$ A \bigtriangleup B $$</td>
+											<td><img src="bilder/mengenlehre/symmetrische_differenz.png" style="max-height:50%; max-width:50%">
+											</td>
+										</tr>
+										<tr>
+											<td>Komplementärmenge</td>
+											<td>$$ \bar{A}:=G \setminus A $$</td>
+											<td><img src="bilder/mengenlehre/komplement.png" style="max-height:50%; max-width:50%">
+											</td>
+										</tr>
+									</tbody>
+								</table>
 					</div>
 				</div>
 			</main>

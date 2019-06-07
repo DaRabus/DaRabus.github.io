@@ -30,7 +30,7 @@
 			<main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
 				<h1 class="bd-title" id="content">Elektrotechnik</h1>
 
-			<h2>Periodische Signale</h2>	
+			<h2>Semester 2</h2>	
 		<div class="pre-spoiler">
 							<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 							<div class="spoiler" style="display: none;">
@@ -41,12 +41,189 @@
     <th>Zusatz</th>
   </tr>
   <tr>
-    <td><b>Substitution: </b></td>
-    <td>$$\text{Periodische Signale sind sich wiederholende Signale} \\[1ex]
+    <td><b>Die Periode: </b></td>
+    <td>$$\text{Die Periode ist der Intervall} \\[1ex]
+f = \frac{1}{T} \\[4ex]
+
+\text{Für die Schwingungsbreite also peak-to-peak gilt} \\[1ex]
+g_{pp} = g_{max} - g_{min} \\[1ex]
+ $$</td>
+      <td>  <b>f</b> = Frequenz [Hz]<br>
+                      <b>T</b> = Zeit in [s]<br></td>
+  </tr>
+									  <tr>
+    <td><b>Werte bei periodischen Grössen: </b></td>
+    <td>$$\text{Falls g = 0 dann ist es Wechselstrom} \\[1ex]
+\overline{g} = \frac{1}{T} \cdot \int_{t_1}^{t_1+T} g\cdot dg \\[4ex]
+
+\text{Den reinen Wechselstromanteil erhält man so:} \\[1ex]
+g_{\sim} = g-\overline{g} \\[4ex]
+
+\text{Dies ist vergleichbar mit der Energie über einem R} \\[1ex]
+dW = P(t) dt = i^2 R dt \\[1ex]
+W_T = R \int_{t_1}^{t_1+T} i^2 dt \\[1ex]
+I = \sqrt{\frac{1}{T} \cdot \int_{t_1}^{t_1+T} i^2 \ dt} \\[4ex]
+
+\text{Für den Gleichrichtwert folgt} \\[1ex]
+\vert \overline{g} \vert = \frac{1}{T} \cdot \int_{t_1}^{t_1+T}  \vert g \vert \ dg \\[4ex]
+
+\text{Scheitelfaktor für den Sinus} \\[1ex]
+\sqrt{2} \\[4ex]
+
+\text{Formfaktor für den Sinus } \\[1ex]
+\frac{\pi}{2\cdot \sqrt{2}} \\[4ex]
+
+\text{Sinusschwingungen Omega} \\[1ex]
+wT = 2 \pi \\[1ex]
+w = 2 \pi f \\[1ex]
 
  $$</td>
-      <td>Die Idee ist die Umkehrung der Kettenregel</td>
+      <td>  </td>
   </tr>
+									
+																		  <tr>
+    <td><b>Gleichfrequente Sinusgrössen: </b></td>
+    <td>$$
+\text{Die neuen Amplituden Werte ergeben sich wie folgt} \\[1ex]
+a_x = a_1 \cdot cos(\phi_1) + a_2 \cdot cos(\phi_2) + a_n \cdot cos(\phi_n) \\[1ex]
+a_y = a_1 \cdot sin(\phi_1) + a_2 \cdot sin(\phi_2) + a_n \cdot sin(\phi_n) \\[4ex]
+
+\text{Daraus folgt folgende Schwingung} \\[1ex]
+a_s = \sqrt{a_x^2 + a_y^2} \\[4ex]
+
+\text{Und die Phasenverschiebung} \\[1ex]
+\phi_s = arctan(\frac{a_y}{a_x}) \\[4ex]
+
+\text{Die Phasenverschiebung zwischen In/Out} \\[1ex]
+\phi = \phi_U - \phi_I \\[4ex]
+ $$</td>
+      <td> Beim Auftreffen von mehreren Sinusschwingungen überlagern Sie sich und es entstehen neue Sinusschwingungen </td>
+  </tr>
+					 <tr>				
+									  <td><b>Passive Bauelemente: </b></td>
+    <td>$$
+		\text{Der Wiederstand bleibt wie im Gleichstrom System} \\[1ex]
+R = U(t) \cdot I(t) \\[1ex]
+P_R = U(t) \cdot I(t)  \\[4ex]
+
+\text{Der Kondensator} \\[1ex]
+\text{Der Strom eilt hier der Spannung um } \frac{\pi}{2} \text{vorraus} \\[1ex]
+I(t) = jwCU(t) \\[1ex]
+Z_C = -j \frac{1}{wC} \\[1ex]
+U(t) = -j \frac{1}{wC} \cdot I(t) \\[4ex]
+
+\text{Die Spule} \\[1ex]
+\text{Die Spannung eilt hier der Strom um } \frac{\pi}{2} \text{vorraus} \\[1ex]
+I(t) = \frac{U(t)}{jwL} \\[1ex]
+Z_L = jwL \\[1ex]
+U(t) = jwL\cdot I(t) \\[4ex]
+ $$</td>
+      <td>  </td>
+  </tr>
+														 <tr>				
+									  <td><b>Betrag + Phase: </b></td>
+    <td>$$
+\text{der Betrag eines Ergebnisses} \\[1ex]
+\vert U \vert = \sqrt{Im_U^2 + Real_U^2} \\[4ex]
+
+\text{Der Phasenwinkel dazu} \\[1ex]
+\phi = arctan(\frac{Im_U}{Real_U}) \\[1ex]
+ $$</td>
+      <td> </td>
+  </tr>
+									<tr>				
+									  <td><b>Viepole: </b></td>
+    <td>$$
+\text{Die Grundgleichungen:} \\[1ex]
+U_1 = Z_{11} I_1 + Z_{12} I_2 \\[1ex]
+U_2 = Z_{21} I_1 + Z_{22} I_2 \\[1ex]
+I_1 = Y_{11} U_1 + Y_{12} U_2 \\[1ex]
+I_2 = Y_{21} U_1 + Y_{22} U_2 \\[4ex]
+
+\text{Eingangsvariationen:} \\[2ex]
+
+\text{Leerlaufimpedanz:} \\[1ex]
+Z_{11} = \frac{U_1}{I_1} \quad \vert_{I_2=0} \\[1ex]
+\text{Negativer Rückwiederstand} \\[1ex]
+Z_{12} = \frac{U_1}{I_2} \quad \vert_{I_1=0} \\[1ex]
+\text{Kernwiederstand Vorwärts} \\[1ex]
+Z_{21} = \frac{U_2}{I_1} \quad \vert_{I_2=0} \\[1ex]
+\text{negative Leerlaufimpedanz} \\[1ex]
+Z_{22} = \frac{U_2}{I_2} \quad \vert_{I_1=0} \\[4ex]
+		
+		\text{Die Wiederstandsmatrix } \\[1ex]
+\begin{bmatrix}
+		U_1 \\ 
+		U_2
+	\end{bmatrix} = \begin{bmatrix}
+Z_{11}	& Z_{12}\\ 
+Z_{21}	& Z_{22}
+\end{bmatrix} \cdot  \begin{bmatrix}
+I_1 \\ 
+I_2 
+\end{bmatrix} = Z \cdot \begin{bmatrix}
+I_1 \\ 
+I_2
+\end{bmatrix} \\[4ex]
+
+\text{Wellenwiederstand folgt aus Kurzschluss und Leerlaufwiederstand} \\[1ex]
+Z_W = \sqrt{Z_0 \cdot Z_K} \\[1ex]
+Z_0 = Z_{11} \quad Z_K = Z_11 - \frac{Z_{12} \cdot Z_{21}}{Z_{22}} \\[4ex]
+ $$</td>
+      <td> </td>
+  </tr>
+																		<tr>				
+									  <td><b>Leistung im Wechselstrom: </b></td>
+    <td>$$
+
+		
+		\def\arraystretch{1.5}
+   \begin{array}{l|c|c|l|l}
+  & Formelzeichen & Einheit & Formel & Umgeformt \\
+	 \hline
+	Scheinleistung & S & Va &  S = U \cdot I &  S = \sqrt{Q^2+P^2} \\
+		Wirkleistung & P & W &  P = U \cdot I \cdot cos(\phi) = S \cdot cos(\phi) &  P = \sqrt{Q^2+S^2} \\
+		Blindleistung & Q & var &  Q = U \cdot I \cdot sin(\phi) = S \cdot sin(\phi) &  Q = \sqrt{S^2-P^2} \\
+\end{array} \\[1ex]
+		
+		\text{Leistungsfaktor} \\[1ex]
+cos(\phi) = \frac{P}{S} \\[4ex]
+
+\text{Blindleistungsfaktor} \\[1ex]
+sin(\phi) = \frac{Q}{S} \\[1ex]
+ $$</td>
+      <td> <img src="bilder/zeigerdiagramm-leistung.png" width="150" height="150" alt=""/></td>
+  </tr>
+										<tr>				
+									  <td><b>Übertragungsfunktion und Dämpfungsgrad: </b></td>
+    <td>$$
+\text{Grundsätzlich gilt für das Verhältniss zum Ein/Ausgang:}\\[1ex]
+G(w) = \frac{O(w)}{I(w)} \\[4ex]
+
+\text{Um den Dämpfungsfaktor zu bekommen berechnet man folgendes:} \\[1ex]
+D(w) = \frac{U_i(w)}{U_o(w)} \qquad D(w) = \frac{I_i(w)}{I_o(w)} \\[4ex]
+
+\text{Der Spannungsübertragsungsfaktor im Betrieb:} \\[1ex]
+T_u(w) = 2 \cdot \frac{U_o(w)}{U_i(w)} \\[4ex]
+
+\text{Der Stromübertragsungsfaktor im Betrieb:} \\[1ex]
+T_i(w) = 2 \cdot \frac{I_o(w)}{I_i(w)} \\[4ex]
+		
+\text{Der Übertragungsfaktor für den Betrieb:} \\[1ex]
+T_B(w) = \sqrt{T_u(w) \cdot T_i(w)} = 2\cdot \sqrt{\frac{U_0(w) \cdot I_o(w)}{U_i(w) \cdot I_i(w)}} \\[4ex]
+		
+		
+ $$</td>
+      <td> </td>
+  </tr>
+																			<tr>				
+									  <td><b>Tiefpass: </b></td>
+    <td>$$
+	
+ $$</td>
+      <td> </td>
+  </tr>
+									
 								</table>
 			</div>
 				</div>

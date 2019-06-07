@@ -539,6 +539,7 @@ a = x_3  \quad \text{somit folgt: } Eig(f,2) = \{(a,a,0,0) \mid a,b \in \mathbb{
 
 \text{Mit den Eigenvektoren erhalten wir die Basen: } \\[1ex]
 a = 1 \rightarrow \  d_1^2 = (1,1,0,0) \\[4ex]
+										  
 										  \text{Die Bestimmung des Eigenraums von 3 } \\[1ex]
 Eig(f,2) = \begin{bmatrix}
 2 & -1 & -1 & 1\\ 
@@ -794,7 +795,7 @@ M_f^{DD} = M^{DE} \cdot M_f^{EE} \cdot  M^{ED} =  \\[1ex]
 				<div class="pre-spoiler">
 					<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Zuklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Aufklappen';}" value="Aufklappen">
 					<div class="spoiler" style="display: none;">
-						<table>
+						<table cellspacing="50" cellpadding="20" table border="1">
 							<tr>
 								<td>Identität</td>
 								<td>$$ E\rightarrow E, \;x \mapsto x $$</td>

@@ -14,6 +14,10 @@
       <li class="nav-item">
         <a class="nav-link <?php if ($loc == "elektrotechnik") echo "active" ?>" href="elektrotechnik.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Elektrotechnik</a>
       </li>
+							<ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link <?php if ($loc == "elektronik") echo "active" ?>" href="elektronik.php" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Elektronik</a>
+      </li>
 		<ul class="navbar-nav bd-navbar-nav flex-row">
     <ul class="navbar-nav bd-navbar-nav flex-row">
       <li class="nav-item">
